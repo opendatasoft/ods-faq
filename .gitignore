@@ -1,0 +1,7 @@
+.DS_STORE
+build
+*.mo
+.idea/
+tmp/
+*.pyc
+node_modules
