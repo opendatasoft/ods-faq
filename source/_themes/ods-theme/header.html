@@ -1,0 +1,62 @@
+{% block header %}
+    <div class="ods__documentation-header">
+
+        <div class="ods__documentation-header-logo">
+            <button type="button" id="nav-button" data-toggle="wy-nav-top"> Menu </button>
+            <a href="{{ pathto(master_doc) }}">
+                <img src="{{ pathto('_static/' + logo, 1) }}" alt="ods-documentation-logo">
+            </a>
+            <button type="button" id="help-hub-button"> Help Hub </button>
+        </div>
+
+        <div class="ods__documentation-header-nav">
+            <div class="ods__documentation-header-nav-item">
+                <a href="https://help.opendatasoft.com/">Help Hub</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="{{ pathto(master_doc) }}">Platform</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="https://help.opendatasoft.com/discovery/">Discovery</a>
+            </div>
+            <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
+                <a href="https://help.opendatasoft.com/faq/">FAQ</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="https://help.opendatasoft.com/widgets/">Widgets</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="https://help.opendatasoft.com/tutorials/">Widgets Tutorial</a>
+            </div>
+            <div class="ods__documentation-header-nav-item">
+                <a href="https://help.opendatasoft.com/en/apis/">APIs</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ods__documentation-help-hub-sidebar">
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="https://help.opendatasoft.com/">Help Hub</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="{{ pathto(master_doc) }}">Platform</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="https://help.opendatasoft.com/discovery/">Discovery</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
+            <a href="https://help.opendatasoft.com/faq/">FAQ</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="https://help.opendatasoft.com/widgets/">Widgets</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="https://help.opendatasoft.com/tutorials/">Widgets Tutorial</a>
+        </div>
+        <div class="ods__documentation-help-hub-sidebar-item">
+            <a href="https://help.opendatasoft.com/en/apis/">APIs</a>
+        </div>
+    </div>
+
+{% endblock %}
