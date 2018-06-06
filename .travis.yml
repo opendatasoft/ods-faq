@@ -3,6 +3,8 @@ env:
   global:
     - DEPLOY_PROD_PATH=/var/www/help/faq-glossary/
     - DEPLOY_BETA_PATH=/var/www/betahelp/faq-glossary/
+    - secure: "av/IfbIn668KaL5iFvA26R2KNUXBhBRXtbi/3rMOEGYS5HadX+Au38SJAJdPPfjWKatOEPIAEsYn2ECx1ONnCzDn35cRrUGbWcXbwekZCNmhbbyhhfWW2hqU33uVnMgOx5X6wdh4GE9KLXee40Qa3MGrL3604KcCbjaGQdphPLYo0+SCB/jmq+dO5DvlQtlqNmDTIqEv8HV1qtNxhq11x2me/tTzJyrGbzL4cWsv79tiN/PcLFed9vd7+SHcp70ApH0UQcf5CHkaRk+Y3Y7x+aJTfLJSQKmpcu0/Gy/ahCGl2clLHY8Zhp2Zk2bsYNRRR3+1r/Neptx1r1vnTEMjPouqh7/ZEuZAo1g+td8RMgL0ehlPLdENcFzsLlmIafvjjDjK91+MSGSzFHbMmjXZ4NDqnWZ2sUQHqb+TPDbzJCSwFhdWjZO2P4plRMvjvcmQ2MiWOQ173zBVNlwDpH9xuMnmuM6ZGkfWQsyPE3ihktPn1M2YLC+cSZE0JFJpjvUGvAs+V1WbW38rxlEk0Uwt/tHUly9/7sUks5F1lVceWCGBZ2QAoV4inABn8/6bS3S+HsNRJu5r06o8eSZL6LMDy/tKiaBSwPgN/2na9KbWRKsL4+VISfya5t+qB1ZBQ2E/kCAF51aj3OqcOQsRtxG+mPjmx2J85IdLLItEthe+sjk="
+    - secure: "G4F73DEly2WwJKrD3wSb5Mx/+BkdcUetEPzbEiieK1eV0xu8uNH7HG0Skel10Skp+etGS0lbn8v0hykdS1ymLTNUhFJkU0THOFPf5JAMf/iWdqh+xQbnfPZeGwL5FxL5ruUOb1uxm8S2UM6SMvrlkDQj8RN9y3q91F/khmDGYD2rW/NhZS3EOV3bi3NcN6zHaNVcVb4ceWT9v6+WpE31KXwE6L0poTQNeI7w+b2IP/oj/LwFrTzc3l/nPITGOWdrdUxOvgg6X+DNpBKdq7mt+thxZhP3xq0YiBnmP+WPqJJO8x9PpH23XxRXpCUqS8b2Vt5QsJcdMMbKSskGVrHF+ZA2SBSTkznwxwzLQCsuH9nzIwxPjAZhUqd4+rlp2rtV2r7EtpBPwjiEaALWN5u6TE8AjtTJE5S8O84i1APOpT90NvZXWHX+rZjruIYA+RAjaNP7lVR4JHSahmCz8Osh4ua+rnq128ATtceTcJsFNzQw2eSGI5B8uudkOX9rct6qnu0F41aeaAXhtOSxnstVXSKo1Q48dhI4XNRkknVxc2Tmj2/HaEHP9eYhSQfWCYwfFW2uY9Saf9cZ3VXVd/ypdYyJ5skYiObx4ojoRYdG+Q0O68+Bkmu+B0JEX+WpBXQrcK88Tbd1KumWHgbj5VaHren77hjpBGVs8342elGnqcg="
 python:
   - 2.7
 install:
@@ -15,7 +17,7 @@ script:
   - sphinx-build -aE -nW -Dlanguage='de' -b html -d tmp source/ build/de
   - sphinx-build -aE -nW -Dlanguage='nl' -b html -d tmp source/ build/nl
 after_success:
-  # - openssl aes-256-cbc -K $encrypted_83dcc4e2814b_key -iv $encrypted_83dcc4e2814b_iv -in .travis.deploy.enc -out .travis.deploy -d
+  - openssl aes-256-cbc -K $encrypted_78d7cc253eac_key -iv $encrypted_78d7cc253eac_iv -in .travis.deploy.enc -out .travis.deploy -d
   - chmod 600 .travis.deploy
   - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "develop" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_BETA_PATH"'
   - 'test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P build/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PROD_PATH"'

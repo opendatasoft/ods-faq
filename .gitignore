@@ -5,3 +5,4 @@ build
 tmp/
 *.pyc
 node_modules
+.travis.deploy
