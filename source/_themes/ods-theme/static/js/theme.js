@@ -280,5 +280,15 @@ $('.internal').on('click', function (event) {
         window.cancelAnimationFrame = function (id) {
             clearTimeout(id);
         };
+
+    //- Open/Close Response in FAQ
+    $('.question').click(function() {
+        if ($(this)[0].nextElementSibling.className.indexOf('response-not-hidden') > -1) {
+            $(this).next().removeClass('response-not-hidden');
+        } else {
+            $('.response').removeClass('response-not-hidden');
+            $(this).next().addClass('response-not-hidden');
+        }
+    });
 }());
 },{"jquery":"jquery"}]},{},["ods-theme"]);

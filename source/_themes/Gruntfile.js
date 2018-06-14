@@ -135,7 +135,7 @@ module.exports = function (grunt) {
             },
             /* JavaScript */
             browserify: {
-                files: ['js/*.js'],
+                files: ['dev/js/*.js'],
                 tasks: ['browserify:dev']
             }
         }
