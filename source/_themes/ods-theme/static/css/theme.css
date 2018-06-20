@@ -5164,6 +5164,9 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 .content-visible li {
   margin: 0 !important;
   list-style: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .content-visible li::before {
   content: "•";
@@ -6034,6 +6037,10 @@ span[id*='MathJax-Span'] {
 }
 .footer-container__langs-items:last-child {
   margin-right: 0;
+}
+
+.footer-container__langs-items:visited {
+  color: white;
 }
 
 .footer-container__langs-items:hover,
