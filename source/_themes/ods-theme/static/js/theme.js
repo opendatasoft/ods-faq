@@ -288,6 +288,7 @@ $('.internal').on('click', function (event) {
      */
     let classVisible = 'content-visible';
     let classHidden = 'content-not-hidden';
+    let classActive = 'content-visible-active';
 
     let removeClass = function (element, className) {
         let reg = new RegExp(`(^| )${className}($| )`, 'g');
@@ -313,12 +314,15 @@ $('.internal').on('click', function (event) {
         } else {
             $('.content-hidden').removeClass(classHidden);
             thisElement.next().addClass(classHidden);
+            thisElement.addClass(classActive);
         }
     }
 
     //- Click to action Open/Close
     $(`.${classVisible}`).click(function () {
         let nextElement = $(this)[0].nextElementSibling;
+
+        $(`.${classVisible}`).removeClass(classActive);
 
         if (nextElement.tagName.indexOf('DIV') > -1) {
             toggleClass(nextElement, classHidden, $(this));

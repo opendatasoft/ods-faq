@@ -1,6 +1,9 @@
 body, h1, h2, h3, p, a
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
-  
+
+body, h1, h2, h3, p, a, th
+  color: $deep-blue
+
 .wy-affix
   position: fixed
   top: $gutter
@@ -358,6 +361,9 @@ body, h1, h2, h3, p, a
     margin-right: 10px
     font-size: 22px
 
+.content-visible:hover
+  color: $blue-ultra-light
+
 #glossary
   .content-visible
     font-weight: bold
@@ -367,7 +373,7 @@ body, h1, h2, h3, p, a
     margin-right: 10px
     font-size: 22px
 
-.content-visible:hover
+.content-visible-active
   color: $blue-ultra-light
   
 .content-hidden

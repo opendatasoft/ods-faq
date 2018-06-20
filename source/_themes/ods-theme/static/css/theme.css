@@ -4738,6 +4738,10 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
 
+body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a, th {
+  color: #003C63;
+}
+
 .wy-affix {
   position: fixed;
   top: 1.618em;
@@ -5168,6 +5172,10 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   font-size: 22px;
 }
 
+.content-visible:hover {
+  color: #CFE6EC;
+}
+
 #glossary .content-visible {
   font-weight: bold;
 }
@@ -5178,7 +5186,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   font-size: 22px;
 }
 
-.content-visible:hover {
+.content-visible-active {
   color: #CFE6EC;
 }
 
