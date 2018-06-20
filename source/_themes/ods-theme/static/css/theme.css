@@ -4738,7 +4738,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
 
-body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a, th {
+body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
   color: #003C63;
 }
 
@@ -6023,7 +6023,6 @@ span[id*='MathJax-Span'] {
 }
 
 .footer-container__langs-items {
-  border: 1px solid white;
   padding: 7px;
   border-radius: 4px;
   margin: 0 20px;
@@ -6035,6 +6034,21 @@ span[id*='MathJax-Span'] {
 }
 .footer-container__langs-items:last-child {
   margin-right: 0;
+}
+
+.footer-container__langs-items:hover,
+.footer-container__langs-items:focus {
+  background-color: white !important;
+  color: #003C63 !important;
+}
+
+#currentLang {
+  display: none;
+}
+
+.lang-active {
+  background-color: white;
+  color: #003C63;
 }
 
 /*# sourceMappingURL=theme.css.map */

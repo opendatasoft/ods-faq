@@ -198,9 +198,9 @@ function ThemeNav() {
     };
 
     nav.toggleCurrent = function (elem) {
-        
+
         var parent_li = elem.closest('li');
-            
+
         parent_li.parent().parent().removeClass('current-active');
         parent_li.siblings('li.current').removeClass('current current-active');
         parent_li.siblings().find('li.current').removeClass('current current-active');
@@ -282,7 +282,7 @@ $('.internal').on('click', function (event) {
 
     /*
      *
-     *  
+     *  Open/Close element and active item selected
      *
      */
     let classVisible = 'content-visible';
@@ -329,4 +329,19 @@ $('.internal').on('click', function (event) {
             toggleClass(nextElement, classHidden, $(this));
         }
     });
+
+    /*
+     *
+     *  Active current lang on item lang  
+     *
+     */
+    let itemLang = $('.footer-container__langs-items');
+    let currentLang = $('#currentLang').text();
+
+    for (let o = 0; o < itemLang.length; o++) {
+        if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {
+            itemLang[o].className += ' lang-active';
+        }
+    }
+
 }());
