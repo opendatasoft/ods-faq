@@ -4738,6 +4738,10 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
 
+body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
+  color: #003C63;
+}
+
 .wy-affix {
   position: fixed;
   top: 1.618em;
@@ -5123,7 +5127,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
 }
 
 .wy-nav-content {
-  padding: 1.618em 3.236em;
+  padding: 50px 3.236em;
   height: 100%;
   max-width: 100%;
   margin: auto;
@@ -5136,33 +5140,59 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, a {
   }
 }
 .section {
-  border: 1px solid red;
   width: 800px;
   margin: 0 auto;
 }
 .section h1, .section h2, .section .rst-content .toctree-wrapper p.caption, .rst-content .toctree-wrapper .section p.caption {
   text-align: center;
-  margin: 60px 0;
+}
+.section h1 {
+  margin: 0 0 30px 0;
+}
+.section h2, .section .rst-content .toctree-wrapper p.caption, .rst-content .toctree-wrapper .section p.caption {
+  margin: 70px 0 40px 0;
 }
 
-.question {
-  border: 1px solid green;
+.content-visible {
   border-radius: 4px;
   cursor: pointer;
   margin: 20px 0;
+  padding: 0;
+  font-size: 16px;
 }
-.question ol {
+.content-visible li {
   margin: 0 !important;
-  padding: 15px;
+  list-style: none !important;
+}
+.content-visible li::before {
+  content: "•";
+  color: #CFE6EC;
+  margin-right: 10px;
+  font-size: 22px;
 }
 
-.response {
-  padding: 20px 0;
-  display: none;
+#glossary .content-visible {
+  font-weight: bold;
+}
+#glossary .content-visible::before {
+  content: "•";
+  color: #CFE6EC;
+  margin-right: 10px;
+  font-size: 22px;
 }
 
-.response-not-hidden {
-  display: block;
+.content-visible:hover {
+  color: #CFE6EC;
+}
+
+.content-hidden {
+  margin-bottom: 0 !important;
+  padding: 10px 20px;
+  display: none !important;
+}
+
+.content-not-hidden {
+  display: block !important;
 }
 
 .wy-body-mask {

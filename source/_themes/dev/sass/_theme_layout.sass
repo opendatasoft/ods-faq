@@ -1,5 +1,8 @@
 body, h1, h2, h3, p, a
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
+
+body, h1, h2, h3, p, th
+  color: $deep-blue
   
 .wy-affix
   position: fixed
@@ -323,7 +326,7 @@ body, h1, h2, h3, p, a
   border-left: 1px solid transparentize($grey-medium, 0.6)
 
 .wy-nav-content
-  padding: $gutter $gutter * 2
+  padding: 50px $gutter * 2
   height: 100%
   max-width: 100%
   margin: auto
@@ -333,29 +336,49 @@ body, h1, h2, h3, p, a
     max-width: 80%
 
 .section
-  border: 1px solid red
   width: 800px
   margin: 0 auto
   h1, h2
     text-align: center
-    margin: 60px 0
+  h1
+    margin: 0 0 30px 0
+  h2
+    margin: 70px 0 40px 0
 
-.question
-  border: 1px solid green
+.content-visible
   border-radius: 4px
   cursor: pointer
   margin: 20px 0
-  ol
+  padding: 0
+  font-size: 16px
+  li
     margin: 0!important
-    padding: 15px
+    list-style: none!important
+  li::before 
+    content: "•"
+    color: $blue-ultra-light
+    margin-right: 10px
+    font-size: 22px
 
-.response
-  // border: 1px solid blue
-  padding: 20px 0
-  display: none
+#glossary
+  .content-visible
+    font-weight: bold
+  .content-visible::before
+    content: "•"
+    color: $blue-ultra-light
+    margin-right: 10px
+    font-size: 22px
 
-.response-not-hidden
-  display: block
+.content-visible:hover
+  color: $blue-ultra-light
+  
+.content-hidden
+  margin-bottom: 0!important
+  padding: 10px 20px
+  display: none!important
+
+.content-not-hidden
+  display: block!important
 
 .wy-body-mask
   position: fixed

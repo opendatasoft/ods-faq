@@ -1,20 +1,20 @@
 Frequently asked questions (FAQ)
 ================================
 
-.. container:: question
+.. rst-class:: content-visible
 
     1. **What is OpenDataSoft?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     OpenDataSoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured
     datasets.
 
-.. container:: question
+.. rst-class:: content-visible
 
     2. **Is OpenDataSoft open source?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     OpenDataSoft is not open source.
 
@@ -28,11 +28,11 @@ Frequently asked questions (FAQ)
     * `Geo aggregations plugin <https://github.com/opendatasoft/elasticsearch-plugin-geoshape>`_
     * `Geo convex envelope plugin <https://github.com/opendatasoft/elasticsearch-aggregation-envelope>`_
 
-.. container:: question
+.. rst-class:: content-visible
 
     3. **Is the OpenDataSoft team managing data on behalf of its customers?**
 
-.. container:: response
+.. rst-class:: content-hidden
    
     No.
 
@@ -40,11 +40,11 @@ Frequently asked questions (FAQ)
 
     Moreover, OpenDataSoft maintains a `data network <https://data.opendatasoft.com/>`_ which federates public datasets published by OpenDataSoft customers as well as datasets published by the OpenDataSoft staff.
 
-.. container:: question
+.. rst-class:: content-visible
 
     4. **I'm representing a public administration. My country has already setup an Open Data initiative. Why should I have my own data portal?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Open Data is about making data that has been produced by public administrations available to citizens. But most of the
     time, one may want to go beyond the simple delivery of raw files and:
@@ -55,22 +55,22 @@ Frequently asked questions (FAQ)
 
     To that extent, having a data management tool tailored to your needs is mandatory and keep in mind that thanks to the Open APIs provided by OpenDataSoft, your national Open Data portal will always have the possibility to reference your public datasets.
 
-.. container:: question
+.. rst-class:: content-visible
 
     5. **If I publish datasets on OpenDataSoft, will they automatically be available to everyone on the Web?**
 
-.. container:: response
+.. rst-class:: content-hidden
     
     No.
 
     The OpenDataSoft platform can be used for both public and private data management projects. A given platform can even
     host public and private datasets. It is also possible to define the ACL of a recordset at the dataset level.
 
-.. container:: question
+.. rst-class:: content-visible
 
     6. **What file formats are supported by OpenDataSoft?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     The OpenDataSoft platform natively supports the following file formats:
 
@@ -96,11 +96,11 @@ Frequently asked questions (FAQ)
 
     Custom connectivity capabilities can be added upon request.
 
-.. container:: question
+.. rst-class:: content-visible
 
     7. **What metadata standards does OpenDataSoft support?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     OpenDataSoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-dcat/>`_ to describe datasets. The following
     metadata are available by default:
@@ -131,65 +131,65 @@ Frequently asked questions (FAQ)
 
     The metadata template can be customized (adding custom metadata). To do so, simply issue a support request from your OpenDataSoft's back-office.
 
-.. container:: question
+.. rst-class:: content-visible
 
     8. **How many datasets can I create?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     You can create as many datasets as you want within the limit set in your licensing plan.
 
-.. container:: question
+.. rst-class:: content-visible
 
     9. **How could I modify the look & feel of my OpenDataSoft domain?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     As a domain administrator, you can fully customize the styling of your portal. Logos, pictos, colors, styles as well as the header, the footer and the dataset box layout in the catalog page can be fully customized.
 
-.. container:: question
+.. rst-class:: content-visible
 
     10. **How can other people collaborate on dataset configuration?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Use the security section in your dataset's configuration page in OpenDataSoft's back-office to give other users or groups of users a write access to the dataset. These users should also have access to your domain to access your dataset. If this is not the case already, you should contact your domain administrator.
 
-.. container:: question
+.. rst-class:: content-visible
 
     11. **How can I transform and enrich my datasets?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     A rich set of processing features is made available in the publishing console. Simply hit the **Add Processor** button.
 
-.. container:: question
+.. rst-class:: content-visible
 
     12. **Can I geocode a full-text address?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Yes.
 
     OpenDataSoft supports Google and ESRI geocoding services. However, OpenDataSoft doesn't come with geocoding API keys.
     The domain administrator has to configure a geocoding API key for one of these services in the back-office configuration (*Configuration > Data processing*).
 
-.. container:: question
+.. rst-class:: content-visible
 
     13. **I have geocoded data in my dataset but the map view doesn't display anything. What went wrong?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Remember that you dataset must contain at least a field of type **Geo Point** or **Geo Shape**
 
     * Geo Point: ``latitude,longitude`` in WGS84, e.g.: ``48.2567,3.7689``.
     * Geo Shape: any valid Geo JSON geometry in WGS84
 
-.. container:: question
+.. rst-class:: content-visible
 
     14. **What is a facet?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Facets are the backbone of most of the features made available by the OpenDataSoft platform. A facet is simply a field
     which has been given specific filtering and aggregation capabilities.
@@ -224,30 +224,30 @@ Frequently asked questions (FAQ)
     .. image:: faq__facet-chart--en.png
         :alt: Build charts with facets
 
-.. container:: question
+.. rst-class:: content-visible
 
     15. **I have an OpenDataSoft free trial account, how can I get a premium account?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Please send a message to <contact@opendatasoft.com>.
 
     We will be happy to discuss your needs and to propose you one of our plans.
 
-.. container:: question
+.. rst-class:: content-visible
 
     16. **How can I display points on a map?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     For a geo data visualization to be available, your dataset needs to contain a **Geo Point 2D** field with content in
     the ``latitude,longitude`` format. For instance: ``48.2567,3.7689``.
 
-.. container:: question
+.. rst-class:: content-visible
 
     17. **In the table view, I have not been able to sort the results using a specific field? What went wrong?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     By default, only the numerical fields are sortable. That is, fields having one of the following types:
 
@@ -258,30 +258,30 @@ Frequently asked questions (FAQ)
 
     **Text** fields are not sortable by default. The dataset owner may configure some text fields to be sortable. Sortable **text** fields can be identified through the API (``sortable`` annotation).
 
-.. container:: question
+.. rst-class:: content-visible
 
     18. **I published a dataset, but no category is displayed in the left column. What shall I do?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Categories (facets) are built out of fields which have been defined as a **facet**. To set a field as a facet, simply
     click on the **filter** icon, in the field definition header in the publishing console.
 
-.. container:: question
+.. rst-class:: content-visible
 
     18. **When I go to the analyze view, the displayed chart doesn't make any sense. How could I change this?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     The dataset owner can easily define the default analytical representation of the dataset using the **analyze tab** in
     the publishing console. End-users can also simply choose different settings and build their own analytical data
     visualization using the available controls.
 
-.. container:: question
+.. rst-class:: content-visible
 
     19. **How can I embed a data visualization on my website?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     There are three ways to embed OpenDataSoft's data visualizations on a website or any content management system:
 
@@ -289,56 +289,56 @@ Frequently asked questions (FAQ)
     * Use `ODS Widgets, our open source widget library <https://github.com/opendatasoft/ods-widgets>`_ to build content pages tailored to your needs with one or several data visualizations at once.
     * Use OpenDataSoft's HTTP/REST APIs to develop your own embed.
 
-.. container:: question
+.. rst-class:: content-visible
 
     20. **What is "Cartograph"?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Cartograph is a tool developed by OpenDataSoft to make it possible to build geo mashups out of datasets stored on the
     OpenDataSoft platform.
 
-.. container:: question
+.. rst-class:: content-visible
 
     21. **What does API mean?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     API is an acronym for Applications Programming Interface. An API is a set of methods for computer programs to exchange information in an autonomous way. OpenDataSoft APIs allow for remote access to datasets using the HTTP protocol.
 
-.. container:: question
+.. rst-class:: content-visible
 
     22. **What are APIs made for?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     APIs are a set of tools that developers can use to integrate data in their applications (Web applications, mobile
     applications, business applications...).
 
-.. container:: question
+.. rst-class:: content-visible
 
     23. **How many API calls can I perform?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     API endpoints are associated with quotas. OpenDataSoft customers can configure their own quotas policy. Contact your
     OpenDataSoft domain owner for more details.
 
-.. container:: question
+.. rst-class:: content-visible
 
     24. **Does every dataset have its own APIs?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     Yes.
 
     Whenever you publish a dataset, a dedicated API is created. See `APIs documentation <https://docs.opendatasoft.com/en/using_api/index.html>`_ for more information.
 
-.. container:: question
+.. rst-class:: content-visible
 
     25. **What are the compatible browsers for OpenDataSoft's platform?**
 
-.. container:: response
+.. rst-class:: content-hidden
 
     .. tabularcolumns:: |C|C|C|C|
 

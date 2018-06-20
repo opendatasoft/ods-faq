@@ -281,13 +281,49 @@ $('.internal').on('click', function (event) {
             clearTimeout(id);
         };
 
-    //- Open/Close Response in FAQ
-    $('.question').click(function() {
-        if ($(this)[0].nextElementSibling.className.indexOf('response-not-hidden') > -1) {
-            $(this).next().removeClass('response-not-hidden');
+    /*
+     *
+     *  
+     *
+     */
+    let classVisible = 'content-visible';
+    let classHidden = 'content-not-hidden';
+
+    let removeClass = function (element, className) {
+        let reg = new RegExp(`(^| )${className}($| )`, 'g');
+        element.className = element.className.replace(reg, '');
+    }
+
+    //- Replace className 'content-hidden' for tables
+    for (let i = 0; i < $('.content-visible').next().length; i++) {
+        if ($('.content-visible').next()[i].tagName.indexOf('P') === -1) {
+            removeClass($('.content-visible').next()[i], 'content-hidden');
+
+            //- DIV which wrappe <table> appears after DOM rendering
+            setTimeout(function () {
+                $('.wy-table-responsive').addClass('content-hidden');
+            }, 500);
+        }
+    }
+
+    //- Open/Close element
+    let toggleClass = function (nextElement, classHidden, thisElement) {
+        if (nextElement.className.indexOf(classHidden) > -1) {
+            thisElement.next().removeClass(classHidden);
         } else {
-            $('.response').removeClass('response-not-hidden');
-            $(this).next().addClass('response-not-hidden');
+            $('.content-hidden').removeClass(classHidden);
+            thisElement.next().addClass(classHidden);
+        }
+    }
+
+    //- Click to action Open/Close
+    $(`.${classVisible}`).click(function () {
+        let nextElement = $(this)[0].nextElementSibling;
+
+        if (nextElement.tagName.indexOf('DIV') > -1) {
+            toggleClass(nextElement, classHidden, $(this));
+        } else {
+            toggleClass(nextElement, classHidden, $(this));
         }
     });
 }());
