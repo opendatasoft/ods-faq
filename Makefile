@@ -77,6 +77,7 @@ dirhtml:
 
 singlehtml:
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
+	cp ./source/ODS_logo_footer.svg build/singlehtml/_static/
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 

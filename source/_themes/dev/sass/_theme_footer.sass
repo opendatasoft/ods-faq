@@ -1,0 +1,32 @@
+.footer-container 
+    display: flex
+    flex-direction: columns
+    justify-content: center
+    background-color: $blue-light
+    height: 60px
+    max-width: 100%
+
+.footer-container__logo 
+    margin: auto
+    height: 40px
+
+.footer-container__langs
+    position: absolute
+    right: 0
+    width: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 11px 30px 11px 0
+
+.footer-container__langs-items
+    border: 1px solid white
+    padding: 7px
+    border-radius: 4px
+    margin: 0 20px
+    color: white
+    text-transform: uppercase
+    &:first-child
+        margin-left: 0
+    &:last-child
+        margin-right: 0

@@ -1,8 +1,5 @@
 body, h1, h2, h3, p, a
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
-
-body, h1, h2, h3, p, th
-  color: $deep-blue
   
 .wy-affix
   position: fixed
@@ -322,13 +319,14 @@ body, h1, h2, h3, p, th
   margin-top: 100px
   background: $section-background-color
   min-height: 100%
+  max-width: 100%
   left: 0
   border-left: 1px solid transparentize($grey-medium, 0.6)
 
 .wy-nav-content
   padding: 50px $gutter * 2
   height: 100%
-  max-width: 100%
+  max-width: 100% 
   margin: auto
 @media screen and (min-width: 930px) and (max-width: 1099px)
   .wy-nav-content
