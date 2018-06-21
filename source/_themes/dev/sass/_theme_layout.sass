@@ -327,14 +327,17 @@ body, h1, h2, h3, p, th
   border-left: 1px solid transparentize($grey-medium, 0.6)
 
 .wy-nav-content
-  padding: 50px $gutter * 2
+  padding: 70px $gutter * 2
   height: 100%
   max-width: 100% 
   margin: auto
+
 @media screen and (min-width: 930px) and (max-width: 1099px)
   .wy-nav-content
-    padding: 1.618em 0
+    padding: 70px 0
     max-width: 80%
+  .section
+    width: auto!important
 
 .section
   width: 800px
@@ -365,7 +368,7 @@ body, h1, h2, h3, p, th
     font-size: 22px
 
 .content-visible:hover
-  color: $blue-ultra-light
+  color: transparentize($blue-light, 0.4)
 
 #glossary
   .content-visible
@@ -377,15 +380,17 @@ body, h1, h2, h3, p, th
     font-size: 22px
 
 .content-visible-active
-  color: $blue-ultra-light
+  color: transparentize($blue-light, 0.4)
   
 .content-hidden
   margin-bottom: 0!important
   padding: 10px 20px
   display: none!important
+  transition: 5s
 
 .content-not-hidden
   display: block!important
+  transition: 5s
 
 .wy-body-mask
   position: fixed
@@ -457,10 +462,12 @@ footer
     margin-left: 0
     width: 100%
     .wy-nav-content
-      max-width: 80%
-      padding: 1.618em 0
+      max-width: 100%
+      padding: 40px 20px
     &.shift
       overflow: hidden
+  .section
+    width: auto!important
 
 @media screen and (min-width: $nav-media-query)
   .wy-nav-content

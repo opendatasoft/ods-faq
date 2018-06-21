@@ -5128,7 +5128,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 }
 
 .wy-nav-content {
-  padding: 50px 3.236em;
+  padding: 70px 3.236em;
   height: 100%;
   max-width: 100%;
   margin: auto;
@@ -5136,8 +5136,12 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 
 @media screen and (min-width: 930px) and (max-width: 1099px) {
   .wy-nav-content {
-    padding: 1.618em 0;
+    padding: 70px 0;
     max-width: 80%;
+  }
+
+  .section {
+    width: auto !important;
   }
 }
 .section {
@@ -5176,7 +5180,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 }
 
 .content-visible:hover {
-  color: #CFE6EC;
+  color: rgba(18, 110, 146, 0.6);
 }
 
 #glossary .content-visible {
@@ -5190,17 +5194,19 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 }
 
 .content-visible-active {
-  color: #CFE6EC;
+  color: rgba(18, 110, 146, 0.6);
 }
 
 .content-hidden {
   margin-bottom: 0 !important;
   padding: 10px 20px;
   display: none !important;
+  transition: 5s;
 }
 
 .content-not-hidden {
   display: block !important;
+  transition: 5s;
 }
 
 .wy-body-mask {
@@ -5310,11 +5316,15 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     width: 100%;
   }
   .wy-nav-content-wrap .wy-nav-content {
-    max-width: 80%;
-    padding: 1.618em 0;
+    max-width: 100%;
+    padding: 40px 20px;
   }
   .wy-nav-content-wrap.shift {
     overflow: hidden;
+  }
+
+  .section {
+    width: auto !important;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -6055,6 +6065,9 @@ span[id*='MathJax-Span'] {
 
 .lang-active {
   background-color: white;
+  color: #003C63;
+}
+.lang-active:visited {
   color: #003C63;
 }
 
