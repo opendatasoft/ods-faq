@@ -1,10 +1,16 @@
 .footer-container 
     display: flex
-    flex-direction: columns
+    flex-direction: column
     justify-content: center
     background-color: $blue-light
     height: 60px
     max-width: 100%
+
+@media only screen and (max-width: $tablet-width)
+    .footer-container
+        position: relative
+        z-index: 50
+        border: 1px solid white
 
 .footer-container__logo 
     margin: auto
@@ -17,7 +23,11 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-    margin: 11px 30px 11px 0
+    margin: 0 30px 11px 0
+
+@media only screen and (max-width: $tablet-width)
+    .footer-container__langs
+        display: none
 
 .footer-container__langs-items
     padding: 7px
@@ -43,6 +53,6 @@
 
 .lang-active
     background-color: white
-    color: $deep-blue
+    color: $deep-blue!important
     &:visited
         color: $deep-blue

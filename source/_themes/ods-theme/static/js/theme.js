@@ -336,8 +336,11 @@ $('.internal').on('click', function (event) {
      *  Active current lang on item lang  
      *
      */
-    let itemLang = $('.footer-container__langs-items');
+
+    let itemLang = $(window).width() > 930 ? $('.footer-container__langs-items') : $('.header__langs-items');
     let currentLang = $('#currentLang').text();
+
+    console.log(itemLang);
 
     for (let o = 0; o < itemLang.length; o++) {
         if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {

@@ -5850,9 +5850,10 @@ span[id*='MathJax-Span'] {
 .ods__documentation-header-logo {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   height: 99px;
   width: 100%;
+  padding: 0 10px;
 }
 .ods__documentation-header-logo button {
   border: none;
@@ -5930,16 +5931,15 @@ span[id*='MathJax-Span'] {
 .ods__documentation-help-hub-sidebar {
   position: fixed;
   top: 100px;
-  right: -300px;
+  left: -300px;
   height: 100%;
   width: 300px;
-  padding-top: 40px;
+  padding-top: 30px;
   background-color: #126E92;
   border-top: 1px solid white;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
+  z-index: 49;
   transition: 0.5s;
+  overflow-y: scroll;
 }
 
 @media only screen and (min-width: 930px) {
@@ -5947,33 +5947,58 @@ span[id*='MathJax-Span'] {
     display: none;
   }
 }
-.ods__documentation-help-hub-sidebar-item {
+.ods__documentation-help-hub-nav-links,
+.ods__documentation-help-hub-langs {
   text-align: center;
-  margin: 15px 0;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin: 0;
+  align-items: center;
 }
-.ods__documentation-help-hub-sidebar-item a {
+
+.ods__documentation-help-hub-nav-links {
+  margin-top: 15px;
+}
+.ods__documentation-help-hub-nav-links a {
+  border-bottom: 2px solid transparent;
   color: white;
   font-size: 16px;
   text-decoration: none;
   font-weight: 400;
-  padding: 5px;
+  margin: 18px 0;
 }
-.ods__documentation-help-hub-sidebar-item:last-child {
-  margin-top: 30px;
+.ods__documentation-help-hub-nav-links a:first-child {
+  margin-top: 0;
 }
 
 .ods__documentation-help-hub-sidebar-active {
-  right: 0;
+  left: 0;
 }
 
-.ods__documentation-header-nav-item-active > a {
-  border-bottom: 2px solid white;
+.ods__documentation-help-hub-langs {
+  margin-bottom: 200px;
+}
+.ods__documentation-help-hub-langs a {
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 7px;
+  margin: 18px auto;
+}
+.ods__documentation-help-hub-langs a:last-child {
+  margin-bottom: 0;
 }
 
-@media only screen and (min-width: 930px) {
-  .ods__documentation-header-nav-item-active > a {
-    border-bottom: 2px solid white;
+@media only screen and (max-width: 930px) {
+  .ods__documentation-header-nav-item-active {
+    border-bottom: 2px solid white !important;
   }
 }
 @media only screen and (min-width: 930px) {
@@ -6013,13 +6038,20 @@ span[id*='MathJax-Span'] {
 }
 .footer-container {
   display: flex;
-  flex-direction: columns;
+  flex-direction: column;
   justify-content: center;
   background-color: #126E92;
   height: 60px;
   max-width: 100%;
 }
 
+@media only screen and (max-width: 930px) {
+  .footer-container {
+    position: relative;
+    z-index: 50;
+    border: 1px solid white;
+  }
+}
 .footer-container__logo {
   margin: auto;
   height: 40px;
@@ -6032,9 +6064,14 @@ span[id*='MathJax-Span'] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 11px 30px 11px 0;
+  margin: 0 30px 11px 0;
 }
 
+@media only screen and (max-width: 930px) {
+  .footer-container__langs {
+    display: none;
+  }
+}
 .footer-container__langs-items {
   padding: 7px;
   border-radius: 4px;
@@ -6065,7 +6102,7 @@ span[id*='MathJax-Span'] {
 
 .lang-active {
   background-color: white;
-  color: #003C63;
+  color: #003C63 !important;
 }
 .lang-active:visited {
   color: #003C63;
