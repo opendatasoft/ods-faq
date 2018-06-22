@@ -1,6 +1,14 @@
 Glossary
 ========
 
+.. rst-class:: expand-collapse-items wrapper-expand-collapse-glossary expand-all-glossary
+
+    Expand all
+
+.. rst-class:: expand-collapse-items wrapper-expand-collapse-glossary collapse-all-glossary
+
+    Collapse all
+
 .. rst-class:: content-visible
 
   Data glossary
@@ -370,7 +378,7 @@ Glossary
         |link_75|
 
       * XML (Extensible Markup Language) is a general-purpose specification for creating custom markup languages. It is classified as an extensible language, because it allows the user to define the mark-up elements. XML's purpose is to aid information systems in sharing structured data especially via the Internet, to encode documents, and to serialize data.
-
+    
 .. |link_2| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Data" target="_blank">Source</a>

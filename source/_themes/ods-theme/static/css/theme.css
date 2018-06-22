@@ -5144,9 +5144,42 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
     width: auto !important;
   }
 }
+.wrapper-expand-collapse {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.expand-collapse-items {
+  margin: 0;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.expand-all-faq::before,
+.expand-all-glossary::before {
+  content: "+ ";
+  color: rgba(18, 110, 146, 0.6);
+}
+
+.collapse-all-faq::before,
+.collapse-all-glossary::before {
+  content: "- ";
+  color: rgba(18, 110, 146, 0.6);
+}
+
+.wrapper-expand-collapse-items-active {
+  display: block;
+}
+
 .section {
   width: 800px;
   margin: 0 auto;
+}
+.section p, .section li, .section table {
+  font-size: 18px;
 }
 .section h1, .section h2, .section .rst-content .toctree-wrapper p.caption, .rst-content .toctree-wrapper .section p.caption {
   text-align: center;
@@ -5164,6 +5197,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
   margin: 20px 0;
   padding: 0;
   font-size: 16px;
+  color: rgba(18, 110, 146, 0.6);
 }
 .content-visible li {
   margin: 0 !important;
@@ -5180,7 +5214,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 }
 
 .content-visible:hover {
-  color: rgba(18, 110, 146, 0.6);
+  color: #003C63;
 }
 
 #glossary .content-visible {
@@ -5194,7 +5228,7 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 }
 
 .content-visible-active {
-  color: rgba(18, 110, 146, 0.6);
+  color: #003C63;
 }
 
 .content-hidden {

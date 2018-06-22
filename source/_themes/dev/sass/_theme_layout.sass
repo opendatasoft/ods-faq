@@ -339,9 +339,36 @@ body, h1, h2, h3, p, th
   .section
     width: auto!important
 
+.wrapper-expand-collapse
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 50px
+
+.expand-collapse-items
+  margin: 0
+  position: absolute
+  display: none
+  cursor: pointer
+  font-weight: bold
+
+.expand-all-faq::before,
+.expand-all-glossary::before
+  content: '+ '
+  color: transparentize($blue-light, 0.4)
+
+.collapse-all-faq::before,
+.collapse-all-glossary::before
+  content: '- '
+  color: transparentize($blue-light, 0.4)
+
+.wrapper-expand-collapse-items-active
+  display: block
+
 .section
   width: 800px
   margin: 0 auto
+  p, li, table
+    font-size: 18px
   h1, h2
     text-align: center
   h1
@@ -355,6 +382,7 @@ body, h1, h2, h3, p, th
   margin: 20px 0
   padding: 0
   font-size: 16px
+  color: transparentize($blue-light, 0.4)
   li
     margin: 0!important
     list-style: none!important
@@ -368,7 +396,7 @@ body, h1, h2, h3, p, th
     font-size: 22px
 
 .content-visible:hover
-  color: transparentize($blue-light, 0.4)
+  color: $deep-blue
 
 #glossary
   .content-visible
@@ -380,7 +408,7 @@ body, h1, h2, h3, p, th
     font-size: 22px
 
 .content-visible-active
-  color: transparentize($blue-light, 0.4)
+  color: $deep-blue
   
 .content-hidden
   margin-bottom: 0!important

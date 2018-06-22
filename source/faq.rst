@@ -1,6 +1,14 @@
 Frequently asked questions (FAQ)
 ================================
 
+.. rst-class:: expand-collapse-items wrapper-expand-collapse-faq expand-all-faq
+
+    Expand all
+
+.. rst-class:: expand-collapse-items wrapper-expand-collapse-faq collapse-all-faq
+
+    Collapse all
+
 .. rst-class:: content-visible
 
     1. **What is OpenDataSoft?**

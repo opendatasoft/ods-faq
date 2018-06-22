@@ -310,8 +310,8 @@ $('.internal').on('click', function (event) {
     let toggleClass = function (nextElement, classHidden, thisElement) {
         if (nextElement.className.indexOf(classHidden) > -1) {
             thisElement.next().removeClass(classHidden);
+            thisElement.removeClass(classActive);
         } else {
-            $('.content-hidden').removeClass(classHidden);
             thisElement.next().addClass(classHidden);
             thisElement.addClass(classActive);
         }
@@ -320,8 +320,6 @@ $('.internal').on('click', function (event) {
     //- Click to action Open/Close
     $(`.${classVisible}`).click(function () {
         let nextElement = $(this)[0].nextElementSibling;
-
-        $(`.${classVisible}`).removeClass(classActive);
 
         if (nextElement.tagName.indexOf('DIV') > -1) {
             toggleClass(nextElement, classHidden, $(this));
@@ -332,19 +330,98 @@ $('.internal').on('click', function (event) {
 
     /*
      *
-     *  Active current lang on item lang  
+     *  Buttons expand/collapse all elements
      *
      */
+    //- Wrap div around p
+    let elementsExpandCollapseFAQ = $('.wrapper-expand-collapse-faq');
+    let elementsExpandCollapseGlossary = $('.wrapper-expand-collapse-glossary');
+    let wrapperPattern = `<div class="wrapper-expand-collapse">
+                          </div>`;
+    let expandCollapseClassActive = 'wrapper-expand-collapse-items-active';
+    let elementClickExpandFAQ = $('.expand-all-faq');
+    let elementClickCollapseFAQ = $('.collapse-all-faq');
+    let elementClickExpandGlossary = $('.expand-all-glossary');
+    let elementClickCollapseGlossary = $('.collapse-all-glossary');
+    let sectionFAQElement = $('#frequently-asked-questions-faq');
+    let sectionGlossaryElement = $('#glossary');
 
+    $(elementsExpandCollapseFAQ).wrapAll(wrapperPattern);
+    $(elementsExpandCollapseGlossary).wrapAll(wrapperPattern);
+
+    //- Add class active to expand all
+    $(elementClickExpandFAQ).addClass(expandCollapseClassActive);
+    $(elementClickExpandGlossary).addClass(expandCollapseClassActive);
+
+    //- Expand all elements
+    let expandAllAction = function (contentsSection, expandElement, collapseElement) {
+        for (let a = 0; a < contentsSection.length; a++) {
+            if (contentsSection[a].className.indexOf('content-hidden') > -1) {
+                contentsSection[a].className += ` ${classHidden}`;
+            }
+        }
+        $(expandElement).removeClass(expandCollapseClassActive);
+        $(collapseElement).addClass(expandCollapseClassActive);
+    }
+
+    //- Expand all FAQ
+    $(elementClickExpandFAQ).click(function () {
+        expandAllAction(
+            $(sectionFAQElement)[0].children,
+            elementClickExpandFAQ,
+            elementClickCollapseFAQ
+        );
+    });
+
+    //- Expand all Glossary
+    $(elementClickExpandGlossary).click(function () {
+        expandAllAction(
+            $(sectionGlossaryElement)[0].children,
+            elementClickExpandGlossary,
+            elementClickCollapseGlossary
+        );
+    });
+
+    //- Collapse all elements
+    let collapseAllAction = function (contentsSection, collapseElement, expandElement) {
+        for (let a = 0; a < contentsSection.length; a++) {
+            if (contentsSection[a].className.indexOf('content-hidden') > -1) {
+                removeClass(contentsSection[a], classHidden);
+            }
+        }
+        $(collapseElement).removeClass(expandCollapseClassActive);
+        $(expandElement).addClass(expandCollapseClassActive);
+    }
+
+    //- Collapse all FAQ
+    $(elementClickCollapseFAQ).click(function () {
+        collapseAllAction(
+            $(sectionFAQElement)[0].children,
+            elementClickCollapseFAQ,
+            elementClickExpandFAQ
+        );
+    });
+
+    //- Collapse all Glossary
+    $(elementClickCollapseGlossary).click(function () {
+        collapseAllAction(
+            $(sectionGlossaryElement)[0].children,
+            elementClickCollapseGlossary,
+            elementClickExpandGlossary
+        );
+    });
+
+    /*
+     *
+     *  Active current lang on item lang
+     *
+     */
     let itemLang = $(window).width() > 930 ? $('.footer-container__langs-items') : $('.header__langs-items');
     let currentLang = $('#currentLang').text();
-
-    console.log(itemLang);
 
     for (let o = 0; o < itemLang.length; o++) {
         if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {
             itemLang[o].className += ' lang-active';
         }
     }
-
 }());
