@@ -280,32 +280,69 @@ $('.internal').on('click', function (event) {
             clearTimeout(id);
         };
 
+    /////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////
+    //
+    //  Description
+    //
+    /////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////
     /*
      *
-     *  Open/Close element and active item selected
+     *  Variables
      *
      */
     let classContentVisible = 'content-visible';
+    let classContentHidden = 'content-hidden';
     let classContentVisibleActive = 'content-visible-active';
     let classContentHiddenActive = 'content-hidden-active';
 
+    let countElementVisibleFAQ = 0;
+    let countElementVisibleActiveFAQ = 0;
+    let countElementVisibleGlossary = 0;
+    let countElementVisibleActiveGlossary = 0;
+
+    let elementsExpandCollapseFAQ = $('.wrapper-expand-collapse-faq');
+    let elementsExpandCollapseGlossary = $('.wrapper-expand-collapse-glossary');
+    let wrapperPattern = `<div class="wrapper-expand-collapse">
+                          </div>`;
+    let expandCollapseClassActive = 'wrapper-expand-collapse-items-active';
+    let elementClickExpandFAQ = $('.expand-all-faq');
+    let elementClickCollapseFAQ = $('.collapse-all-faq');
+    let elementClickExpandGlossary = $('.expand-all-glossary');
+    let elementClickCollapseGlossary = $('.collapse-all-glossary');
+    let sectionFAQElement = $('#frequently-asked-questions-faq');
+    let sectionGlossaryElement = $('#glossary');
+
+    /*
+     *
+     *  Generic functions
+     *
+     */
     let removeClass = function (element, className) {
         let reg = new RegExp(`(^| )${className}($| )`, 'g');
         element.className = element.className.replace(reg, '');
     }
 
+    /*
+     *
+     *  Open/Close element and active item selected
+     *
+     */
+
     //- Replace className 'content-hidden' for tables
-    for (let i = 0; i < $('.content-visible').next().length; i++) {
+    for (let i = 0; i < $(`.${classContentVisible}`).next().length; i++) {
         if ($('.content-visible').next()[i].tagName.indexOf('P') === -1) {
-            removeClass($('.content-visible').next()[i], 'content-hidden');
+            removeClass($(`.${classContentVisible}`).next()[i], classContentHidden);
 
             //- DIV which wrappe <table> appears after DOM rendering
             setTimeout(function () {
-                $('.wy-table-responsive').addClass('content-hidden');
+                $('.wy-table-responsive').addClass(classContentHidden);
             }, 500);
         }
     }
 
+    //- Add action class at all elements after element click
     let changeClassActive = function(element, action) {
         while (element) {
             element[action](classContentHiddenActive);
@@ -316,7 +353,7 @@ $('.internal').on('click', function (event) {
         }
     }
 
-    //- Open/Close element
+    //- Function Open/Close element
     let toggleContentActive = function (nextElement, classContentHiddenActive, thisElement) {
         if (thisElement.hasClass(classContentVisibleActive)) {
             changeClassActive(nextElement, 'removeClass');
@@ -331,26 +368,53 @@ $('.internal').on('click', function (event) {
     $(`.${classContentVisible}`).click(function () {
         let nextElement = $(this).next();
         toggleContentActive(nextElement, classContentHiddenActive, $(this));
+
+        //- All elements in section are open -> Collapse all
+        AllElementsOpenedToChangeExpand(
+            sectionFAQElement[0].children,
+            elementClickExpandFAQ,
+            elementClickCollapseFAQ,
+            countElementVisibleFAQ,
+            countElementVisibleActiveFAQ
+        );
+
+        AllElementsOpenedToChangeExpand(
+            sectionGlossaryElement[0].children,
+            elementClickExpandGlossary,
+            elementClickCollapseGlossary,
+            countElementVisibleGlossary,
+            countElementVisibleActiveGlossary
+        );
+
     });
+
+    let AllElementsOpenedToChangeExpand = function (sectionChildren, expandElement, collapseElement, countElementVisible, countElementVisibleActive) {
+        for (let p = 0; p < sectionChildren.length; p++) {
+            if (sectionChildren[p].className.indexOf(classContentVisible) > -1) {
+                countElementVisible++;
+            }
+            if (sectionChildren[p].className.indexOf(classContentVisibleActive) > -1) {
+                countElementVisibleActive++;
+            }
+        }
+        if (countElementVisible === countElementVisibleActive) {
+            $(expandElement).removeClass(expandCollapseClassActive);
+            $(collapseElement).addClass(expandCollapseClassActive);
+        } else {
+            $(expandElement).addClass(expandCollapseClassActive);
+            $(collapseElement).removeClass(expandCollapseClassActive);
+        }
+        console.log(`Element Visible : ${countElementVisible}
+                    Element Visible Active : ${countElementVisibleActive}`);
+    }
 
     /*
      *
      *  Buttons expand/collapse all elements
      *
      */
-    //- Wrap div around p
-    let elementsExpandCollapseFAQ = $('.wrapper-expand-collapse-faq');
-    let elementsExpandCollapseGlossary = $('.wrapper-expand-collapse-glossary');
-    let wrapperPattern = `<div class="wrapper-expand-collapse">
-                          </div>`;
-    let expandCollapseClassActive = 'wrapper-expand-collapse-items-active';
-    let elementClickExpandFAQ = $('.expand-all-faq');
-    let elementClickCollapseFAQ = $('.collapse-all-faq');
-    let elementClickExpandGlossary = $('.expand-all-glossary');
-    let elementClickCollapseGlossary = $('.collapse-all-glossary');
-    let sectionFAQElement = $('#frequently-asked-questions-faq');
-    let sectionGlossaryElement = $('#glossary');
 
+    //- Wrap div around p
     $(elementsExpandCollapseFAQ).wrapAll(wrapperPattern);
     $(elementsExpandCollapseGlossary).wrapAll(wrapperPattern);
 
@@ -361,11 +425,15 @@ $('.internal').on('click', function (event) {
     //- Expand all elements
     let expandAllAction = function (contentsSection, expandElement, collapseElement) {
         for (let a = 0; a < contentsSection.length; a++) {
-            if (contentsSection[a].className.indexOf('content-hidden') > -1) {
-                contentsSection[a].className += ` ${classContentHiddenActive}`;
+            if (contentsSection[a].className.indexOf(classContentHidden) > -1) {
+                if (contentsSection[a].className.indexOf(classContentHiddenActive) === -1) {
+                    contentsSection[a].className += ` ${classContentHiddenActive}`;
+                }
             }
-            if (contentsSection[a].className.indexOf('content-visible') > -1) {
-                contentsSection[a].className += ` ${classContentVisibleActive}`;
+            if (contentsSection[a].className.indexOf(classContentVisible) > -1) {
+                if (contentsSection[a].className.indexOf(classContentVisibleActive) === -1) {
+                    contentsSection[a].className += ` ${classContentVisibleActive}`;
+                }
             }
         }
         $(expandElement).removeClass(expandCollapseClassActive);
@@ -393,10 +461,10 @@ $('.internal').on('click', function (event) {
     //- Collapse all elements
     let collapseAllAction = function (contentsSection, collapseElement, expandElement) {
         for (let a = 0; a < contentsSection.length; a++) {
-            if (contentsSection[a].className.indexOf('content-hidden') > -1) {
+            if (contentsSection[a].className.indexOf(classContentHidden) > -1) {
                 removeClass(contentsSection[a], classContentHiddenActive);
             }
-            if (contentsSection[a].className.indexOf('content-visible') > -1) {
+            if (contentsSection[a].className.indexOf(classContentVisible) > -1) {
                 removeClass(contentsSection[a], classContentVisibleActive);
             }
         }
@@ -411,6 +479,8 @@ $('.internal').on('click', function (event) {
             elementClickCollapseFAQ,
             elementClickExpandFAQ
         );
+        //- Reset count
+        countElementVisibleActiveFAQ = 0;
     });
 
     //- Collapse all Glossary
@@ -420,6 +490,8 @@ $('.internal').on('click', function (event) {
             elementClickCollapseGlossary,
             elementClickExpandGlossary
         );
+        //- Reset count
+        countElementVisibleActiveGlossary = 0;
     });
 
     /*
