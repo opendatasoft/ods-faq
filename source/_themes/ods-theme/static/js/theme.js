@@ -286,9 +286,9 @@ $('.internal').on('click', function (event) {
      *  Open/Close element and active item selected
      *
      */
-    let classVisible = 'content-visible';
-    let classHidden = 'content-not-hidden';
-    let classActive = 'content-visible-active';
+    let classContentVisible = 'content-visible';
+    let classContentVisibleActive = 'content-visible-active';
+    let classContentHiddenActive = 'content-hidden-active';
 
     let removeClass = function (element, className) {
         let reg = new RegExp(`(^| )${className}($| )`, 'g');
@@ -307,26 +307,31 @@ $('.internal').on('click', function (event) {
         }
     }
 
+    let changeClassActive = function(element, action) {
+        while (element) {
+            element[action](classContentHiddenActive);
+            element = element.next();
+            if (element.hasClass(classContentVisible) || !element[0]) {
+                element = false;
+            }
+        }
+    }
+
     //- Open/Close element
-    let toggleClass = function (nextElement, classHidden, thisElement) {
-        if (nextElement.className.indexOf(classHidden) > -1) {
-            thisElement.next().removeClass(classHidden);
-            thisElement.removeClass(classActive);
+    let toggleContentActive = function (nextElement, classContentHiddenActive, thisElement) {
+        if (thisElement.hasClass(classContentVisibleActive)) {
+            changeClassActive(nextElement, 'removeClass');
+            thisElement.removeClass(classContentVisibleActive);
         } else {
-            thisElement.next().addClass(classHidden);
-            thisElement.addClass(classActive);
+            changeClassActive(nextElement, 'addClass');
+            thisElement.addClass(classContentVisibleActive);
         }
     }
 
     //- Click to action Open/Close
-    $(`.${classVisible}`).click(function () {
-        let nextElement = $(this)[0].nextElementSibling;
-
-        if (nextElement.tagName.indexOf('DIV') > -1) {
-            toggleClass(nextElement, classHidden, $(this));
-        } else {
-            toggleClass(nextElement, classHidden, $(this));
-        }
+    $(`.${classContentVisible}`).click(function () {
+        let nextElement = $(this).next();
+        toggleContentActive(nextElement, classContentHiddenActive, $(this));
     });
 
     /*
@@ -358,7 +363,10 @@ $('.internal').on('click', function (event) {
     let expandAllAction = function (contentsSection, expandElement, collapseElement) {
         for (let a = 0; a < contentsSection.length; a++) {
             if (contentsSection[a].className.indexOf('content-hidden') > -1) {
-                contentsSection[a].className += ` ${classHidden}`;
+                contentsSection[a].className += ` ${classContentHiddenActive}`;
+            }
+            if (contentsSection[a].className.indexOf('content-visible') > -1) {
+                contentsSection[a].className += ` ${classContentVisibleActive}`;
             }
         }
         $(expandElement).removeClass(expandCollapseClassActive);
@@ -387,7 +395,10 @@ $('.internal').on('click', function (event) {
     let collapseAllAction = function (contentsSection, collapseElement, expandElement) {
         for (let a = 0; a < contentsSection.length; a++) {
             if (contentsSection[a].className.indexOf('content-hidden') > -1) {
-                removeClass(contentsSection[a], classHidden);
+                removeClass(contentsSection[a], classContentHiddenActive);
+            }
+            if (contentsSection[a].className.indexOf('content-visible') > -1) {
+                removeClass(contentsSection[a], classContentVisibleActive);
             }
         }
         $(collapseElement).removeClass(expandCollapseClassActive);
