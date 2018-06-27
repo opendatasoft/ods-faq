@@ -238,7 +238,7 @@ endif
 
 localizedhtml: clean
 	@echo "Building translated html"
-	for LANGUAGE in $(LANGUAGES); do make -e SPHINXOPTS="-D language='$$LANGUAGE'" html/$$LANGUAGE; done
+	for LANGUAGE in $(LANGUAGES); do make -e SPHINXOPTS="-D language='$$LANGUAGE'" singlehtml; done
 
 localizedhtml-%:
 	make -e SPHINXOPTS="-D language='$*'" html/$*
