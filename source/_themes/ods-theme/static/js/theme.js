@@ -368,6 +368,7 @@ $('.internal').on('click', function (event) {
     //- Click to action Open/Close
     $(`.${classContentVisible}`).click(function () {
         let nextElement = $(this).next();
+
         toggleContentActive(nextElement, classContentHiddenActive, $(this));
 
         //- All elements in section are open -> Collapse all
@@ -405,8 +406,6 @@ $('.internal').on('click', function (event) {
             $(expandElement).addClass(expandCollapseClassActive);
             $(collapseElement).removeClass(expandCollapseClassActive);
         }
-        console.log(`Element Visible : ${countElementVisible}
-                    Element Visible Active : ${countElementVisibleActive}`);
     }
 
     /*

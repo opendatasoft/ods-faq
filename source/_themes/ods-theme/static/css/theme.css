@@ -5207,7 +5207,8 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
   justify-content: flex-start;
 }
 .content-visible li::before {
-  content: "•";
+  font-family: FontAwesome;
+  content: "";
   color: #CFE6EC;
   margin-right: 10px;
   font-size: 22px;
@@ -5221,7 +5222,8 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
   font-weight: bold;
 }
 #glossary .content-visible::before {
-  content: "•";
+  font-family: FontAwesome;
+  content: "";
   color: #CFE6EC;
   margin-right: 10px;
   font-size: 22px;

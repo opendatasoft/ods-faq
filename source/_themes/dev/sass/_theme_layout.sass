@@ -374,7 +374,7 @@ body, h1, h2, h3, p, th
   h1
     margin: 0 0 30px 0
   h2
-    margin: 70px 0 40px 0    
+    margin: 70px 0 40px 0
 
 //- Content visible (Question FAQ / Category Glossary)
 .content-visible
@@ -391,7 +391,8 @@ body, h1, h2, h3, p, th
     flex-direction: row
     justify-content: flex-start
   li::before 
-    content: "•"
+    font-family: FontAwesome
+    content: "\f0d8"
     color: $blue-ultra-light
     margin-right: 10px
     font-size: 22px
@@ -403,7 +404,8 @@ body, h1, h2, h3, p, th
   .content-visible
     font-weight: bold
   .content-visible::before
-    content: "•"
+    font-family: FontAwesome
+    content: "\f0d8"
     color: $blue-ultra-light
     margin-right: 10px
     font-size: 22px
