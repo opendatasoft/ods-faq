@@ -390,12 +390,6 @@ body, h1, h2, h3, p, th
     display: flex
     flex-direction: row
     justify-content: flex-start
-  li::before 
-    font-family: FontAwesome
-    content: "\f0d8"
-    color: $blue-ultra-light
-    margin-right: 10px
-    font-size: 22px
 
 .content-visible:hover
   color: $deep-blue
@@ -403,12 +397,6 @@ body, h1, h2, h3, p, th
 #glossary
   .content-visible
     font-weight: bold
-  .content-visible::before
-    font-family: FontAwesome
-    content: "\f0d8"
-    color: $blue-ultra-light
-    margin-right: 10px
-    font-size: 22px
 
 .content-visible-active
   color: $deep-blue
@@ -423,6 +411,33 @@ body, h1, h2, h3, p, th
 .content-hidden-active
   display: block!important
   transition: 5s
+
+//- FAQ
+#frequently-asked-questions-faq
+  .carret-up, .carret-down
+    li::before
+      font-family: FontAwesome
+      color: $blue-ultra-light
+      margin-right: 10px
+      font-size: 22px
+  .carret-up
+    li::before
+      content: "\f0d8"
+  .carret-down
+    li::before 
+      content: "\f0d7"
+
+//- Glossary
+#glossary
+  .carret-up::before, .carret-down::before
+    font-family: FontAwesome
+    color: $blue-ultra-light
+    margin-right: 10px
+    font-size: 22px
+  .carret-up::before
+    content: "\f0d8"
+  .carret-down::before 
+    content: "\f0d7"
 
 .wy-body-mask
   position: fixed

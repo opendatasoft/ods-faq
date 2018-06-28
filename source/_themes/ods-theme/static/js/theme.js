@@ -321,7 +321,7 @@ $('.internal').on('click', function (event) {
      *
      */
     let removeClass = function (element, className) {
-        let reg = new RegExp(`(^| )${className}($| )`, 'g');
+        let reg = new RegExp(`(^|)${className}($|)`, 'g');
         element.className = element.className.replace(reg, '');
     }
 
@@ -361,7 +361,7 @@ $('.internal').on('click', function (event) {
             thisElement.removeClass(classContentVisibleActive);
         } else {
             changeClassActive(nextElement, 'addClass');
-            thisElement.addClass(classContentVisibleActive);
+            thisElement[0].classList.add(classContentVisibleActive);
         }
     }
 
@@ -370,6 +370,7 @@ $('.internal').on('click', function (event) {
         let nextElement = $(this).next();
 
         toggleContentActive(nextElement, classContentHiddenActive, $(this));
+        changeCarretClass($(this)[0]);
 
         //- All elements in section are open -> Collapse all
         AllElementsOpenedToChangeExpand(
@@ -387,7 +388,6 @@ $('.internal').on('click', function (event) {
             countElementVisibleGlossary,
             countElementVisibleActiveGlossary
         );
-
     });
 
     let AllElementsOpenedToChangeExpand = function (sectionChildren, expandElement, collapseElement, countElementVisible, countElementVisibleActive) {
@@ -427,12 +427,13 @@ $('.internal').on('click', function (event) {
         for (let a = 0; a < contentsSection.length; a++) {
             if (contentsSection[a].className.indexOf(classContentHidden) > -1) {
                 if (contentsSection[a].className.indexOf(classContentHiddenActive) === -1) {
-                    contentsSection[a].className += ` ${classContentHiddenActive}`;
+                    contentsSection[a].classList.add(classContentHiddenActive);
                 }
             }
             if (contentsSection[a].className.indexOf(classContentVisible) > -1) {
                 if (contentsSection[a].className.indexOf(classContentVisibleActive) === -1) {
-                    contentsSection[a].className += ` ${classContentVisibleActive}`;
+                    contentsSection[a].classList.add(classContentVisibleActive);
+                    changeCarretClass(contentsSection[a]);
                 }
             }
         }
@@ -466,6 +467,7 @@ $('.internal').on('click', function (event) {
             }
             if (contentsSection[a].className.indexOf(classContentVisible) > -1) {
                 removeClass(contentsSection[a], classContentVisibleActive);
+                changeCarretClass(contentsSection[a]);
             }
         }
         $(collapseElement).removeClass(expandCollapseClassActive);
@@ -496,6 +498,29 @@ $('.internal').on('click', function (event) {
 
     /*
      *
+     *  Generate classes for carret on question/category
+     *
+     */
+    let classCarretUp = 'carret-up';
+    let classCarretDown = 'carret-down';
+
+    for (let w = 0; w < $(`.${classContentVisible}`).length; w++) {
+        $(`.${classContentVisible}`)[w].classList.add(classCarretDown);
+    }
+
+    //- Change carret class
+    let changeCarretClass = function (element) {
+        if (element.className.indexOf(classContentVisibleActive) > -1) {
+            removeClass(element, classCarretDown);
+            element.classList.add(classCarretUp);
+        } else {
+            removeClass(element, classCarretUp);
+            element.classList.add(classCarretDown);
+        }
+    }
+
+    /*
+     *
      *  Active current lang on item lang
      *
      */
@@ -504,7 +529,7 @@ $('.internal').on('click', function (event) {
 
     for (let o = 0; o < itemLang.length; o++) {
         if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {
-            itemLang[o].className += ' lang-active';
+            itemLang[o].classList.add('lang-active');
         }
     }
 }());

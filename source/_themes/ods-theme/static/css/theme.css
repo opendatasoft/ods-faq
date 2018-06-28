@@ -5206,13 +5206,6 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
   flex-direction: row;
   justify-content: flex-start;
 }
-.content-visible li::before {
-  font-family: FontAwesome;
-  content: "";
-  color: #CFE6EC;
-  margin-right: 10px;
-  font-size: 22px;
-}
 
 .content-visible:hover {
   color: #003C63;
@@ -5220,13 +5213,6 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 
 #glossary .content-visible {
   font-weight: bold;
-}
-#glossary .content-visible::before {
-  font-family: FontAwesome;
-  content: "";
-  color: #CFE6EC;
-  margin-right: 10px;
-  font-size: 22px;
 }
 
 .content-visible-active {
@@ -5243,6 +5229,32 @@ body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, p, th {
 .content-hidden-active {
   display: block !important;
   transition: 5s;
+}
+
+#frequently-asked-questions-faq .carret-up li::before, #frequently-asked-questions-faq .carret-down li::before {
+  font-family: FontAwesome;
+  color: #CFE6EC;
+  margin-right: 10px;
+  font-size: 22px;
+}
+#frequently-asked-questions-faq .carret-up li::before {
+  content: "";
+}
+#frequently-asked-questions-faq .carret-down li::before {
+  content: "";
+}
+
+#glossary .carret-up::before, #glossary .carret-down::before {
+  font-family: FontAwesome;
+  color: #CFE6EC;
+  margin-right: 10px;
+  font-size: 22px;
+}
+#glossary .carret-up::before {
+  content: "";
+}
+#glossary .carret-down::before {
+  content: "";
 }
 
 .wy-body-mask {
