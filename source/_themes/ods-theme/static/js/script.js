@@ -484,7 +484,7 @@ $(elementClickCollapseGlossary).click(function () {
  *  All elements generated after DOM rendered
  * 
  */
-function generatedAfterDOMRendered () {
+function generatedAfterDOMRendered (callback) {
     //-  Active current lang on item lang
     for (var o = 0; o < itemLang.length; o++) {
         if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {
@@ -516,11 +516,17 @@ function generatedAfterDOMRendered () {
     //- Add class active to expand all
     $(elementClickExpandFAQ).addClass(expandCollapseClassActive);
     $(elementClickExpandGlossary).addClass(expandCollapseClassActive);
+
+    callback();
 }
 
 (function () {
-    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
-        generatedAfterDOMRendered();
+    generatedAfterDOMRendered(function () {
+        //- Stop spinner
+        setTimeout(function () {
+            $('.ods-theme-spinner').css('display', 'none');
+            $('.wy-nav-content-wrap').css('display', 'block');
+        }, 1000);
     });
 }());
 },{"jquery":"jquery"}]},{},["ods-theme"]);
