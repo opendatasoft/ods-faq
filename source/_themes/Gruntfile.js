@@ -3,6 +3,10 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+    var FILES = [
+        './dev/js/theme.js'
+    ];
+
     grunt.initConfig({
         copy: {
             fonts: {
@@ -79,21 +83,21 @@ module.exports = function (grunt) {
                 options: {
                     external: ['jquery'],
                     alias: {
-                        'ods-theme': './dev/js/theme.js'
+                        'ods-theme': FILES
                     }
                 },
-                src: ['dev/js/*.js'],
-                dest: 'ods-theme/static/js/theme.js'
+                src: FILES,
+                dest: 'ods-theme/static/js/script.js'
             },
             build: {
                 options: {
                     external: ['jquery'],
                     alias: {
-                        'ods-theme': './dev/js/theme.js'
+                        'ods-theme': FILES
                     }
                 },
-                src: ['dev/js/*.js'],
-                dest: 'ods-theme/static/js/theme.js'
+                src: FILES,
+                dest: 'ods-theme/static/js/script.js'
             }
         },
         uglify: {
@@ -105,15 +109,9 @@ module.exports = function (grunt) {
                     },
                     ie8: true // compliance with IE 6-8 quirks
                 },
-                files: [{
-                    expand: true,
-                    src: ['ods-theme/static/js/*.js' ,'!ods-theme/static/js/*.min.js'],
-                    dest: 'ods-theme/static/js/',
-                    rename: function (dst, src) {
-                        // Use unminified file name for minified file
-                        return src;
-                    }
-                }]
+                files: {
+                    'ods-theme/static/js/script.min.js': 'ods-theme/static/js/script.js'
+                }
             }
         },
         exec: {
