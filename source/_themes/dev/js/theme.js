@@ -478,7 +478,12 @@ $(elementClickCollapseGlossary).click(function () {
     countElementVisibleActiveGlossary = 0;
 });
 
-(function () {
+/*
+ *
+ *  All elements generated after DOM rendered
+ * 
+ */
+function generatedAfterDOMRendered () {
     //-  Active current lang on item lang
     for (var o = 0; o < itemLang.length; o++) {
         if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {
@@ -510,4 +515,10 @@ $(elementClickCollapseGlossary).click(function () {
     //- Add class active to expand all
     $(elementClickExpandFAQ).addClass(expandCollapseClassActive);
     $(elementClickExpandGlossary).addClass(expandCollapseClassActive);
+}
+
+(function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+        generatedAfterDOMRendered();
+    });
 }());

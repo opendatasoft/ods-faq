@@ -390,6 +390,8 @@ body, h1, h2, h3, p, th
     display: flex
     flex-direction: row
     justify-content: flex-start
+    p
+      color: transparentize($blue-light, 0.4)
 
 .content-visible:hover
   color: $deep-blue
@@ -400,6 +402,9 @@ body, h1, h2, h3, p, th
 
 .content-visible-active
   color: $deep-blue
+  li
+    p
+      color: $deep-blue!important
 
 //- Content hidden (Response FAQ / Tables Glossary)
 .content-hidden

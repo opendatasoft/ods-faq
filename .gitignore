@@ -8,3 +8,4 @@ node_modules
 .travis.deploy
 .sass-cache
 bower_components
+.tx
