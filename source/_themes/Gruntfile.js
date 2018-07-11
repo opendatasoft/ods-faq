@@ -65,7 +65,6 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     style: 'compressed',
-                    sourcemap: 'none',
                     loadPath: ['bower_components/bourbon/dist', 'bower_components/neat/app/assets/stylesheets', 'bower_components/font-awesome/scss', 'bower_components/wyrm/sass']
                 },
                 files: [{
@@ -75,6 +74,14 @@ module.exports = function (grunt) {
                     dest: 'ods-theme/static/css',
                     ext: '.css'
                 }]
+            }
+        },
+
+        autoprefixer: {
+            dist: {
+                files: {
+                    'ods-theme/static/css/theme.css': 'ods-theme/static/css/theme.css'
+                }
             }
         },
 
@@ -148,7 +155,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
-    grunt.registerTask('default', ['exec:bower_update', 'clean', 'copy:fonts', 'sass:dev', 'browserify:dev', 'watch']);
-    grunt.registerTask('build', ['exec:bower_update', 'clean', 'copy:fonts', 'sass:build', 'browserify:build', 'uglify']);
+    grunt.registerTask('default', ['exec:bower_update', 'clean', 'copy:fonts', 'sass:dev', 'autoprefixer', 'browserify:dev', 'watch']);
+    grunt.registerTask('build', ['exec:bower_update', 'clean', 'copy:fonts', 'sass:build', 'autoprefixer', 'browserify:build', 'uglify']);
 }
