@@ -395,6 +395,12 @@ body, h1, h2, h3, p, th
     justify-content: flex-start
     p
       color: transparentize($blue-light, 0.4)
+  
+//- IE 10 / 11
+@media all and (-ms-high-contrast: active), (-ms-high-contrast:none)
+    .content-visible /* IE10 */
+      li
+        display: block
 
 .content-visible:hover
   color: $deep-blue
@@ -532,3 +538,8 @@ footer
     display: none
   .wy-nav-content-wrap
     margin-left: 0
+
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
+    .section 
+      td 
+        white-space: normal!important
