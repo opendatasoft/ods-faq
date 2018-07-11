@@ -487,7 +487,7 @@ $(elementClickCollapseGlossary).click(function () {
 function generatedAfterDOMRendered (callback) {
     //-  Active current lang on item lang
     for (var o = 0; o < itemLang.length; o++) {
-        if (itemLang[o].attributes[0].nodeValue.indexOf(currentLang) > -1) {
+        if ($(itemLang[o]).data('lang').indexOf(currentLang) > -1) {
             itemLang[o].classList.add('lang-active');
         }
     }
