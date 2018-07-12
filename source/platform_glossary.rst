@@ -3,11 +3,11 @@ Glossary
 
 .. rst-class:: expand-collapse-items wrapper-expand-collapse-glossary expand-all-glossary
 
-    Expand all
+    Expand All
 
 .. rst-class:: expand-collapse-items wrapper-expand-collapse-glossary collapse-all-glossary
 
-    Collapse all
+    Collapse All
 
 .. rst-class:: content-visible
 

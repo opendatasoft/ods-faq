@@ -2,7 +2,7 @@
 # Copyright (C) 2016, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -12,39 +12,47 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Admin OpenDataSoft <admin@opendatasoft.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/platform_glossary.rst:6
+msgid "Expand All"
+msgstr "Expandir Todo"
+
+#: ../../source/platform_glossary.rst:10
+msgid "Collapse All"
+msgstr "Colapsar Todo"
 
 #: ../../source/platform_glossary.rst:2
 msgid "Glossary"
 msgstr "Glosario"
 
-#: ../../source/platform_glossary.rst:6
+#: ../../source/platform_glossary.rst:14
 msgid "Data glossary"
 msgstr "Glosario de datos"
 
-#: ../../source/platform_glossary.rst:10 ../../source/platform_glossary.rst:58
-#: ../../source/platform_glossary.rst:146
+#: ../../source/platform_glossary.rst:21 ../../source/platform_glossary.rst:73
+#: ../../source/platform_glossary.rst:165
 msgid "Name"
 msgstr "Nombre"
 
-#: ../../source/platform_glossary.rst:11 ../../source/platform_glossary.rst:59
-#: ../../source/platform_glossary.rst:147
+#: ../../source/platform_glossary.rst:22 ../../source/platform_glossary.rst:74
+#: ../../source/platform_glossary.rst:166
 msgid "Definition"
 msgstr "Definición"
 
-#: ../../source/platform_glossary.rst:12
+#: ../../source/platform_glossary.rst:23
 msgid "Data"
 msgstr "Datos"
 
-#: ../../source/platform_glossary.rst:14
+#: ../../source/platform_glossary.rst:25
 msgid "|link_2|"
 msgstr "|link_2|"
 
-#: ../../source/platform_glossary.rst:16
+#: ../../source/platform_glossary.rst:27
 msgid ""
 "Data is a set of values of qualitative or quantitative variables.[...]While "
 "the concept of data is commonly associated with scientific research, data is"
@@ -62,15 +70,15 @@ msgstr ""
 "delincuencia, paro o alfabetización) y organizaciones no gubernamentales (p."
 " ej. censo de personas sin techo)."
 
-#: ../../source/platform_glossary.rst:17
+#: ../../source/platform_glossary.rst:28
 msgid "Data Model"
 msgstr "Modelo de datos"
 
-#: ../../source/platform_glossary.rst:19
+#: ../../source/platform_glossary.rst:30
 msgid "|link_3|"
 msgstr "|link_3|"
 
-#: ../../source/platform_glossary.rst:21
+#: ../../source/platform_glossary.rst:32
 msgid ""
 "A Data Model is an abstract model that organizes elements of data and "
 "standardizes how they relate to one another and to properties of the real "
@@ -84,15 +92,15 @@ msgstr ""
 "que representa un coche incluya una serie de elementos adicionales que a su "
 "vez representen el color, el tamaño y el propietario del vehículo."
 
-#: ../../source/platform_glossary.rst:22
+#: ../../source/platform_glossary.rst:33
 msgid "Data Quality"
 msgstr "Calidad de datos"
 
-#: ../../source/platform_glossary.rst:24
+#: ../../source/platform_glossary.rst:35
 msgid "|link_4|"
 msgstr "|link_4|"
 
-#: ../../source/platform_glossary.rst:26
+#: ../../source/platform_glossary.rst:37
 msgid ""
 "Data quality refers to the level of quality of data. There are many "
 "definitions of data quality but data are generally considered high quality "
@@ -104,15 +112,15 @@ msgstr ""
 "datos se consideran de alta calidad si \"son adecuados para sus usos "
 "previstos en las operaciones, la toma de decisiones y la planificación\"."
 
-#: ../../source/platform_glossary.rst:27
+#: ../../source/platform_glossary.rst:38
 msgid "Open Data"
 msgstr "Datos abiertos"
 
-#: ../../source/platform_glossary.rst:29
+#: ../../source/platform_glossary.rst:40
 msgid "|link_5|"
 msgstr "|link_5|"
 
-#: ../../source/platform_glossary.rst:31
+#: ../../source/platform_glossary.rst:42
 msgid ""
 "Open data is the idea that some data should be freely available to everyone "
 "to use and republish as they wish, without restrictions from copyright, "
@@ -127,15 +135,15 @@ msgstr ""
 "parecidos a los de otros movimientos \"abiertos\" (como los de código "
 "abierto, hardware abierto, contenido abierto y acceso abierto)."
 
-#: ../../source/platform_glossary.rst:32
+#: ../../source/platform_glossary.rst:43
 msgid "Query"
 msgstr "Consulta"
 
-#: ../../source/platform_glossary.rst:34
+#: ../../source/platform_glossary.rst:45
 msgid "|link_6|"
 msgstr "|link_6|"
 
-#: ../../source/platform_glossary.rst:36
+#: ../../source/platform_glossary.rst:47
 msgid ""
 "A web search query is a query that a user enters into a web search engine to"
 " satisfy his or her information needs. Web search queries are distinctive in"
@@ -152,15 +160,15 @@ msgstr ""
 "lenguajes de consulta estándar, regidos por estrictas reglas de sintaxis en "
 "forma de lenguajes de comandos con parámetros de posición o palabra clave."
 
-#: ../../source/platform_glossary.rst:37
+#: ../../source/platform_glossary.rst:48
 msgid "Semantic Web"
 msgstr "Web semántica"
 
-#: ../../source/platform_glossary.rst:39
+#: ../../source/platform_glossary.rst:50
 msgid "|link_7|"
 msgstr "|link_7|"
 
-#: ../../source/platform_glossary.rst:41
+#: ../../source/platform_glossary.rst:52
 msgid ""
 "A representation in two (or possibly three) dimensions of the semantic "
 "relationships between and among terms and the concepts they represent; "
@@ -174,15 +182,15 @@ msgstr ""
 "compartir y reutilizar los datos más allá de los límites de las "
 "aplicaciones, empresas y comunidades."
 
-#: ../../source/platform_glossary.rst:42
+#: ../../source/platform_glossary.rst:53
 msgid "Taxonomy"
 msgstr "Taxonomía"
 
-#: ../../source/platform_glossary.rst:44
+#: ../../source/platform_glossary.rst:55
 msgid "|link_8|"
 msgstr "|link_8|"
 
-#: ../../source/platform_glossary.rst:46
+#: ../../source/platform_glossary.rst:57
 msgid ""
 "A collection of controlled vocabulary terms organized into a hierarchical "
 "structure."
@@ -190,15 +198,15 @@ msgstr ""
 "Una colección de términos de vocabulario controlados y organizados en una "
 "estructura jerárquica."
 
-#: ../../source/platform_glossary.rst:47
+#: ../../source/platform_glossary.rst:58
 msgid "Unstructured Data"
 msgstr "Datos no estructurados"
 
-#: ../../source/platform_glossary.rst:49
+#: ../../source/platform_glossary.rst:60
 msgid "|link_9|"
 msgstr "|link_9|"
 
-#: ../../source/platform_glossary.rst:51
+#: ../../source/platform_glossary.rst:62
 msgid ""
 "Data that is more free-form, such as multimedia files, images, sound files, "
 "or unstructured text. Unstructured data does not necessarily follow any "
@@ -213,15 +221,15 @@ msgstr ""
 "de informaciones a menudo informatizadas que carecen de una estructura de "
 "datos fácilmente legible por una máquina."
 
-#: ../../source/platform_glossary.rst:54
+#: ../../source/platform_glossary.rst:66
 msgid "OpenDataSoft glossary"
 msgstr "Glosario de OpenDataSoft"
 
-#: ../../source/platform_glossary.rst:60
+#: ../../source/platform_glossary.rst:75
 msgid "Assets"
 msgstr "Activos"
 
-#: ../../source/platform_glossary.rst:62
+#: ../../source/platform_glossary.rst:77
 msgid ""
 "Assets are the graphical elements uploaded to the platform. Assets can be "
 "images or fonts, they can be used on custom pages."
@@ -230,11 +238,11 @@ msgstr ""
 "archivos pueden ser imágenes o fuentes, y se pueden usar en páginas "
 "personalizadas."
 
-#: ../../source/platform_glossary.rst:63
+#: ../../source/platform_glossary.rst:78
 msgid "Catalog"
 msgstr "Catálogo"
 
-#: ../../source/platform_glossary.rst:65
+#: ../../source/platform_glossary.rst:80
 msgid ""
 "The catalog is a register of all the dataset you have on your platform. The "
 "collection of datasets is organized and can be browsed by a full text search"
@@ -245,15 +253,15 @@ msgstr ""
 "mediante una búsqueda de texto completo y filtrarse por las características "
 "de los conjuntos de datos."
 
-#: ../../source/platform_glossary.rst:66
+#: ../../source/platform_glossary.rst:81
 msgid "Chart"
 msgstr "Gráfico"
 
-#: ../../source/platform_glossary.rst:68
+#: ../../source/platform_glossary.rst:83
 msgid "|link_12|"
 msgstr "|link_12|"
 
-#: ../../source/platform_glossary.rst:70
+#: ../../source/platform_glossary.rst:85
 msgid ""
 "A chart, also called a graph, is a graphical representation of data, in "
 "which \"the data is represented by symbols, such as bars in a bar chart, "
@@ -267,11 +275,11 @@ msgstr ""
 "puede representar datos tubulares numéricos, funciones o algunos tipos de "
 "estructuras cualitativas, así como suministrar diferente información."
 
-#: ../../source/platform_glossary.rst:71
+#: ../../source/platform_glossary.rst:86
 msgid "Chart builder"
 msgstr "Compilador de gráficos"
 
-#: ../../source/platform_glossary.rst:73
+#: ../../source/platform_glossary.rst:88
 msgid ""
 "Chart builder is the chart building solution of OpenDatasoft. With Chart "
 "Builder, you can choose a visualization type, choose data to display and "
@@ -282,15 +290,15 @@ msgstr ""
 "visualización, elegir los datos que se visualizarán, y personalizar los ejes"
 " X e Y y los colores."
 
-#: ../../source/platform_glossary.rst:74
+#: ../../source/platform_glossary.rst:89
 msgid "Choropleth map"
 msgstr "Mapa cloropético"
 
-#: ../../source/platform_glossary.rst:76
+#: ../../source/platform_glossary.rst:91
 msgid "|link_14|"
 msgstr "|link_14|"
 
-#: ../../source/platform_glossary.rst:78
+#: ../../source/platform_glossary.rst:93
 msgid ""
 "A choropleth map is a thematic map in which areas are shaded or patterned in"
 " proportion to the measurement of the statistical variable being displayed "
@@ -301,11 +309,11 @@ msgstr ""
 "estadística visualizada en el mapa, como la densidad de población o la renta"
 " per cápita."
 
-#: ../../source/platform_glossary.rst:79
+#: ../../source/platform_glossary.rst:94
 msgid "Console (API)"
 msgstr "Consola (API)"
 
-#: ../../source/platform_glossary.rst:81
+#: ../../source/platform_glossary.rst:96
 msgid ""
 "The API console allows people to interact with the application programmable "
 "interface. The consoles offers a range of parameters to input to view the "
@@ -315,11 +323,11 @@ msgstr ""
 "programación de aplicaciones. La consola ofrece un conjunto de parámetros de"
 " entrada para ver las distintas respuestas de la API."
 
-#: ../../source/platform_glossary.rst:82
+#: ../../source/platform_glossary.rst:97
 msgid "Data schema (dataset)"
 msgstr "Esquema de datos (juego de datos)"
 
-#: ../../source/platform_glossary.rst:84
+#: ../../source/platform_glossary.rst:99
 msgid ""
 "The data schema describes the properties attached to each fields of the "
 "records in a dataset. Data schema includes the field's name, type and "
@@ -329,15 +337,15 @@ msgstr ""
 "campos de los registros de un juego de datos. El esquema de datos incluye el"
 " nombre del campo, el tipo y un ejemplo."
 
-#: ../../source/platform_glossary.rst:85
+#: ../../source/platform_glossary.rst:100
 msgid "Dataset"
 msgstr "Juego de datos"
 
-#: ../../source/platform_glossary.rst:87
+#: ../../source/platform_glossary.rst:102
 msgid "|link_17|"
 msgstr "|link_17|"
 
-#: ../../source/platform_glossary.rst:89
+#: ../../source/platform_glossary.rst:104
 msgid ""
 "A dataset is an organized collection of data. The most basic representation "
 "of a dataset is data elements presented in tabular form. Each column "
@@ -354,11 +362,11 @@ msgstr ""
 "tabulares, como un archivo XML (Extended Mark-Up Language), un archivo de "
 "datos geoespaciales o un archivo de imagen."
 
-#: ../../source/platform_glossary.rst:90
+#: ../../source/platform_glossary.rst:105
 msgid "Description (dataset)"
 msgstr "Descripción (juego de datos)"
 
-#: ../../source/platform_glossary.rst:92
+#: ../../source/platform_glossary.rst:107
 msgid ""
 "The description is a text attached to the dataset, it allows users to "
 "understand the data inside the dataset. A good description helps users find "
@@ -368,15 +376,15 @@ msgstr ""
 "usuarios entender los datos del juego de datos. Una buena descripción ayuda "
 "a los usuarios a encontrar la información relevante."
 
-#: ../../source/platform_glossary.rst:93
+#: ../../source/platform_glossary.rst:108
 msgid "Document"
 msgstr "Documento"
 
-#: ../../source/platform_glossary.rst:95
+#: ../../source/platform_glossary.rst:110
 msgid "|link_19|"
 msgstr "|link_19|"
 
-#: ../../source/platform_glossary.rst:97
+#: ../../source/platform_glossary.rst:112
 msgid ""
 "A file containing Unstructured and/or Semi-Structured Data Resources. A "
 "discrete and unique electronic aggregation of data produced with the intent "
@@ -392,15 +400,15 @@ msgstr ""
 "documento puede constar de juegos de datos con formatos distintos (p. ej. "
 "archivos de MS Word con gráficos incrustados)."
 
-#: ../../source/platform_glossary.rst:98
+#: ../../source/platform_glossary.rst:113
 msgid "File format"
 msgstr "Formato de archivo"
 
-#: ../../source/platform_glossary.rst:100
+#: ../../source/platform_glossary.rst:115
 msgid "|link_20|"
 msgstr "|link_20|"
 
-#: ../../source/platform_glossary.rst:102
+#: ../../source/platform_glossary.rst:117
 msgid ""
 "A file format is a standard way that information is encoded for storage in a"
 " computer file. It specifies how bits are used to encode information in a "
@@ -413,11 +421,11 @@ msgstr ""
 "formatos de archivo pueden ser de propiedad o libres, y pueden ser no "
 "publicados o abiertos."
 
-#: ../../source/platform_glossary.rst:103
+#: ../../source/platform_glossary.rst:118
 msgid "Harvester"
 msgstr "Recopilador"
 
-#: ../../source/platform_glossary.rst:105
+#: ../../source/platform_glossary.rst:120
 msgid ""
 "A harvester is an automated process to fetch data on a remote portal. The "
 "harvester fetches the datasets on a remote portal and automatically copies "
@@ -428,11 +436,11 @@ msgstr ""
 "remoto y los copia automáticamente en la plataforma. Los juegos de datos "
 "capturados se pueden consultar con parámetros."
 
-#: ../../source/platform_glossary.rst:106
+#: ../../source/platform_glossary.rst:121
 msgid "Keyword (dataset)"
 msgstr "Palabra clave (juego de datos)"
 
-#: ../../source/platform_glossary.rst:108
+#: ../../source/platform_glossary.rst:123
 msgid ""
 "Keywords help understand the data content of the dataset. They are used to "
 "filter, search and browse datasets by content. Keywords are non constrained "
@@ -443,11 +451,11 @@ msgstr ""
 "contenido. Las palabras claves no son limitadas y pueden especificarse "
 "libremente."
 
-#: ../../source/platform_glossary.rst:109
+#: ../../source/platform_glossary.rst:124
 msgid "License (dataset)"
 msgstr "Licencia (juego de datos)"
 
-#: ../../source/platform_glossary.rst:111
+#: ../../source/platform_glossary.rst:126
 msgid ""
 "The License refers to the permissions attached to a dataset regarding "
 "conditions of use, reproducibility and monetary use"
@@ -455,11 +463,11 @@ msgstr ""
 "La licencia hace referencia a los permisos asociados a un conjunto de datos "
 "acerca de las condiciones de uso, reproducción y uso monetario."
 
-#: ../../source/platform_glossary.rst:112
+#: ../../source/platform_glossary.rst:127
 msgid "Map builder"
 msgstr "Compilador de mapas"
 
-#: ../../source/platform_glossary.rst:114
+#: ../../source/platform_glossary.rst:129
 msgid ""
 "Map builder is the map building solution of OpenDatasoft. With Map Builder, "
 "you can quickly add datasets to a geographical view and customize the "
@@ -470,32 +478,19 @@ msgstr ""
 " datos a una vista geográfica y personalizar los colores, los métodos de "
 "clúster de datos y las ayudas de herramientas."
 
-#: ../../source/platform_glossary.rst:115
+#: ../../source/platform_glossary.rst:130
 msgid "Metadata"
 msgstr "Metadatos"
 
-#: ../../source/platform_glossary.rst:117
+#: ../../source/platform_glossary.rst:132
 msgid "|link_25|"
 msgstr "|link_25|"
 
-#: ../../source/platform_glossary.rst:119
-msgid ""
-"Metadata are \"data that provide information about other data\". Two types "
-"of metadata exist: structural metadata and descriptive metadata. Structural "
-"metadata are data about the containers of data. Descriptive metadata use "
-"individual instances of application data or the data content."
-msgstr ""
-"Los metadatos son \"datos que aportan información sobre otros datos\". "
-"Existen 2 tipos de metadatos: estructurales y descriptivos. Los metadatos "
-"estructurales son datos sobre los contenedores de datos. Los metadatos "
-"descriptivos utilizan instancias individuales de los datos de la aplicación "
-"o el contenido de los datos."
-
-#: ../../source/platform_glossary.rst:120
+#: ../../source/platform_glossary.rst:135
 msgid "Publisher (dataset)"
 msgstr "Publicador (juego de datos)"
 
-#: ../../source/platform_glossary.rst:122
+#: ../../source/platform_glossary.rst:137
 msgid ""
 "The publisher is the entity responsible of the data dissemination either to "
 "the general public in Open Data or to targeted users"
@@ -503,15 +498,15 @@ msgstr ""
 "El publicador es la entidad responsable de la difusión de los datos al "
 "público en general en un portal de datos abiertos o a usuarios específicos."
 
-#: ../../source/platform_glossary.rst:123
+#: ../../source/platform_glossary.rst:138
 msgid "Record"
 msgstr "Registro"
 
-#: ../../source/platform_glossary.rst:125
+#: ../../source/platform_glossary.rst:140
 msgid "|link_27|"
 msgstr "|link_27|"
 
-#: ../../source/platform_glossary.rst:127
+#: ../../source/platform_glossary.rst:142
 msgid ""
 "A record (also called struct or compound data) is a basic data structure. A "
 "record is a collection of fields, possibly of different data types, "
@@ -522,11 +517,11 @@ msgstr ""
 "pueden ser de varios tipos de datos, normalmente con un número fijo y una "
 "secuencia."
 
-#: ../../source/platform_glossary.rst:128
+#: ../../source/platform_glossary.rst:143
 msgid "Reuse"
 msgstr "Reutilización"
 
-#: ../../source/platform_glossary.rst:130
+#: ../../source/platform_glossary.rst:145
 msgid ""
 "A reuse is a voluntary declaration of dataset use in another context (a map,"
 " an application, a website) by  anyone"
@@ -535,11 +530,11 @@ msgstr ""
 "en otro contexto (un mapa, una aplicación o un sitio web) realizada por "
 "cualquier usuario."
 
-#: ../../source/platform_glossary.rst:131
+#: ../../source/platform_glossary.rst:146
 msgid "Subdomain"
 msgstr "Subdominio"
 
-#: ../../source/platform_glossary.rst:133
+#: ../../source/platform_glossary.rst:148
 msgid ""
 "A subdomain is a child domain of a parent domain. A parent domain can "
 "distribute or collect content to these child domains."
@@ -548,11 +543,11 @@ msgstr ""
 "primario puede recopilar/distribuir contenido de/a estos dominios "
 "secundarios."
 
-#: ../../source/platform_glossary.rst:134
+#: ../../source/platform_glossary.rst:149
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../../source/platform_glossary.rst:136
+#: ../../source/platform_glossary.rst:151
 msgid ""
 "Tags (or keywords) help users discover your dataset and should include terms"
 " that would be used by technical and non-technical users."
@@ -561,11 +556,11 @@ msgstr ""
 " de datos y deben incluir los términos que emplearían los usuarios técnicos "
 "y no técnicos."
 
-#: ../../source/platform_glossary.rst:137
+#: ../../source/platform_glossary.rst:152
 msgid "Theme (dataset)"
 msgstr "Tema (juego de datos)"
 
-#: ../../source/platform_glossary.rst:139
+#: ../../source/platform_glossary.rst:154
 msgid ""
 "A theme is a dataset topic, it helps categorize dataset into bigger "
 "categories. Themes are constrained and are to be chosen in a list."
@@ -574,19 +569,19 @@ msgstr ""
 "datos en categorías más amplias. Los temas son limitados y deben elegirse de"
 " una lista."
 
-#: ../../source/platform_glossary.rst:142
+#: ../../source/platform_glossary.rst:158
 msgid "Technical glossary"
 msgstr "Glosario técnico"
 
-#: ../../source/platform_glossary.rst:148
+#: ../../source/platform_glossary.rst:167
 msgid "API"
 msgstr "API"
 
-#: ../../source/platform_glossary.rst:150
+#: ../../source/platform_glossary.rst:169
 msgid "|link_32|"
 msgstr "|link_32|"
 
-#: ../../source/platform_glossary.rst:152
+#: ../../source/platform_glossary.rst:171
 msgid ""
 "An application programming interface, which is a set of definitions of the "
 "ways one piece of computer software communicates with another. It is a "
@@ -598,15 +593,15 @@ msgstr ""
 "un método de abstracción, normalmente (aunque no siempre) entre software de "
 "alto nivel y software de bajo nivel."
 
-#: ../../source/platform_glossary.rst:153
+#: ../../source/platform_glossary.rst:172
 msgid "API Key"
 msgstr "Clave de API"
 
-#: ../../source/platform_glossary.rst:155
+#: ../../source/platform_glossary.rst:174
 msgid "|link_33|"
 msgstr "|link_33|"
 
-#: ../../source/platform_glossary.rst:157
+#: ../../source/platform_glossary.rst:176
 msgid ""
 "An application programming interface key (API key) is a code passed in by "
 "computer programs calling an application programming interface (API) to "
@@ -616,15 +611,15 @@ msgstr ""
 " los programas informáticos pasan en una llamada de API para identificar el "
 "programa que llama, su desarrollador o su usuario en el sitio web."
 
-#: ../../source/platform_glossary.rst:158
+#: ../../source/platform_glossary.rst:177
 msgid "Basic Auth"
 msgstr "Autenticación básica"
 
-#: ../../source/platform_glossary.rst:160
+#: ../../source/platform_glossary.rst:179
 msgid "|link_34|"
 msgstr "|link_34|"
 
-#: ../../source/platform_glossary.rst:162
+#: ../../source/platform_glossary.rst:181
 msgid ""
 "HTTP Basic authentication (BA) implementation is the simplest technique for "
 "enforcing access controls to web resources because it doesn't require "
@@ -638,15 +633,15 @@ msgstr ""
 "la autenticación HTTP básica utiliza campos estándar en el encabezado HTTP, "
 "por lo que no se necesitan protocolos de enlace."
 
-#: ../../source/platform_glossary.rst:163
+#: ../../source/platform_glossary.rst:182
 msgid "CKAN (Comprehensive Knowledge Archive Network)"
 msgstr "CKAN (Comprehensive Knowledge Archive Network)"
 
-#: ../../source/platform_glossary.rst:165
+#: ../../source/platform_glossary.rst:184
 msgid "|link_35|"
 msgstr "|link_35|"
 
-#: ../../source/platform_glossary.rst:167
+#: ../../source/platform_glossary.rst:186
 msgid ""
 "CKAN stands for Comprehensive Knowledge Archive Network, an open source data"
 " management system that is the basis of the Data.gov catalog, as well as the"
@@ -657,11 +652,11 @@ msgstr ""
 "catálogo data.gov, así como los catálogos de datos abiertos de unas 50 "
 "centrales de datos de todo el mundo."
 
-#: ../../source/platform_glossary.rst:168
+#: ../../source/platform_glossary.rst:187
 msgid "Connector"
 msgstr "Conector"
 
-#: ../../source/platform_glossary.rst:170
+#: ../../source/platform_glossary.rst:189
 msgid ""
 "A connector is a computer program specifically designed to connect to a data"
 " source. A data source can be another Open Data portal or a FTP server."
@@ -670,15 +665,15 @@ msgstr ""
 "conectar con un origen de datos. Un origen de datos puede ser otro portal de"
 " datos abiertos o un servidor FTP."
 
-#: ../../source/platform_glossary.rst:171
+#: ../../source/platform_glossary.rst:190
 msgid "CSV (comma separated value)"
 msgstr "CSV (valores separados por comas)"
 
-#: ../../source/platform_glossary.rst:173
+#: ../../source/platform_glossary.rst:192
 msgid "|link_37|"
 msgstr "|link_37|"
 
-#: ../../source/platform_glossary.rst:175
+#: ../../source/platform_glossary.rst:194
 msgid ""
 "A comma separated value (CSV) file is a computer data file used for "
 "implementing the organizational tool of the Comma Separated List. The CSV "
@@ -695,15 +690,15 @@ msgstr ""
 "campos están separados por comas y cada uno de ellos corresponde a una "
 "columna de la tabla."
 
-#: ../../source/platform_glossary.rst:176
+#: ../../source/platform_glossary.rst:195
 msgid "CSW (Catalog Service for the Web)"
 msgstr "CSW (Catalog Service for the Web)"
 
-#: ../../source/platform_glossary.rst:178
+#: ../../source/platform_glossary.rst:197
 msgid "|link_38|"
 msgstr "|link_38|"
 
-#: ../../source/platform_glossary.rst:180
+#: ../../source/platform_glossary.rst:199
 msgid ""
 "Catalog Service for the Web (CSW), sometimes seen as Catalog Service - Web, "
 "is a standard for exposing a catalog of geospatial records in XML on the "
@@ -717,15 +712,15 @@ msgstr ""
 "datos geoespaciales (p. ej. KML), servicios geoespaciales (p. ej. WMS) y "
 "recursos relacionados."
 
-#: ../../source/platform_glossary.rst:181
+#: ../../source/platform_glossary.rst:200
 msgid "Database"
 msgstr "Base de datos"
 
-#: ../../source/platform_glossary.rst:183
+#: ../../source/platform_glossary.rst:202
 msgid "|link_39|"
 msgstr "|link_39|"
 
-#: ../../source/platform_glossary.rst:185
+#: ../../source/platform_glossary.rst:204
 msgid ""
 "A database is an organized collection of data. It is the collection of "
 "schemas, tables, queries, reports, views, and other objects."
@@ -733,27 +728,27 @@ msgstr ""
 "Una base de datos es una colección organizada de datos. Es la colección de "
 "esquemas, tablas, consultas, informes, vistas y otros objetos."
 
-#: ../../source/platform_glossary.rst:186
+#: ../../source/platform_glossary.rst:205
 msgid "DKAN (Drupal based CKAN)"
 msgstr "DKAN (Drupal-based CKAN)"
 
-#: ../../source/platform_glossary.rst:188
+#: ../../source/platform_glossary.rst:207
 msgid "|link_40|"
 msgstr "|link_40|"
 
-#: ../../source/platform_glossary.rst:190
+#: ../../source/platform_glossary.rst:209
 msgid "DKAN is an open-source data management platform"
 msgstr "DKAN es una plataforma de administración de datos de código abierto."
 
-#: ../../source/platform_glossary.rst:191
+#: ../../source/platform_glossary.rst:210
 msgid "DNS"
 msgstr "DNS"
 
-#: ../../source/platform_glossary.rst:193
+#: ../../source/platform_glossary.rst:212
 msgid "|link_41|"
 msgstr "|link_41|"
 
-#: ../../source/platform_glossary.rst:195
+#: ../../source/platform_glossary.rst:214
 msgid ""
 "The Domain Name System (DNS) is a hierarchical decentralized naming system "
 "for computers, services, or any resource connected to the Internet or a "
@@ -763,15 +758,15 @@ msgstr ""
 "descentralizado para equipos, servicios o cualquier recurso conectado a "
 "Internet o una red privada."
 
-#: ../../source/platform_glossary.rst:196
+#: ../../source/platform_glossary.rst:215
 msgid "Endpoint"
 msgstr "Extremo"
 
-#: ../../source/platform_glossary.rst:198
+#: ../../source/platform_glossary.rst:217
 msgid "|link_42|"
 msgstr "|link_42|"
 
-#: ../../source/platform_glossary.rst:200
+#: ../../source/platform_glossary.rst:219
 msgid ""
 "An end point indicates a specific location for accessing a service using a "
 "specific protocol and data format."
@@ -779,15 +774,15 @@ msgstr ""
 "Un extremo es una ubicación específica de acceso a un servicio que utiliza "
 "un protocolo y un formato de datos específicos."
 
-#: ../../source/platform_glossary.rst:201
+#: ../../source/platform_glossary.rst:220
 msgid "EPSG (European Petroleum Survey Group)"
 msgstr "EPSG (European Petroleum Survey Group)"
 
-#: ../../source/platform_glossary.rst:203
+#: ../../source/platform_glossary.rst:222
 msgid "|link_43|"
 msgstr "|link_43|"
 
-#: ../../source/platform_glossary.rst:205
+#: ../../source/platform_glossary.rst:224
 msgid ""
 "The EPSG Geodetic Parameter Dataset is a structured dataset of Coordinate "
 "Reference Systems and Coordinate Transformations [...] The geographic "
@@ -801,15 +796,15 @@ msgstr ""
 "recalca que el juego de datos no registra (ni puede hacerlo) todos los "
 "parámetros geodésicos posibles del mundo."
 
-#: ../../source/platform_glossary.rst:206
+#: ../../source/platform_glossary.rst:225
 msgid "FTP"
 msgstr "FTP"
 
-#: ../../source/platform_glossary.rst:208
+#: ../../source/platform_glossary.rst:227
 msgid "|link_44|"
 msgstr "|link_44|"
 
-#: ../../source/platform_glossary.rst:210
+#: ../../source/platform_glossary.rst:229
 msgid ""
 "The File Transfer Protocol (FTP) is a standard network protocol used to "
 "transfer computer files between a client and server on a computer network."
@@ -818,15 +813,15 @@ msgstr ""
 "estándar empleado para transferir archivos informáticos entre un cliente y "
 "un servidor en una red informática."
 
-#: ../../source/platform_glossary.rst:211
+#: ../../source/platform_glossary.rst:230
 msgid "Geocoding"
 msgstr "Geocodificación"
 
-#: ../../source/platform_glossary.rst:213
+#: ../../source/platform_glossary.rst:232
 msgid "|link_45|"
 msgstr "|link_45|"
 
-#: ../../source/platform_glossary.rst:215
+#: ../../source/platform_glossary.rst:234
 msgid ""
 "Geocoding is the computational process of transforming a postal address "
 "description to a location on the Earth's surface"
@@ -834,15 +829,15 @@ msgstr ""
 "La geodificación es el proceso de cálculo por el cual se transforma una "
 "descripción de dirección postal en una ubicación de la superficie terrestre."
 
-#: ../../source/platform_glossary.rst:216
+#: ../../source/platform_glossary.rst:235
 msgid "HTML (HyperText Markup Language)"
 msgstr "HTML (HyperText Markup Language)"
 
-#: ../../source/platform_glossary.rst:218
+#: ../../source/platform_glossary.rst:237
 msgid "|link_46|"
 msgstr "|link_46|"
 
-#: ../../source/platform_glossary.rst:220
+#: ../../source/platform_glossary.rst:239
 msgid ""
 "HyperText Markup Language (HTML) is the standard markup language for "
 "creating web pages and web applications. With Cascading Style Sheets (CSS), "
@@ -856,15 +851,15 @@ msgstr ""
 "exploradores web reciben documentos HTML de un servidor web o el "
 "almacenamiento local, y los presentan en las páginas web multimedia."
 
-#: ../../source/platform_glossary.rst:221
+#: ../../source/platform_glossary.rst:240
 msgid "HTTP (HyperText Transfer Protocol)"
 msgstr "HTTP (HyperText Transfer Protocol)"
 
-#: ../../source/platform_glossary.rst:223
+#: ../../source/platform_glossary.rst:242
 msgid "|link_47|"
 msgstr "|link_47|"
 
-#: ../../source/platform_glossary.rst:225
+#: ../../source/platform_glossary.rst:244
 msgid ""
 "The primary method used to convey information on the World Wide Web. HTTP is"
 " a request/response protocol between clients and servers."
@@ -872,15 +867,15 @@ msgstr ""
 "El principal método para transmitir información por Internet. HTTP es un "
 "protocolo de solicitud/respuesta entre clientes y servidores."
 
-#: ../../source/platform_glossary.rst:226
+#: ../../source/platform_glossary.rst:245
 msgid "JSON (JavaScript Object Notation)"
 msgstr "JSON (JavaScript Object Notation)"
 
-#: ../../source/platform_glossary.rst:228
+#: ../../source/platform_glossary.rst:247
 msgid "|link_48|"
 msgstr "|link_48|"
 
-#: ../../source/platform_glossary.rst:230
+#: ../../source/platform_glossary.rst:249
 msgid ""
 "JSON (JavaScript Object Notation) is an open-standard format that uses "
 "human-readable text to transmit data objects consisting of attributeÐvalue "
@@ -894,15 +889,15 @@ msgstr ""
 "comunicación explorador/servidor asíncrona (AJAJ), sustituyendo en gran "
 "medida al formato XML empleado por AJAX."
 
-#: ../../source/platform_glossary.rst:231
+#: ../../source/platform_glossary.rst:250
 msgid "KML (Keyhole Markup Language)"
 msgstr "KML (Keyhole Markup Language)"
 
-#: ../../source/platform_glossary.rst:233
+#: ../../source/platform_glossary.rst:252
 msgid "|link_49|"
 msgstr "|link_49|"
 
-#: ../../source/platform_glossary.rst:235
+#: ../../source/platform_glossary.rst:254
 msgid ""
 "Keyhole Markup Language (KML) is an XML notation for expressing geographic "
 "annotation and visualization within Internet-based, two-dimensional maps and"
@@ -912,15 +907,15 @@ msgstr ""
 " y visualización geográfica en mapas bidimensionales y exploradores "
 "terrestres tridimensionales por Internet."
 
-#: ../../source/platform_glossary.rst:236
+#: ../../source/platform_glossary.rst:255
 msgid "KMZ (Keyhole Markup Zipped)"
 msgstr "KMZ (Keyhole Markup Zipped)"
 
-#: ../../source/platform_glossary.rst:238
+#: ../../source/platform_glossary.rst:257
 msgid "|link_50|"
 msgstr "|link_50|"
 
-#: ../../source/platform_glossary.rst:240
+#: ../../source/platform_glossary.rst:259
 msgid ""
 "KML files are very often distributed in KMZ files, which are zipped files "
 "with a .KMZ extension. When a KMZ file is unzipped, a single doc.kml is "
@@ -932,15 +927,15 @@ msgstr ""
 " KMZ, se extrae un único doc.kml junto con las imágenes de superposición e "
 "icono referenciadas en el KML y todos los archivos KML vinculados en la red."
 
-#: ../../source/platform_glossary.rst:241
+#: ../../source/platform_glossary.rst:260
 msgid "LDAP (Lightweight Directory Access Protocol)"
 msgstr "LDAP (Lightweight Directory Access Protocol)"
 
-#: ../../source/platform_glossary.rst:243
+#: ../../source/platform_glossary.rst:262
 msgid "|link_51|"
 msgstr "|link_51|"
 
-#: ../../source/platform_glossary.rst:245
+#: ../../source/platform_glossary.rst:264
 msgid ""
 "The Lightweight Directory Access Protocol is an open, vendor-neutral, "
 "industry standard application protocol for accessing and maintaining "
@@ -957,15 +952,15 @@ msgstr ""
 "permitir el uso compartido de la información sobre usuarios, sistemas, "
 "redes, servicios y aplicaciones en toda la red."
 
-#: ../../source/platform_glossary.rst:246
+#: ../../source/platform_glossary.rst:265
 msgid "Machine-Readable File"
 msgstr "Archivo legible por la máquina"
 
-#: ../../source/platform_glossary.rst:248
+#: ../../source/platform_glossary.rst:267
 msgid "|link_52|"
 msgstr "|link_52|"
 
-#: ../../source/platform_glossary.rst:250
+#: ../../source/platform_glossary.rst:269
 msgid ""
 "Refers to information or data that is in a format that can be easily "
 "processed by a computer without human intervention while ensuring no "
@@ -975,15 +970,15 @@ msgstr ""
 "de procesar por un equipo sin la intervención humana y sin pérdida "
 "semántica."
 
-#: ../../source/platform_glossary.rst:251
+#: ../../source/platform_glossary.rst:270
 msgid "Mapbox"
 msgstr "Mapbox"
 
-#: ../../source/platform_glossary.rst:253
+#: ../../source/platform_glossary.rst:272
 msgid "|link_53|"
 msgstr "|link_53|"
 
-#: ../../source/platform_glossary.rst:255
+#: ../../source/platform_glossary.rst:274
 msgid ""
 "Mapbox is a large provider of custom online maps for websites such as "
 "Foursquare, Pinterest, Evernote, the Financial Times, The Weather Channel "
@@ -997,15 +992,15 @@ msgstr ""
 "mapas personalizados, en respuesta a las escasas posibilidades de elección "
 "de los proveedores de mapas como Google Maps."
 
-#: ../../source/platform_glossary.rst:256
+#: ../../source/platform_glossary.rst:275
 msgid "OAuth"
 msgstr "OAuth"
 
-#: ../../source/platform_glossary.rst:258
+#: ../../source/platform_glossary.rst:277
 msgid "|link_54|"
 msgstr "|link_54|"
 
-#: ../../source/platform_glossary.rst:260
+#: ../../source/platform_glossary.rst:279
 msgid ""
 "OAuth is an open standard for authorization, commonly used as a way for "
 "Internet users to log in to third party websites using their Google, "
@@ -1020,15 +1015,15 @@ msgstr ""
 " \"acceso delegado seguro\" a los recursos del servidor en nombre de un "
 "propietario de recursos."
 
-#: ../../source/platform_glossary.rst:261
+#: ../../source/platform_glossary.rst:280
 msgid "oData"
 msgstr "OData"
 
-#: ../../source/platform_glossary.rst:263
+#: ../../source/platform_glossary.rst:282
 msgid "|link_55|"
 msgstr "|link_55|"
 
-#: ../../source/platform_glossary.rst:265
+#: ../../source/platform_glossary.rst:284
 msgid ""
 "Open Data Protocol (OData) is an open protocol which allows the creation and"
 " consumption of queryable and interoperable RESTful APIs in a simple and "
@@ -1038,15 +1033,15 @@ msgstr ""
 " el consumo de interfaces API RESTful consultables e interoperativas de "
 "forma simple y estándar."
 
-#: ../../source/platform_glossary.rst:266
+#: ../../source/platform_glossary.rst:285
 msgid "Open Source Software"
 msgstr "Software de código abierto"
 
-#: ../../source/platform_glossary.rst:268
+#: ../../source/platform_glossary.rst:287
 msgid "|link_56|"
 msgstr "|link_56|"
 
-#: ../../source/platform_glossary.rst:270
+#: ../../source/platform_glossary.rst:289
 msgid ""
 "Computer software that is available in source code form: the source code and"
 " certain other rights normally reserved for copyright holders are provided "
@@ -1061,11 +1056,11 @@ msgstr ""
 "distribuir el software. El software de código abierto acostumbra a "
 "desarrollarse  de manera pública y colaborativa."
 
-#: ../../source/platform_glossary.rst:271
+#: ../../source/platform_glossary.rst:290
 msgid "Parser (or extractor)"
 msgstr "Analizador (o extractor)"
 
-#: ../../source/platform_glossary.rst:273
+#: ../../source/platform_glossary.rst:292
 msgid ""
 "A parser is a computer program that takes a file as input, processes and "
 "indexes it in order for the platform or people to perform complex operations"
@@ -1075,15 +1070,15 @@ msgstr ""
 "lo procesa y lo indexa para permitir que la plataforma o los usuarios "
 "realicen operaciones complejas con él."
 
-#: ../../source/platform_glossary.rst:274
+#: ../../source/platform_glossary.rst:293
 msgid "RDF (Resource Description Framework )"
 msgstr "RDF (Resource Description Framework )"
 
-#: ../../source/platform_glossary.rst:276
+#: ../../source/platform_glossary.rst:295
 msgid "|link_58|"
 msgstr "|link_58|"
 
-#: ../../source/platform_glossary.rst:278
+#: ../../source/platform_glossary.rst:297
 msgid ""
 "The Resource Description Framework (RDF) is a family of World Wide Web "
 "Consortium (W3C) specifications originally designed as a metadata data "
@@ -1100,15 +1095,15 @@ msgstr ""
 "serialización de datos. También se usa en las aplicaciones de administración"
 " del conocimiento."
 
-#: ../../source/platform_glossary.rst:279
+#: ../../source/platform_glossary.rst:298
 msgid "REST (Representational state transfer)"
 msgstr "REST (Representational State Transfer)"
 
-#: ../../source/platform_glossary.rst:281
+#: ../../source/platform_glossary.rst:300
 msgid "|link_59|"
 msgstr "|link_59|"
 
-#: ../../source/platform_glossary.rst:283
+#: ../../source/platform_glossary.rst:302
 msgid ""
 "In computing, representational state transfer (REST) is an architectural "
 "style used for web development. Systems and sites designed using this style "
@@ -1125,15 +1120,15 @@ msgstr ""
 "componentes reutilizables que se pueden administrar y actualizar sin afectar"
 " al sistema en su conjunto durante su ejecución."
 
-#: ../../source/platform_glossary.rst:284
+#: ../../source/platform_glossary.rst:303
 msgid "RSS (Rich Site Summary)"
 msgstr "RSS (Rich Site Summary)"
 
-#: ../../source/platform_glossary.rst:286
+#: ../../source/platform_glossary.rst:305
 msgid "|link_60|"
 msgstr "|link_60|"
 
-#: ../../source/platform_glossary.rst:288
+#: ../../source/platform_glossary.rst:307
 msgid ""
 "RSS (Rich Site Summary; originally RDF Site Summary; often called Really "
 "Simple Syndication) uses a family of standard web feed formats to publish "
@@ -1148,23 +1143,23 @@ msgstr ""
 " \"fuente\", \"fuente web\" o \"canal\") incluye texto completo o resumido y"
 " metadatos, como la fecha de publicación y el nombre del autor."
 
-#: ../../source/platform_glossary.rst:289
+#: ../../source/platform_glossary.rst:308
 msgid "RSS Feed"
 msgstr "Fuente RSS"
 
-#: ../../source/platform_glossary.rst:291
+#: ../../source/platform_glossary.rst:310
 msgid "URL for an RSS feed that provides access to the dataset."
 msgstr "Dirección URL de una fuente RSS que da acceso al juego de datos."
 
-#: ../../source/platform_glossary.rst:292
+#: ../../source/platform_glossary.rst:311
 msgid "SAML (Security Assertion Markup Language)"
 msgstr "SAML (Security Assertion Markup Language)"
 
-#: ../../source/platform_glossary.rst:294
+#: ../../source/platform_glossary.rst:313
 msgid "|link_62|"
 msgstr "|link_62|"
 
-#: ../../source/platform_glossary.rst:296
+#: ../../source/platform_glossary.rst:315
 msgid ""
 "Security Assertion Markup Language (SAML) is an XML-based, open-standard "
 "data format for exchanging authentication and authorization data between "
@@ -1175,15 +1170,15 @@ msgstr ""
 "autorización entre las partes, en concreto, entre un proveedor de identidad "
 "y un proveedor de servicio."
 
-#: ../../source/platform_glossary.rst:297
+#: ../../source/platform_glossary.rst:316
 msgid "Shapefile"
 msgstr "Shapefile"
 
-#: ../../source/platform_glossary.rst:299
+#: ../../source/platform_glossary.rst:318
 msgid "|link_63|"
 msgstr "|link_63|"
 
-#: ../../source/platform_glossary.rst:301
+#: ../../source/platform_glossary.rst:320
 msgid ""
 "The shapefile format is a popular geospatial vector data format for "
 "geographic information system (GIS) software. A shapefile stores non-"
@@ -1199,15 +1194,15 @@ msgstr ""
 "almacena como una forma que contiene un conjunto de coordenadas vectoriales."
 " Los archivos Shapefile pueden admitir funciones de punto, línea y área."
 
-#: ../../source/platform_glossary.rst:302
+#: ../../source/platform_glossary.rst:321
 msgid "SOAP (Simple Object Access Protocol)"
 msgstr "SOAP (Simple Object Access Protocol)"
 
-#: ../../source/platform_glossary.rst:304
+#: ../../source/platform_glossary.rst:323
 msgid "|link_64|"
 msgstr "|link_64|"
 
-#: ../../source/platform_glossary.rst:306
+#: ../../source/platform_glossary.rst:325
 msgid ""
 "SOAP (Simple Object Access Protocol) is a message-based protocol based on "
 "XML for accessing services on the Web. It employs XML syntax to send text "
@@ -1224,15 +1219,15 @@ msgstr ""
 "de intercambio, SOAP también se puede usar para implementar un sistema de "
 "mensajería."
 
-#: ../../source/platform_glossary.rst:307
+#: ../../source/platform_glossary.rst:326
 msgid "SQL (Structured Query Language)"
 msgstr "SQL (Structured Query Language)"
 
-#: ../../source/platform_glossary.rst:309
+#: ../../source/platform_glossary.rst:328
 msgid "|link_65|"
 msgstr "|link_65|"
 
-#: ../../source/platform_glossary.rst:311
+#: ../../source/platform_glossary.rst:330
 msgid ""
 "SQL (Structured Query Language) is a special-purpose programming language "
 "designed for managing data held in a relational database management system "
@@ -1245,15 +1240,15 @@ msgstr ""
 "secuencia de un sistema de administración de secuencias de datos "
 "relacionales (RDSMS)."
 
-#: ../../source/platform_glossary.rst:312
+#: ../../source/platform_glossary.rst:331
 msgid "SSL certificate"
 msgstr "Certificado SSL"
 
-#: ../../source/platform_glossary.rst:314
+#: ../../source/platform_glossary.rst:333
 msgid "|link_66|"
 msgstr "|link_66|"
 
-#: ../../source/platform_glossary.rst:316
+#: ../../source/platform_glossary.rst:335
 msgid ""
 "A SSL certificate is an electronic document used to secure connections "
 "between websites. The certificate includes information about the key, "
@@ -1265,15 +1260,15 @@ msgstr ""
 "clave, información sobre la identidad del propietario y la firma digital de "
 "una entidad que ha verificado que el contenido del certificado es correcto."
 
-#: ../../source/platform_glossary.rst:317
+#: ../../source/platform_glossary.rst:336
 msgid "Swagger"
 msgstr "Swagger"
 
-#: ../../source/platform_glossary.rst:319
+#: ../../source/platform_glossary.rst:338
 msgid "|link_67|"
 msgstr "|link_67|"
 
-#: ../../source/platform_glossary.rst:321
+#: ../../source/platform_glossary.rst:340
 msgid ""
 "The OpenAPI Specification (originally known as the Swagger Specification) is"
 " a specification for machine-readable interface files for describing, "
@@ -1287,15 +1282,15 @@ msgstr ""
 "generar código, documentación y casos de prueba a partir de un archivo de "
 "interfaz."
 
-#: ../../source/platform_glossary.rst:322
+#: ../../source/platform_glossary.rst:341
 msgid "Tiles"
 msgstr "Teselas"
 
-#: ../../source/platform_glossary.rst:324
+#: ../../source/platform_glossary.rst:343
 msgid "|link_68|"
 msgstr "|link_68|"
 
-#: ../../source/platform_glossary.rst:326
+#: ../../source/platform_glossary.rst:345
 msgid ""
 "Tiles are individually requested image files over the internet that are "
 "seemlessly joined to create a map"
@@ -1303,15 +1298,15 @@ msgstr ""
 "Las teselas son archivos de imagen solicitados individualmente a través de "
 "Internet que se integran de forma transparente para crear un mapa."
 
-#: ../../source/platform_glossary.rst:327
+#: ../../source/platform_glossary.rst:346
 msgid "Token"
 msgstr "Token"
 
-#: ../../source/platform_glossary.rst:329
+#: ../../source/platform_glossary.rst:348
 msgid "|link_69|"
 msgstr "|link_69|"
 
-#: ../../source/platform_glossary.rst:331
+#: ../../source/platform_glossary.rst:350
 msgid ""
 "A token is piece of data that is used in network communications (often over "
 "HTTP) to identify a session, a series of related message exchanges. On the "
@@ -1322,15 +1317,15 @@ msgstr ""
 "intercambios de mensajes relacionados. En la plataforma, los tokens permiten"
 " conectar con dispositivos externos."
 
-#: ../../source/platform_glossary.rst:332
+#: ../../source/platform_glossary.rst:351
 msgid "TSV (Tab Separated Values)"
 msgstr "TSV (valores separados por tabulaciones)"
 
-#: ../../source/platform_glossary.rst:334
+#: ../../source/platform_glossary.rst:353
 msgid "|link_70|"
 msgstr "|link_70|"
 
-#: ../../source/platform_glossary.rst:336
+#: ../../source/platform_glossary.rst:355
 msgid ""
 "A simple text format for a database table. Each record in the table is one "
 "line of the text file. Each field value of a record is separated from the "
@@ -1343,15 +1338,15 @@ msgstr ""
 " de tabulación. Es una forma del formato de valores separados por "
 "delimitadores más general."
 
-#: ../../source/platform_glossary.rst:337
+#: ../../source/platform_glossary.rst:356
 msgid "Turtle (Terse RDF Triple Language)"
 msgstr "Turtle (Terse RDF Triple Language)"
 
-#: ../../source/platform_glossary.rst:339
+#: ../../source/platform_glossary.rst:358
 msgid "|link_71|"
 msgstr "|link_71|"
 
-#: ../../source/platform_glossary.rst:341
+#: ../../source/platform_glossary.rst:360
 msgid ""
 "Turtle (Terse RDF Triple Language) is a format for expressing data in the "
 "Resource Description Framework (RDF) data model with a syntax similar to "
@@ -1365,15 +1360,15 @@ msgstr ""
 "\"triples\", cada uno de los cuales consta de un sujeto, un predicado y un "
 "objeto. Cada uno de estos elementos se expresa como URI web."
 
-#: ../../source/platform_glossary.rst:342
+#: ../../source/platform_glossary.rst:361
 msgid "Web Service"
 msgstr "Servicio web"
 
-#: ../../source/platform_glossary.rst:344
+#: ../../source/platform_glossary.rst:363
 msgid "|link_72|"
 msgstr "|link_72|"
 
-#: ../../source/platform_glossary.rst:346
+#: ../../source/platform_glossary.rst:365
 msgid ""
 "A Web service is a service offered by an electronic device to another "
 "electronic device, communicating with each other via the World Wide Web. In "
@@ -1389,15 +1384,15 @@ msgstr ""
 "máquina a máquina, y más concretamente para la transferencia de formatos de "
 "archivo legibles por la máquina como XML y JSON."
 
-#: ../../source/platform_glossary.rst:347
+#: ../../source/platform_glossary.rst:366
 msgid "WFS (Web Feature Service)"
 msgstr "WFS (Web Feature Service)"
 
-#: ../../source/platform_glossary.rst:349
+#: ../../source/platform_glossary.rst:368
 msgid "|link_73|"
 msgstr "|link_73|"
 
-#: ../../source/platform_glossary.rst:351
+#: ../../source/platform_glossary.rst:370
 msgid ""
 "Web Feature Service Interface Standard (WFS) provides an interface allowing "
 "requests for geographical features across the web using platform-independent"
@@ -1407,15 +1402,15 @@ msgstr ""
 "para realizar solicitudes de funciones geográficas por Internet mediante "
 "llamadas independientes de la plataforma."
 
-#: ../../source/platform_glossary.rst:352
+#: ../../source/platform_glossary.rst:371
 msgid "WSDL (Web Services Description Language)"
 msgstr "WSDL (Web Services Description Language)"
 
-#: ../../source/platform_glossary.rst:354
+#: ../../source/platform_glossary.rst:373
 msgid "|link_74|"
 msgstr "|link_74|"
 
-#: ../../source/platform_glossary.rst:356
+#: ../../source/platform_glossary.rst:375
 msgid ""
 "The Web Services Description Language is an XML-based interface definition "
 "language that is used for describing the functionality offered by a web "
@@ -1425,15 +1420,15 @@ msgstr ""
 "interfaz XML que se utiliza para describir la funcionalidad ofrecida por un "
 "servicio web."
 
-#: ../../source/platform_glossary.rst:357
+#: ../../source/platform_glossary.rst:376
 msgid "XML (Extensible Markup Language)"
 msgstr "XML (Extensible Markup Language)"
 
-#: ../../source/platform_glossary.rst:359
+#: ../../source/platform_glossary.rst:378
 msgid "|link_75|"
 msgstr "|link_75|"
 
-#: ../../source/platform_glossary.rst:361
+#: ../../source/platform_glossary.rst:380
 msgid ""
 "XML (Extensible Markup Language) is a general-purpose specification for "
 "creating custom markup languages. It is classified as an extensible "
@@ -1447,3 +1442,29 @@ msgstr ""
 "XML tiene como finalidad ayudar a los sistemas de información a compartir "
 "datos estructurados especialmente a través de Internet, codificar documentos"
 " y serializar datos."
+
+#: ../../source/platform_glossary.rst:134
+#, fuzzy
+msgid ""
+"Metadata are \"data that provide information about other data\". Two types "
+"of metadata exist: structural metadata and descriptive metadata. Structural "
+"metadata are data about the rst-classs of data. Descriptive metadata use "
+"individual instances of application data or the data content."
+msgstr ""
+"Los metadatos son \"datos que aportan información sobre otros datos\". "
+"Existen 2 tipos de metadatos: estructurales y descriptivos. Los metadatos "
+"estructurales son datos sobre los contenedores de datos. Los metadatos "
+"descriptivos utilizan instancias individuales de los datos de la aplicación "
+"o el contenido de los datos."
+
+#~ msgid ""
+#~ "Metadata are \"data that provide information about other data\". Two types "
+#~ "of metadata exist: structural metadata and descriptive metadata. Structural "
+#~ "metadata are data about the containers of data. Descriptive metadata use "
+#~ "individual instances of application data or the data content."
+#~ msgstr ""
+#~ "Los metadatos son \"datos que aportan información sobre otros datos\". "
+#~ "Existen 2 tipos de metadatos: estructurales y descriptivos. Los metadatos "
+#~ "estructurales son datos sobre los contenedores de datos. Los metadatos "
+#~ "descriptivos utilizan instancias individuales de los datos de la aplicación "
+#~ "o el contenido de los datos."

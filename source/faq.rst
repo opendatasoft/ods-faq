@@ -3,11 +3,11 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: expand-collapse-items wrapper-expand-collapse-faq expand-all-faq
 
-    Expand all
+    Expand All
 
 .. rst-class:: expand-collapse-items wrapper-expand-collapse-faq collapse-all-faq
 
-    Collapse all
+    Collapse All
 
 .. rst-class:: content-visible
 

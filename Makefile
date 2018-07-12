@@ -81,6 +81,12 @@ singlehtml:
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
+singlehtml/%:
+	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/$@
+	cp ./source/ODS_logo_footer.svg build/$@/_static/
+	@echo
+	@echo "Build finished. The HTML page is in $(BUILDDIR)/$@."
+
 pickle:
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) $(BUILDDIR)/pickle
 	@echo
@@ -224,21 +230,21 @@ pull-translations-%:
 	@echo "Translations (.po) for $* retrieved from transifex."
 
 push-translations: clean html
-ifeq ($(shell git symbolic-ref HEAD --short), develop)
+#ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
 	@sphinx-intl update -p $(BUILDDIR)/locale -l $(TRANSLATED_LANGUAGES)
 	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
-	@echo "Uploading translation files to Transifex"
-	tx push -s
-	@echo "Build finished. Translation templates (.pot) uploaded to transifex."
-else
-	@echo "You have to be on the develop branch to build translations"
-endif
+#	@echo "Uploading translation files to Transifex"
+#	tx push -s
+#	@echo "Build finished. Translation templates (.pot) uploaded to transifex."
+#else
+#	@echo "You have to be on the develop branch to build translations"
+#endif
 
 localizedhtml: clean
 	@echo "Building translated html"
-	for LANGUAGE in $(LANGUAGES); do make -e SPHINXOPTS="-D language='$$LANGUAGE'" singlehtml; done
+	for LANGUAGE in $(LANGUAGES); do make -e SPHINXOPTS="-D language='$$LANGUAGE'" singlehtml/$$LANGUAGE; done
 
 localizedhtml-%:
 	make -e SPHINXOPTS="-D language='$*'" html/$*
