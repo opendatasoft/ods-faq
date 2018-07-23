@@ -212,33 +212,19 @@ $('#help-hub-button').click(function () {
     setHub();
 });
 
-// scroll content below ods_header 
-$('.internal').on('click', function (event) {
-    var target = $(this)[0].attributes.href.nodeValue;
-
-    if (target.indexOf('#') !== -1) {
-        event.preventDefault();
-
-        if (target == '#') {
-            window.location.hash = '';
-        } else {
-            hash_url = target.split('#');
-            window.location.hash = '#' + hash_url[1];
-
-            res_target = $('#' + target.split('#')[1]).offset().top;
-            setTimeout(function () {
-                $('html').animate({ scrollTop: res_target - 110 }, 0);
-            }, 0);
-        }
-
-    } else {
-        return null;
-    }
-});
-
 // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
 // https://gist.github.com/paulirish/1579671
 // MIT license
+
+$('a').on('click', function (event) {
+    event.preventDefault();
+
+    var target = $(this).offset().top;
+
+    setTimeout(function () {
+        $('html, body').animate({ scrollTop: target - 120 }, 0);
+    }, 0);
+});
 
 (function () {
     var lastTime = 0;
