@@ -354,15 +354,29 @@ body, h1, h2, h3, p, th
   cursor: pointer
   font-weight: bold
 
+.expand-all-faq,
+.expand-all-glossary
+  color: transparentize($blue-light, 0.4)
+
+.collapse-all-faq,
+.collapse-all-glossary
+  color: $deep-blue
+
+.expand-all-faq::before,
+.expand-all-glossary::before,
+.collapse-all-faq::before,
+.collapse-all-glossary::before
+  font-family: FontAwesome
+  color: transparentize($blue-light, 0.4)
+  margin-right: 10px
+
 .expand-all-faq::before,
 .expand-all-glossary::before
-  content: '+ '
-  color: transparentize($blue-light, 0.4)
+  content: "\f0d7"
 
 .collapse-all-faq::before,
 .collapse-all-glossary::before
-  content: '- '
-  color: transparentize($blue-light, 0.4)
+  content: "\f0d8"
 
 .wrapper-expand-collapse-items-active
   display: block

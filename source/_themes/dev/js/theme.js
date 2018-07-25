@@ -289,6 +289,8 @@ var currentLang = $('#currentLang').text();
 var classCarretUp = 'carret-up';
 var classCarretDown = 'carret-down';
 
+var elementItemLang = $('.item-lang-attr');
+
 /*
  *
  *  Generic functions
@@ -327,12 +329,12 @@ var toggleContentActive = function (nextElement, thisElement) {
     }
 }
 
-//- Click to action Open/Close
-$('.' + classContentVisible).click(function () {
-    var nextElement = $(this).next();
+//- Function which open/close elements 
+var actionOpenClose = function(element) {
+    var nextElement = $(element).next();
 
-    toggleContentActive(nextElement, $(this));
-    changeCarretClass($(this)[0]);
+    toggleContentActive(nextElement, $(element));
+    changeCarretClass($(element)[0]);
 
     //- All elements in section are open -> Collapse all
     AllElementsOpenedToChangeExpand(
@@ -350,6 +352,18 @@ $('.' + classContentVisible).click(function () {
         countElementVisibleGlossary,
         countElementVisibleActiveGlossary
     );
+}
+
+//- Click to action Open/Close
+$('.' + classContentVisible).click(function () {
+    actionOpenClose(this);
+});
+
+$('.' + classContentVisible).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        actionOpenClose(this);
+    }
 });
 
 var AllElementsOpenedToChangeExpand = function (sectionChildren, expandElement, collapseElement, countElementVisible, countElementVisibleActive) {
@@ -416,6 +430,17 @@ $(elementClickExpandFAQ).click(function () {
     );
 });
 
+$(elementClickExpandFAQ).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        expandAllAction(
+            $(sectionFAQElement)[0].children,
+            elementClickExpandFAQ,
+            elementClickCollapseFAQ
+        );
+    }
+});
+
 //- Expand all Glossary
 $(elementClickExpandGlossary).click(function () {
     expandAllAction(
@@ -423,6 +448,17 @@ $(elementClickExpandGlossary).click(function () {
         elementClickExpandGlossary,
         elementClickCollapseGlossary
     );
+});
+
+$(elementClickExpandGlossary).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        expandAllAction(
+            $(sectionGlossaryElement)[0].children,
+            elementClickExpandGlossary,
+            elementClickCollapseGlossary
+        );
+    }
 });
 
 //- Collapse all elements
@@ -451,6 +487,19 @@ $(elementClickCollapseFAQ).click(function () {
     countElementVisibleActiveFAQ = 0;
 });
 
+$(elementClickCollapseFAQ).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        collapseAllAction(
+            $(sectionFAQElement)[0].children,
+            elementClickCollapseFAQ,
+            elementClickExpandFAQ
+        );
+        //- Reset count
+        countElementVisibleActiveFAQ = 0;
+    }
+});
+
 //- Collapse all Glossary
 $(elementClickCollapseGlossary).click(function () {
     collapseAllAction(
@@ -460,6 +509,19 @@ $(elementClickCollapseGlossary).click(function () {
     );
     //- Reset count
     countElementVisibleActiveGlossary = 0;
+});
+
+$(elementClickCollapseGlossary).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        collapseAllAction(
+            $(sectionGlossaryElement)[0].children,
+            elementClickCollapseGlossary,
+            elementClickExpandGlossary
+        );
+        //- Reset count
+        countElementVisibleActiveGlossary = 0;
+    }
 });
 
 /*
@@ -477,7 +539,7 @@ function generatedAfterDOMRendered (callback) {
 
     //- Replace className 'content-hidden' for tables
     for (var i = 0; i < $('.' + classContentVisible).next().length; i++) {
-        if ($('.content-visible').next()[i].tagName.indexOf('P') === -1) {
+        if ($('.' + classContentVisible).next()[i].tagName.indexOf('P') === -1) {
             removeClass($('.' + classContentVisible).next()[i], classContentHidden);
 
             //- DIV which wrappe <table> appears after DOM rendering
@@ -499,6 +561,33 @@ function generatedAfterDOMRendered (callback) {
     //- Add class active to expand all
     $(elementClickExpandFAQ).addClass(expandCollapseClassActive);
     $(elementClickExpandGlossary).addClass(expandCollapseClassActive);
+
+    /*
+     *
+     *  set up accessibility
+     * 
+     */
+    //- Add attribut tabindex for all "content-visible"
+    for (var p = 0; p < $('.' + classContentVisible).length; p++) {
+        $($('.' + classContentVisible)[p]).attr('tabindex', '0');
+    }
+
+    //- Add attribut tabindex for all "expand all/collapse all"
+    elementClickExpandFAQ.attr('tabindex', '0');
+    elementClickCollapseFAQ.attr('tabindex', '0');
+    elementClickExpandGlossary.attr('tabindex', '0');
+    elementClickCollapseGlossary.attr('tabindex', '0');
+
+    //- Add title accessibility for item lang
+    for (var t = 0; t < elementItemLang.length; t++) {
+        var dataLangAttr = $(elementItemLang[t]).data('lang');
+
+        if (dataLangAttr == 'en') $($(elementItemLang)[t]).attr('title', 'Language English');
+        if (dataLangAttr == 'fr') $($(elementItemLang)[t]).attr('title', 'Language French');
+        if (dataLangAttr == 'es') $($(elementItemLang)[t]).attr('title', 'Language Spanich');
+        if (dataLangAttr == 'de') $($(elementItemLang)[t]).attr('title', 'Language German');
+        if (dataLangAttr == 'nl') $($(elementItemLang)[t]).attr('title', 'Language Dutch');
+    }
 
     callback();
 }
