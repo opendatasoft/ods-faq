@@ -11,37 +11,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/index.rst:2
-msgid "Welcome to OpenDataSoft FAQ!"
-msgstr ""
+#~ msgid "Welcome to OpenDataSoft FAQ!"
+#~ msgstr ""
 
-#: ../../source/index.rst:4
-msgid ""
-"`OpenDataSoft <https://www.opendatasoft.com/>`_ is a turnkey solution, "
-"designed for non-technical users to share, publish and reuse data. It is "
-"available as a commercial-off-the-shelf, cloud hosted product."
-msgstr ""
+#~ msgid ""
+#~ "`OpenDataSoft <https://www.opendatasoft.com/>`_ is a turnkey solution, "
+#~ "designed for non-technical users to share, publish and reuse data. It is "
+#~ "available as a commercial-off-the-shelf, cloud hosted product."
+#~ msgstr ""
 
-#: ../../source/index.rst:6
-msgid "OpenDataSoft includes a unique set of integrated features:"
-msgstr ""
+#~ msgid "OpenDataSoft includes a unique set of integrated features:"
+#~ msgstr ""
 
-#: ../../source/index.rst:8
-msgid "to collect datasets from various locations and in different formats."
-msgstr ""
+#~ msgid "to collect datasets from various locations and in different formats."
+#~ msgstr ""
 
-#: ../../source/index.rst:9
-msgid ""
-"to transform and enrich these datasets using powerful built-in data "
-"preparation features."
-msgstr ""
+#~ msgid ""
+#~ "to transform and enrich these datasets using powerful built-in data "
+#~ "preparation features."
+#~ msgstr ""
 
-#: ../../source/index.rst:10
-msgid "to publish these datasets as RESTFul APIs."
-msgstr ""
+#~ msgid "to publish these datasets as RESTFul APIs."
+#~ msgstr ""
 
-#: ../../source/index.rst:11
-msgid ""
-"to explore the datasets catalog, to visualize individual datasets or build "
-"multi-datasets mashups."
-msgstr ""
+#~ msgid ""
+#~ "to explore the datasets catalog, to visualize individual datasets or build "
+#~ "multi-datasets mashups."
+#~ msgstr ""

@@ -28,7 +28,7 @@ msgstr "Alles Sluiten"
 
 #: ../../source/faq.rst:2
 msgid "Frequently asked questions (FAQ)"
-msgstr "Frequently asked questions (FAQ)"
+msgstr "Veelgestelde vragen"
 
 #: ../../source/faq.rst:14
 msgid "**What is OpenDataSoft?**"
