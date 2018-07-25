@@ -217,12 +217,10 @@ $('#help-hub-button').click(function () {
 // MIT license
 
 $('a').on('click', function (event) {
-    event.preventDefault();
-
     var target = $(this).offset().top;
 
     setTimeout(function () {
-        $('html, body').animate({ scrollTop: target - 120 }, 0);
+        $('html, body').animate({ scrollTop: target - 130 }, 0);
     }, 0);
 });
 
