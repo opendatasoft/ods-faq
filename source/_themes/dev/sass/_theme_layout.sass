@@ -7,6 +7,10 @@ body, h1, h2, h3, p, a
 body, h1, h2, h3, p, th
   color: $deep-blue
 
+//- plugin focus-visible
+.js-focus-visible :focus:not(.focus-visible)
+  outline: 0
+
 .wy-affix
   position: fixed
   top: $gutter
