@@ -357,7 +357,7 @@ Frequently asked questions (FAQ)
     |         |    |iexplore|      | Version 9+       | Version 10+      |
     |         +--------------------+------------------+------------------+
     |         | Edge               |                  |                  |
-    |         |    |iexplore|      | Latest version   | Latest version   |
+    |         |    |edge|          | Latest version   | Latest version   |
     |         +--------------------+------------------+------------------+
     |         | Chrome             |                  |                  |
     |         |    |chrome|        | Latest version   | Latest version   |
@@ -375,8 +375,11 @@ Frequently asked questions (FAQ)
     |         |    |firefox|       | Latest version   | Latest version   |
     +---------+--------------------+------------------+------------------+
 
-    .. |iexplore| image:: browser-logos-master/src/edge/edge_32x32.png
+    .. |iexplore| image:: browser-logos-master/src/ie/ie_32x32.png
         :alt: Internet Explorer
+    
+    .. |edge| image:: browser-logos-master/src/edge/edge_32x32.png
+        :alt: Edge
 
     .. |chrome| image:: browser-logos-master/src/chrome/chrome_32x32.png
         :alt: Chrome
