@@ -47,8 +47,10 @@
     padding: 7px
     border-radius: 4px
     margin: 0 20px
-    color: white
+    background-color: white
+    color: $blue-hover
     text-transform: uppercase
+    font-weight: 500
     &:first-child
         margin-left: 0
     &:last-child
@@ -59,19 +61,14 @@
 
 .footer-container__langs-items:hover,
 .footer-container__langs-items:focus
-    background-color: white!important
-    color: $deep-blue!important
+    background-color: $blue-hover!important 
+    color: white!important
 
 #currentLang
     display: none
 
 .lang-active
-    background-color: white
-    color: $deep-blue!important
+    background-color: $blue-hover!important 
+    color: white!important
     &:visited
-        color: $deep-blue
-
-
-//- IE 10 / 11
-// @media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
-    
+        color: $white
