@@ -468,6 +468,26 @@ body, h1, h2, h3, p, th
   .carret-down::before 
     content: "\f0d7"
 
+.ods-tooltip
+  position: absolute
+  height: auto
+  width: auto
+  border-radius: 4px
+  background-color: $blue-light
+  opacity: 0
+  p
+    margin: auto 10px
+    color: white
+    font-size: 14px
+    font-weight: 500
+  p::after
+      font-family: FontAwesome
+      content: "\f0ea"
+      margin-left: 10px
+
+.ods-tooltip-active
+  opacity: 1
+
 .wy-body-mask
   position: fixed
   width: 100%

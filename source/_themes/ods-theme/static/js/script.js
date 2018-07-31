@@ -3,13 +3,6 @@ require=(function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=
 
 var jQuery = (typeof (window) != 'undefined') ? window.jQuery : require('jquery');
 
-function setHub() {
-    $('.ods__documentation-help-hub-sidebar')
-        .toggleClass('ods__documentation-help-hub-sidebar-active');
-    $('#help-hub-button')
-        .toggleClass('ods__documentation-header-btn-active');
-}
-
 // Sphinx theme nav state
 function ThemeNav() {
 
@@ -208,23 +201,9 @@ if (typeof (window) != 'undefined') {
     window.OdsTheme = { Navigation: module.exports.ThemeNav };
 }
 
-// ODS Theme Header
-$('#help-hub-button').click(function () {
-    setHub();
-});
-
 // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
 // https://gist.github.com/paulirish/1579671
 // MIT license
-
-$('a').on('click', function (event) {
-    var target = $(this).offset().top;
-
-    setTimeout(function () {
-        $('html, body').animate({ scrollTop: target - 130 }, 0);
-    }, 0);
-});
-
 (function () {
     var lastTime = 0;
     var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -254,7 +233,7 @@ $('a').on('click', function (event) {
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 //
-//  Description
+//  ODS THEME
 //
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
@@ -264,6 +243,11 @@ $('a').on('click', function (event) {
  *  Variables
  *
  */
+var helpHubElement = '.ods__documentation-help-hub-sidebar';
+var helpHubClassActive = 'ods__documentation-help-hub-sidebar-active';
+var btnHelpHubElement = '#help-hub-button';
+var btnHelpHubClassActive = 'ods__documentation-header-btn-active';
+
 var classContentVisible = 'content-visible';
 var classContentHidden = 'content-hidden';
 var classContentVisibleActive = 'content-visible-active';
@@ -292,6 +276,9 @@ var classCarretDown = 'carret-down';
 
 var elementItemLang = $('.item-lang-attr');
 
+var tooltipClass = 'ods-tooltip';
+var tooltipClassActive = 'ods-tooltip-active';
+
 /*
  *
  *  Generic functions
@@ -301,6 +288,20 @@ var removeClass = function (element, className) {
     var reg = new RegExp('(^|)' + className + '($|)', 'g');
     element.className = element.className.replace(reg, '');
 }
+
+/*
+ *
+ *  ODS Theme Header
+ *
+ */
+function setHub() {
+    $(helpHubElement).toggleClass(helpHubClassActive);
+    $(btnHelpHubElement).toggleClass(btnHelpHubClassActive);
+}
+
+$(btnHelpHubElement).click(function () {
+    setHub();
+});
 
 /*
  *
@@ -525,6 +526,55 @@ $(elementClickCollapseGlossary).keypress(function (event) {
     }
 });
 
+//- function to add value in clipboard
+function copyStringToClipboard(content) {
+    var element = document.createElement('textarea');
+    element.value = content;
+    element.setAttribute('readonly', '');
+    element.style = { position: 'absolute', left: '-9999px' };
+    document.body.appendChild(element);
+    element.select();
+    document.execCommand('copy');
+    document.body.removeChild(element);
+}
+
+//- function to show tooltip after clipboard
+function addTooltipAfterClipboard(mouse) {
+    var coordY = mouse[0] - 11;
+    var coordX = mouse[1] + 15;
+
+    if ($('.' + tooltipElement)[0]) {
+        //- Show tooltip
+        var tooltipElement = $('.' + tooltipClass);
+
+        $(tooltipElement).addClass(tooltipClassActive);
+        $(tooltipElement).css({ "top": coordY + "px", "left": coordX + "px" });
+    } else {
+        //- Creation/Insertion tooltip
+        var tooltipElement = document.createElement('div');
+
+        tooltipElement.innerHTML = '<p>Copied</p>';
+        $(tooltipElement).addClass(tooltipClass);
+        $(tooltipElement).css({ "top": coordY + "px", "left": coordX + "px" });
+        $(tooltipElement).addClass(tooltipClassActive);
+        document.body.appendChild(tooltipElement);
+    }
+
+    //- Hide tooltip
+    setTimeout(function () {
+        $(tooltipElement).removeClass(tooltipClassActive);
+    }, 1000);
+}
+
+//- Click action on link
+$('a').on('click', function (event) {
+    if ($(this)[0].hash) {
+        event.preventDefault();
+        copyStringToClipboard(window.location.hostname + window.location.pathname + $(this).attr('href'));
+        addTooltipAfterClipboard([event.pageY, event.pageX]);
+    }
+});
+
 /*
  *
  *  All elements generated after DOM rendered
@@ -599,7 +649,7 @@ function generatedAfterDOMRendered (callback) {
         setTimeout(function () {
             $('.ods-theme-spinner').css('display', 'none');
             $('.wy-nav-content-wrap').css('display', 'block');
-        }, 1000);
+        }, 1300);
     });
 }());
 },{"jquery":"jquery"}]},{},["ods-theme"]);
