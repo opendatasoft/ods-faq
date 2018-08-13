@@ -1,0 +1,184 @@
+{% extends '!layout.html' %}
+
+{%- block extrahead %}
+<style type="text/css">
+    .ods-logo {
+        width: 60px !important;
+        margin-bottom: 10px !important;
+    }
+    .wy-table-responsive table td,
+    .wy-table-responsive table th {
+        white-space: initial;
+    }
+    .wy-table td,
+    .rst-content table.docutils td,
+    .rst-content table.field-list td {
+        vertical-align: top
+    }
+
+    .algolia-autocomplete {
+        width: 100%;
+    }
+
+    /* Add a little icon next to external links */
+    .rst-content a[href^="http://"]:after,
+    .rst-content a[href^="https://"]:after {
+        font-family: 'FontAwesome';
+        content: " \f08e";
+        font-size: 0.8em;
+        vertical-align: middle;
+        margin-left: 0.15em;
+        margin-right: 0.2em;
+    }
+
+    /* Styles for the icons cheatsheet */
+    .ods-icon-block {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .ods-icon-plus-caption:hover .ods-icon-caption-filename {
+        color: #fff;
+    }
+
+    .ods-icon-plus-caption {
+        display:flex;
+        flex:0 0 31%;
+        margin-bottom: 1.5rem;
+        margin-right:2%;
+        padding-left:15px;
+    }
+
+    .ods-icon-plus-caption:hover {
+        background-color: #31a0ea;
+        color: #fff;
+        border-radius: 6px;
+    }
+
+    .ods-icon-plus-caption:hover .ods-icon {
+        transform: scale(1.2);
+    }
+
+    .ods-icon-plus-caption:hover .svg {
+        fill:white;
+        stroke:white;
+    }
+
+    .ods-icon {
+        width:20px;
+        transition: all 0.3s;
+        align-self: center;
+    }
+
+    .ods-icon-caption-name {
+        font-size:0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+      .ods-icon-caption-filename {
+        font-size:0.8rem;
+        margin-left: 0.5rem;
+        color:#999;
+        margin-top:-5px;
+        max-width: 140px;
+        text-overflow: ellipsis;
+    }
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://public.opendatasoft.com/static/pictos/odsui/odsui.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+{% endblock %}
+{% block sidebartitle %}
+
+<a href="{{ pathto(master_doc) }}">
+    <img src="{{ pathto('_static/' + logo, 1) }}" class="logo ods-logo"/>
+    {{ project }}
+</a>
+
+{% if theme_display_version %}
+{%- set nav_version = version %}
+{% if READTHEDOCS and current_version %}
+{%- set nav_version = current_version %}
+{% endif %}
+{% if nav_version %}
+<div class="version">
+    {{ nav_version }}
+</div>
+{% endif %}
+{% endif %}
+
+{%- if builder != 'singlehtml' %}
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
+    <input type="text" name="q" placeholder="{{ gettext("Search docs") }}" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+{%- endif %}
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41201218-6', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script type="text/javascript">
+    var search = docsearch({
+        apiKey: 'bb766758a6a056d3d0e6e8ae19f99984',
+        indexName: 'opendatasoft',
+        inputSelector: '#rtd-search-form input[name="q"]',
+        algoliaOptions: { 'facetFilters': ["language:{{ language }}"] },
+        /*
+        autocompleteOptions: {
+            templates: {
+                empty: '<div class="algolia-docsearch-suggestion">' +
+                    '   <div class="algolia-docsearch-suggestion--wrapper">' +
+                    '       <div class="algolia-docsearch-suggestion--content algolia-docsearch-suggestion--no-results">' +
+                    '           <div class="algolia-docsearch-suggestion--title">' +
+                    '               <div class="algolia-docsearch-suggestion--text">' +
+                    {% if language == 'fr' %}
+                    {% raw %}'                   Aucun résultat pour la recherche <b>"{{{query}}}"</b>' + {% endraw %}
+                    {% else %}
+                    {% raw %}'                   No results found for query <b>"{{{query}}}"</b>' +{% endraw %}
+                    {% endif %}
+                    '               </div>' +
+                    '           </div>' +
+                    '       </div>' +
+                    '   </div>' +
+                    '</div>'
+            }
+        },*/
+        debug: false // Set debug to true if you want to inspect the dropdown
+    });
+
+    search.autocomplete.on('autocomplete:opened', function(e) {
+        // Sphinx's magical side menu does voodoo stuff with overflows, we need
+        // to cut that for a moment.
+        $('.wy-nav-side').css('overflow', 'visible');
+        $('.wy-side-scroll').css('overflow', 'visible');
+    });
+    search.autocomplete.on('autocomplete:closed', function(e) {
+        $('.wy-nav-side').css('overflow', 'hidden');
+        $('.wy-side-scroll').css('overflow-x', 'hidden');
+        $('.wy-side-scroll').css('overflow-y', 'scroll');
+    });
+</script>
+
+<!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+(function(d,s,i,r) {
+  if (d.getElementById(i)){return;}
+  var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+  n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2041226.js';
+  e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+{% endblock %}

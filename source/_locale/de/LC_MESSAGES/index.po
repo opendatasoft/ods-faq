@@ -1,0 +1,40 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-29 15:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#~ msgid "Welcome to OpenDataSoft FAQ!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`OpenDataSoft <https://www.opendatasoft.com/>`_ is a turnkey solution, "
+#~ "designed for non-technical users to share, publish and reuse data. It is "
+#~ "available as a commercial-off-the-shelf, cloud hosted product."
+#~ msgstr ""
+
+#~ msgid "OpenDataSoft includes a unique set of integrated features:"
+#~ msgstr ""
+
+#~ msgid "to collect datasets from various locations and in different formats."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "to transform and enrich these datasets using powerful built-in data "
+#~ "preparation features."
+#~ msgstr ""
+
+#~ msgid "to publish these datasets as RESTFul APIs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "to explore the datasets catalog, to visualize individual datasets or build "
+#~ "multi-datasets mashups."
+#~ msgstr ""

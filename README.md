@@ -24,12 +24,12 @@ sphinx-intl update-txconfig-resources --pot-dir build/locale --transifex-project
 
 To build the documentation.
 ```bash
-make html
+make singlehtml
 ```
 
 Please be aware that Sphinx builds fully independant pages and that it only builds pages that have changed since the last build. Which means you may experience different menus on different pages unless you clean the build directory beforehand.
 ```bash
-rm -r build && make html
+make clean && make singlehtml
 ```
 
 To list translatable strings and retrieve their translations from transifex:
@@ -42,8 +42,8 @@ To build the localized documentation (using translated strings from transifex):
 make localizedhtml
 ```
 
-The generated html will be available in `/build/html`. You can either open the index.html file in your browser or do a
-`make server` and go to `http://localhost:9000/build/html`.
+The generated html will be available in `/build/singlehtml`. You can either open the index.html file in your browser or do a
+`make server` and go to `http://localhost:9000/build/singlehtml`.
 
 ## Building the PDF documentation
 
@@ -96,7 +96,6 @@ git add source .tx/config
 git commit -m "Rebuilt translations sources"
 ```
 
-
 ### Retrieve translations from Transifex
 
 ```
@@ -136,6 +135,37 @@ a blog post or a newsletter for example
 - Use present tense
 - When describing steps, use imperative. e.g. "Click on this button, then type in the title..."
 - When talking about OpenDataSoft as a company, use "us" or "OpenDataSoft"
+
+### Document structure
+
+To customize the theme documentation tags have been added. In the FAQ, questions are visible and responses are hidden. Similarly, for glossary documentation, titles are visible et content are hidden.
+
+To set this up, you have to put these lines in front of the content:
+
+```
+.. rst-class:: content-visible
+```
+```
+.. rst-class:: content-hidden
+```
+
+Example : 
+
+```
+.. rst-class:: content-visible
+
+    2. **Is OpenDataSoft open source?**
+```
+
+Example : 
+
+```
+.. rst-class:: content-hidden
+
+    OpenDataSoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured
+    datasets.
+```
+
 
 ### Titles
 

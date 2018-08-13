@@ -1,0 +1,179 @@
+////////////////////////////////////////////////////////////////////////////////
+// ODS DOCUMENTATION HEADER
+////////////////////////////////////////////////////////////////////////////////
+     
+//- By default mobile
+.ods__documentation-header 
+  height: 100px
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 51
+  background-color: $blue-light
+@media only screen and (min-width: $tablet-width) 
+  .ods__documentation-header 
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+
+.ods__documentation-header-logo 
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  height: 99px
+  width: 100%
+  padding: 0
+  button 
+    border: none
+    margin: auto 5px auto 0
+    background-color: white
+    color: $blue-light
+    border-radius: 4px
+    padding: 5px 10px
+    font-size: 16px
+    font-weight: 500
+    &.open 
+      background-color: $blue-hover
+      color: white
+    &.ods__documentation-header-btn-active 
+      background-color: $blue-hover
+      color: white
+  button:focus 
+    outline: none
+  img 
+      height: 70px
+      margin: auto 0       
+@media only screen and (min-width: $tablet-width)
+  .ods__documentation-header-logo 
+    height: 99px
+    width: auto
+    padding: 0 0 0 40px
+    img 
+      height: 80px
+    button 
+      display: none
+//- IE 10 / 11
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
+    .ods__documentation-header-logo
+      padding-left: 50px
+      a
+        padding-top: 0
+        img 
+          height: 90px
+          margin: -10px 0 0 0
+
+.ods__documentation-header-block-hidden
+  width: 92px
+
+@media only screen and (min-width: $tablet-width)
+  .ods__documentation-header-block-hidden
+    display: none
+        
+.ods__documentation-header-nav 
+  display: none
+@media only screen and (min-width: $tablet-width)
+  .ods__documentation-header-nav 
+    display: flex
+    margin-left: 100px
+//- IE 10 / 11
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
+  .ods__documentation-header-nav
+    display: flex
+    margin-left: 120px
+
+.ods__documentation-help-hub-sidebar 
+  position: fixed
+  top: 100px
+  right: -300px
+  height: 100%
+  width: 300px
+  padding-top: 30px
+  background-color: $blue-light
+  border-top: 1px solid white
+  z-index: 49
+  transition: 0.5s
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+@media only screen and (min-width: $tablet-width) 
+  .ods__documentation-help-hub-sidebar 
+    display: none
+
+.ods__documentation-help-hub-nav-links,
+.ods__documentation-help-hub-langs 
+  text-align: center
+  line-height: 25px
+  display: flex
+  flex-direction: column
+  width: auto
+  height: auto
+  margin: 0
+  align-items: center
+
+.ods__documentation-help-hub-nav-links
+  margin-top: 15px
+  a
+    border-bottom: 2px solid transparent
+    color: white
+    font-size: 16px
+    text-decoration: none
+    font-weight: 400
+    margin: 18px 0
+    &:first-child
+      margin-top: 0
+  
+.ods__documentation-help-hub-sidebar-active 
+  right: 0
+
+.ods__documentation-help-hub-sidebar-separator
+  border-top: 1px solid white
+  margin: 5px 30px 15px 30px
+
+.ods__documentation-help-hub-langs
+  margin-bottom: 200px
+  a
+    padding: 10px 0
+    text-transform: uppercase
+    color: $blue-hover
+    background-color: white
+    font-size: 16px
+    text-decoration: none
+    font-weight: 500
+    border-radius: 4px
+    padding: 7px
+    margin: 18px auto
+    &:last-child
+      margin-bottom: 0
+
+@media only screen and (max-width: $tablet-width - 1)  
+  .ods__documentation-header-nav-item-active
+    border-bottom: 2px solid white!important
+
+//- Desktop
+@media only screen and (min-width: $tablet-width) 
+  .ods__documentation-header-nav-item 
+    margin: 39px 20px
+  //- IE 10 / 11
+  @media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
+    .ods__documentation-header-nav-item
+      margin: 35px 20px 0 20px
+  
+  .ods__documentation-header-nav-item:first-child 
+    margin-left: 0px
+  
+  .ods__documentation-header-nav-item:last-child 
+    margin-right: 0px
+  
+  .ods__documentation-header-nav-item > a 
+    color: white
+    font-size: 18px
+    text-decoration: none
+    padding: 5px 0
+    border-bottom: 2px solid transparent
+  
+  .ods__documentation-header-nav-item > a:hover 
+    border-bottom: 2px solid white
+
+  .ods__documentation-header-nav-item-active > a
+    border-bottom: 2px solid white
+      
