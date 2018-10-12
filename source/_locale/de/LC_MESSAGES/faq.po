@@ -1,34 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, OpenDataSoft
+# Copyright (C) 2018, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 16:51+0100\n"
+"POT-Creation-Date: 2018-10-12 08:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Admin OpenDataSoft <admin@opendatasoft.com>, 2017\n"
+"Last-Translator: Proofread_DE1 <datawords.proofread.de1@gmail.com>, 2018\n"
 "Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: ../../source/faq.rst:6
-msgid "Expand All"
-msgstr "Alle Erweitern"
-
-#: ../../source/faq.rst:10
-msgid "Collapse All"
-msgstr "Alle Zusammenklappen"
 
 #: ../../source/faq.rst:2
 msgid "Frequently asked questions (FAQ)"
 msgstr "Häufig gestellte Fragen (FAQ)"
+
+#: ../../source/faq.rst:6
+msgid "Expand All"
+msgstr ""
+
+#: ../../source/faq.rst:10
+msgid "Collapse All"
+msgstr ""
 
 #: ../../source/faq.rst:14
 msgid "**What is OpenDataSoft?**"
@@ -793,6 +793,13 @@ msgstr ""
 msgid "**Does every dataset have its own APIs?**"
 msgstr "**Hat jeder Datensatz seine eigenen APIs?**"
 
+#: ../../source/faq.rst:343
+msgid ""
+"Whenever you publish a dataset, a dedicated API is created. See `APIs "
+"documentation <https://docs.opendatasoft.com/en/using_api/index.html>`_ for "
+"more information."
+msgstr ""
+
 #: ../../source/faq.rst:347
 msgid "**What are the compatible browsers for OpenDataSoft's platform?**"
 msgstr "**Welche Browser sind kompatibel mit der OpenDataSoft-Plattform?**"
@@ -821,7 +828,7 @@ msgstr "Windows"
 msgid "Internet Explorer"
 msgstr "Internet Explorer"
 
-#: ../../source/faq.rst:357 ../../source/faq.rst:360
+#: ../../source/faq.rst:357
 msgid "|iexplore|"
 msgstr "|iexplore|"
 
@@ -836,6 +843,10 @@ msgstr "Version 10+"
 #: ../../source/faq.rst:359
 msgid "Edge"
 msgstr "Edge"
+
+#: ../../source/faq.rst:360
+msgid "|edge|"
+msgstr ""
 
 #: ../../source/faq.rst:360 ../../source/faq.rst:360 ../../source/faq.rst:363
 #: ../../source/faq.rst:363 ../../source/faq.rst:366 ../../source/faq.rst:366
@@ -875,20 +886,3 @@ msgstr "|safari|"
 #: ../../source/faq.rst:369 ../../source/faq.rst:369
 msgid "Version 6+"
 msgstr "Version 6+"
-
-#: ../../source/faq.rst:343
-#, fuzzy
-msgid ""
-"Whenever you publish a dataset, a dedicated API is created. See `APIs "
-"documentation <https://docs.opendatasoft.com/en/using_api/index.html>`_ for "
-"more information."
-msgstr ""
-"Immer wenn Sie einen Datensatz veröffentlichen, wird eine API erstellt. "
-"Weitere Informationen siehe :doc:`APIs Dokumentation</using_api/index>`."
-
-#~ msgid ""
-#~ "Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs "
-#~ "documentation</using_api/index>` for more information."
-#~ msgstr ""
-#~ "Immer wenn Sie einen Datensatz veröffentlichen, wird eine API erstellt. "
-#~ "Weitere Informationen siehe :doc:`APIs Dokumentation</using_api/index>`."

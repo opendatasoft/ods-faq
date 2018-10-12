@@ -1,34 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, OpenDataSoft
+# Copyright (C) 2018, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 16:51+0100\n"
+"POT-Creation-Date: 2018-10-12 08:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2017\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-#: ../../source/platform_glossary.rst:6
-msgid "Expand All"
-msgstr "Tout Développer"
-
-#: ../../source/platform_glossary.rst:10
-msgid "Collapse All"
-msgstr "Tout Fermer"
 
 #: ../../source/platform_glossary.rst:2
 msgid "Glossary"
 msgstr "Glossaire"
+
+#: ../../source/platform_glossary.rst:6
+msgid "Expand All"
+msgstr "Tout afficher"
+
+#: ../../source/platform_glossary.rst:10
+msgid "Collapse All"
+msgstr "Tout refermer"
 
 #: ../../source/platform_glossary.rst:14
 msgid "Data glossary"
@@ -424,7 +424,7 @@ msgstr ""
 
 #: ../../source/platform_glossary.rst:118
 msgid "Harvester"
-msgstr "Moissonneur"
+msgstr "Harvester"
 
 #: ../../source/platform_glossary.rst:120
 msgid ""
@@ -486,6 +486,20 @@ msgstr "Métadonnées"
 #: ../../source/platform_glossary.rst:132
 msgid "|link_25|"
 msgstr "|link_25|"
+
+#: ../../source/platform_glossary.rst:134
+msgid ""
+"Metadata are \"data that provide information about other data\". Two types "
+"of metadata exist: structural metadata and descriptive metadata. Structural "
+"metadata are data about the rst-classs of data. Descriptive metadata use "
+"individual instances of application data or the data content."
+msgstr ""
+"Les métadonnées sont des \"données qui fournissent des informations sur "
+"d'autres données\". Il existe deux types de métadonnées: les métadonnées "
+"structurelles et les métadonnées descriptives. Les métadonnées structurelles"
+" sont des données sur les conteneurs de données. Les métadonnées "
+"descriptives utilisent des instances individuelles de données d'application "
+"ou de contenu de données."
 
 #: ../../source/platform_glossary.rst:135
 msgid "Publisher (dataset)"
@@ -712,7 +726,7 @@ msgstr ""
 
 #: ../../source/platform_glossary.rst:200
 msgid "Database"
-msgstr "Base de données"
+msgstr "Database"
 
 #: ../../source/platform_glossary.rst:202
 msgid "|link_39|"
@@ -1445,31 +1459,3 @@ msgstr ""
 " but de XML est d'aider les systèmes d'information à partager des données "
 "structurées notamment via Internet, à encoder des documents et à sérialiser "
 "des données."
-
-#: ../../source/platform_glossary.rst:134
-#, fuzzy
-msgid ""
-"Metadata are \"data that provide information about other data\". Two types "
-"of metadata exist: structural metadata and descriptive metadata. Structural "
-"metadata are data about the rst-classs of data. Descriptive metadata use "
-"individual instances of application data or the data content."
-msgstr ""
-"Les métadonnées sont des \"données qui fournissent des informations sur "
-"d'autres données\". Il existe deux types de métadonnées: les métadonnées "
-"structurelles et les métadonnées descriptives. Les métadonnées structurelles"
-" sont des données sur les conteneurs de données. Les métadonnées "
-"descriptives utilisent des instances individuelles de données d'application "
-"ou de contenu de données."
-
-#~ msgid ""
-#~ "Metadata are \"data that provide information about other data\". Two types "
-#~ "of metadata exist: structural metadata and descriptive metadata. Structural "
-#~ "metadata are data about the containers of data. Descriptive metadata use "
-#~ "individual instances of application data or the data content."
-#~ msgstr ""
-#~ "Les métadonnées sont des \"données qui fournissent des informations sur "
-#~ "d'autres données\". Il existe deux types de métadonnées: les métadonnées "
-#~ "structurelles et les métadonnées descriptives. Les métadonnées structurelles"
-#~ " sont des données sur les conteneurs de données. Les métadonnées "
-#~ "descriptives utilisent des instances individuelles de données d'application "
-#~ "ou de contenu de données."

@@ -54,7 +54,7 @@ source_suffix = ['.rst']
 #source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'faq_index'
 
 # General information about the project.
 now = datetime.datetime.now()
@@ -171,7 +171,9 @@ html_favicon = 'ods-favicon.ico'
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-#html_additional_pages = {}
+html_additional_pages = {
+  'index': 'index.html',
+}
 
 # If false, no module index is generated.
 #html_domain_indices = True

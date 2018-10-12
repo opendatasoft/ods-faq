@@ -6,8 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
-TRANSLATED_LANGUAGES = fr,es,de,it,nl
-LANGUAGES     = fr es de it nl en
+TRANSLATED_LANGUAGES = fr,es,de,nl
+LANGUAGES     = fr es de nl en
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -230,17 +230,17 @@ pull-translations-%:
 	@echo "Translations (.po) for $* retrieved from transifex."
 
 push-translations: clean html
-#ifeq ($(shell git symbolic-ref HEAD --short), develop)
+ifeq ($(shell git symbolic-ref HEAD --short), develop)
 	@echo "Building translation files"
 	@make gettext
 	@sphinx-intl update -p $(BUILDDIR)/locale -l $(TRANSLATED_LANGUAGES)
 	@sphinx-intl update-txconfig-resources --pot-dir $(BUILDDIR)/locale --transifex-project-name documentation-5
-#	@echo "Uploading translation files to Transifex"
-#	tx push -s
-#	@echo "Build finished. Translation templates (.pot) uploaded to transifex."
-#else
-#	@echo "You have to be on the develop branch to build translations"
-#endif
+	@echo "Uploading translation files to Transifex"
+	tx push -s
+	@echo "Build finished. Translation templates (.pot) uploaded to transifex."
+else
+	@echo "You have to be on the develop branch to build translations"
+endif
 
 localizedhtml: clean
 	@echo "Building translated html"
