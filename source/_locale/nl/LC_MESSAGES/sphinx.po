@@ -1,42 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, OpenDataSoft
+# Copyright (C) 2018, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 16:51+0100\n"
+"POT-Creation-Date: 2018-10-12 08:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../../source/_templates/versions.html:4
-msgid "lang"
-msgstr "taal"
+#: ../../source/_templates/header.html:17
+#: ../../source/_templates/header.html:41
+msgid "User guide"
+msgstr "Gebruikershandleiding"
 
-#: ../../source/_templates/versions.html:10
-msgid "Languages"
-msgstr "Talen"
-
-#: ../../source/_templates/versions.html:16
-msgid "On Github"
-msgstr "Op Github"
-
-#: ../../source/_templates/versions.html:18
-msgid "View project's source"
-msgstr "De born van het project bekijken"
-
-#: ../../source/_templates/versions.html:22
-msgid "Make the most of your data and APIs with OpenDataSoft."
-msgstr "Haal met OpenDataSoft het uiterste uit uw data en API's."
+#: ../../source/_templates/header.html:32
+#: ../../source/_templates/header.html:46
+msgid "Tutorials"
+msgstr "Handleidingen"
 
 #: ../../source/_templates/layout.html:114
 msgid "Search docs"
@@ -101,12 +91,22 @@ msgstr ""
 "Gebouwd met <a href=\"http://sphinx-doc.org/\">Sphinx</a> gebruik makend van een <a\n"
 "        href=\"https://github.com/snide/sphinx_rtd_theme\">thema</a> dat werd aangeleverd door <a href=\"https://readthedocs.org\">Lees de documenten</a>"
 
-#: ../../source/_templates/header.html:17
-#: ../../source/_templates/header.html:41
-msgid "User guide"
-msgstr "Handleiding"
+#: ../../source/_templates/versions.html:4
+msgid "lang"
+msgstr "taal"
 
-#: ../../source/_templates/header.html:32
-#: ../../source/_templates/header.html:46
-msgid "Tutorials"
-msgstr "Tutorials"
+#: ../../source/_templates/versions.html:10
+msgid "Languages"
+msgstr "Talen"
+
+#: ../../source/_templates/versions.html:16
+msgid "On Github"
+msgstr "Op Github"
+
+#: ../../source/_templates/versions.html:18
+msgid "View project's source"
+msgstr "De born van het project bekijken"
+
+#: ../../source/_templates/versions.html:22
+msgid "Make the most of your data and APIs with OpenDataSoft."
+msgstr "Haal met OpenDataSoft het uiterste uit uw data en API's."

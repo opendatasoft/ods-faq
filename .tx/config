@@ -1,0 +1,19 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[documentation-5.faq]
+file_filter = source/_locale/<lang>/LC_MESSAGES/faq.po
+source_file = build/locale/faq.pot
+source_lang = en
+
+[documentation-5.sphinx]
+file_filter = source/_locale/<lang>/LC_MESSAGES/sphinx.po
+source_file = build/locale/sphinx.pot
+source_lang = en
+
+[documentation-5.platform_glossary]
+file_filter = source/_locale/<lang>/LC_MESSAGES/platform_glossary.po
+source_file = build/locale/platform_glossary.pot
+source_lang = en
+
