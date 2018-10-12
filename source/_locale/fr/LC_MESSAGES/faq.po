@@ -830,7 +830,7 @@ msgstr "Windows"
 msgid "Internet Explorer"
 msgstr "Internet Explorer"
 
-#: ../../source/faq.rst:357 ../../source/faq.rst:360
+#: ../../source/faq.rst:357
 msgid "|iexplore|"
 msgstr "|iexplore|"
 
@@ -895,3 +895,7 @@ msgstr ""
 "Une API dédiée est créée à chaque fois que vous publiez un jeu de données. "
 "Voir la :doc:`documentation sur les API</using_api/index>` pour plus "
 "d'informations."
+
+#: ../../source/faq.rst:360
+msgid "|edge|"
+msgstr ""

@@ -827,7 +827,7 @@ msgstr "Windows"
 msgid "Internet Explorer"
 msgstr "Internet Explorer"
 
-#: ../../source/faq.rst:357 ../../source/faq.rst:360
+#: ../../source/faq.rst:357
 msgid "|iexplore|"
 msgstr "|iexplore|"
 
@@ -891,6 +891,10 @@ msgid ""
 msgstr ""
 "Wanneer u een dataset publiceert, wordt een speciale API aangemaakt. Zie "
 ":doc:`APIs documentation</using_api/index>` voor meer informatie."
+
+#: ../../source/faq.rst:360
+msgid "|edge|"
+msgstr ""
 
 #~ msgid ""
 #~ "Whenever you publish a dataset, a dedicated API is created. See :doc:`APIs "
