@@ -769,7 +769,7 @@ msgstr ""
 
 #: ../../source/faq.rst:319
 msgid "**What are APIs made for?**"
-msgstr "** À quoi servent les API ?**"
+msgstr "**À quoi servent les API ?**"
 
 #: ../../source/faq.rst:323
 msgid ""
