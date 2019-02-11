@@ -649,6 +649,9 @@ function generatedAfterDOMRendered (callback) {
         setTimeout(function () {
             $('.ods-theme-spinner').css('display', 'none');
             $('.wy-nav-content-wrap').css('display', 'block');
+            setTimeout(function () {
+                document.location.href += '';
+            });
         }, 1300);
     });
 }());
