@@ -1,15 +1,7 @@
-body
-  background-color: white
+$gutter: 1.7rem
 
-body, h1, h2, h3, p, a
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
-
-body, h1, h2, h3, p, th
-  color: $deep-blue
-
-//- plugin focus-visible
-.js-focus-visible :focus:not(.focus-visible)
-  outline: 0
+body, h1, h2, h3, h4, h5, h6, p, a
+  font-family: Helvetica,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif!important
 
 .wy-affix
   position: fixed
@@ -37,35 +29,32 @@ body, h1, h2, h3, p, th
     padding: 0 $base-font-size
 
 .wy-menu-vertical
+  @extend %text-100
   width: $nav-desktop-width
+  padding-right: $gutter
+  padding-bottom: 80px
+
   header, p.caption
-    height: $base-font-size * 2
-    display: inline-block
-    line-height: $base-font-size * 2
+    @extend %text-200
     padding: 0 $gutter
-    margin-bottom: 0
-    display: block
-    font-weight: bold
-    text-transform: uppercase
-    font-size: 80%
-    color: $menu-dark
+    margin: $spacing-300 0 $spacing-200 0
+    color: $gray-medium
     white-space: nowrap
 
-  ul
-    margin-bottom: 0
   li
+    //margin-right: $gutter
+    > a
+      margin-bottom: $gutter / 2
+      padding-right: 1rem
+      &:hover
+        color: $link-color !important
     &.divide-top
       border-top: solid 1px hsl(0, 0%, 25%)
     &.divide-bottom
       border-bottom: solid 1px hsl(0, 0%, 25%)
-    &.current
+    &.current-active
       a
-        color: $grey-dark
-        border-right: solid 1px darken($menu-vertical-background-color, 20%)
-        padding: $gutter / 4 $gutter * 1.5
-        &:hover
-          background: $blue-light!important
-          color: white!important
+        color: $gray-medium
     code
       border: none
       background: inherit
@@ -73,138 +62,95 @@ body, h1, h2, h3, p, th
       padding-left: 0
       padding-right: 0
     // Expand links
-    span.toctree-expand
-      display: none!important
-      float: left
-      margin-left: -1.2em
-      @extend .fa
-      @extend .fa-plus-square-o
-      font-size: .8em
-      line-height: 1.6em
-      color: darken($menu-link-medium, 20%)
 
-  // On state for the first level
-  li.on a, li.current > a
-    padding: $gutter / 4 $gutter
-    font-weight: bold
-    position: relative
-    border: none
-    padding-left: $gutter -4px
-    +font-smooth
-    &:hover
-      background: $blue-light
-      span.toctree-expand
-        color: white
     span.toctree-expand
+      font-size: 0.6rem !important
+      color: $light-500
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
       @extend .fa
-      @extend .fa-minus-square-o
-      display: block
-      font-size: .8em
-      line-height: 1.6em
-      color: $grey-dark
+      @extend .fa-chevron-down
+    &.current > a > span.toctree-expand
+      @extend .fa
+      @extend .fa-chevron-up
+    a:hover span.toctree-expand
+      color: $link-color !important
 
-  // This is the on state for pages beyond second level
-  li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3
+
+  li.toctree-l1
+    margin-top: $spacing-200
+  li.toctree-l1 a
+    margin-left: $gutter
+    color: $light-700
+  li.toctree-l2 a
+    margin-left: $gutter * 1.5 - ($gutter / 2)
+    padding-left: $gutter / 2
+    color: $gray-medium
+  li.toctree-l3 a
+    margin-left: $gutter * 2 - ($gutter / 2)
+    padding-left: $gutter / 2
+  li.toctree-l4 a
+    margin-left: $gutter * 2.5 - ($gutter / 2)
+    padding-left: $gutter / 2
+
+  li.toctree-l1, li.toctree-l2, li.toctree-l3
     > ul
       display: none
     &.current > ul
       display: block
-  li.toctree-l2
-    &.current
-      > a
-        padding: $gutter / 4 $gutter * 1.5
-      li.toctree-l3 > a
-        display: block
-        color: $grey-dark
-        padding: $gutter / 4 $gutter * 2.5
-    a:hover span.toctree-expand
-      color: white
-      background: $blue-light
-    span.toctree-expand
-      color: $grey-dark
-  li.toctree-l3
-    font-size: .9em
-    &.current
-      > a
-        padding: $gutter / 4 $gutter * 2.5
-      li.toctree-l4 > a
-        display: block
-        color: $grey-dark
-        padding: $gutter / 4 $gutter * 3.5
-    a:hover span.toctree-expand
-      color: white
-      background: $blue-light
-    span.toctree-expand
-      color: $grey-dark
-  li.toctree-l4
-    font-size: .9em
-    &.current
-      > a
-        padding: $gutter / 4 $gutter * 2.5
-      a:hover span.toctree-expand
-        color: white
-        background: $blue-light
-      span.toctree-expand
-        color: $grey-dark
 
-  li.current ul
-    display: block
-  li ul
-    margin-bottom: 0
-    display: none
+    &.current-active > ul ul
+      display: none
+
+
   .local-toc
     li ul
       display: block
-  li ul li a
-    margin-bottom: 0
-    color: $menu-link-light
-    font-weight: normal
   a
-    display: inline-block
-    line-height: 18px
-    padding: $gutter / 4 $gutter
     display: block
     position: relative
-    font-size: 90%
-    color: $grey-dark
+    text-align: left
+    justify-content: space-between
+    @extend %text-100
+    color: $gray-medium
+    text-transform: uppercase
     &:hover
-      background-color: $blue-light
       cursor: pointer
-      color: white
-      span.toctree-expand
-        color: white
-    &:active
-      cursor: pointer
-      span.toctree-expand
-        color: $grey-dark
+      color: $link-color
+    *
+      -ms-flex: 0 1 auto
+      flex-shrink: 1
+      max-width: 100%
+      overflow: hidden
 
 .current-active
-  background-color: $blue-ultra-light!important
   & > a
-    background-color: $blue-light!important
-    color: white!important
-    span.toctree-expand
-        color: white!important
-  & > ul
-    background-color: $blue-ultra-light!important
+    color: $link-color !important
+    &:hover
+      color: $link-color
 
 .wy-side-nav-search
   display: block
   width: $nav-desktop-width
-  padding: $gutter / 2
+  padding: $spacing-200 $spacing-200 0 $spacing-200
   z-index: $z-index-popover
-  background-color: white
   text-align: center
-  padding: $gutter / 2
+  //padding: $gutter / 2
   display: block
-  color: $grey-dark
-  margin-bottom: 0
-  margin-top: 5px
   input[type=text]
+    border: 1px solid #CBD2DB
+    border-radius: 2px
+    box-shadow: none
+    line-height: $base-line-height
+    height: $spacing-300
+    padding: 0.25rem 0.5rem
     width: 100%
-    border-radius: 50px
-    padding: 6px 20px
-    border-color: transparentize($grey-dark, 0.6)
+    &:hover
+      border-color: mix(#fff, #CBD2DB, 25%)
+    &:focus
+      border-color: $blue-light
   img
     display: none
     margin: auto auto $gutter / 2 auto
@@ -216,7 +162,6 @@ body, h1, h2, h3, p, th
   > a, .wy-dropdown > a
     color: $nav-search-color
     font-size: 100%
-    font-weight: bold
     display: none
     padding: $base-line-height / 6 $base-line-height / 4
     margin-bottom: $gutter / 2
@@ -242,13 +187,12 @@ body, h1, h2, h3, p, th
     display: none
 
 .wy-nav .wy-menu-vertical
+  @extend %text-100
   header
     color: $link-color
   a
-    color: $text-light
     &:hover
-      background-color: $link-color
-      color: $white
+      color: $link-color
 
 [data-menu-wrap]
   +transition(all .2s ease-in)
@@ -275,19 +219,16 @@ body, h1, h2, h3, p, th
 .wy-grid-for-nav
   position: absolute
   width: 100%
-  height: 100%
-  top: 100px
+  top: 80px
 
 .wy-nav-side
   position: fixed
-  top: 100px
+  top: 80px
   bottom: 0
   left: 0
-  padding-bottom: 2em
   width: $nav-desktop-width
   overflow-x: hidden
   overflow-y: hidden
-  min-height: 100%
   background: white
   z-index: $z-index-popover
 
@@ -297,6 +238,7 @@ body, h1, h2, h3, p, th
   overflow-x: hidden
   overflow-y: scroll
   height: 100%
+  -webkit-overflow-scrolling: touch
 
 .wy-nav-top
   display: none
@@ -310,7 +252,6 @@ body, h1, h2, h3, p, th
   +clearfix
   a
     color: $white
-    font-weight: bold
     +font-smooth
   img
     margin-right: $base-line-height / 2
@@ -325,168 +266,35 @@ body, h1, h2, h3, p, th
     cursor: pointer
     padding-top: inherit
 
+code,
+.rst-content tt,
+.rst-content code
+  white-space: pre-wrap
+  word-break: break-word
+
 .wy-nav-content-wrap
-  margin-top: 100px
   background: $section-background-color
-  min-height: 100%
-  max-width: 100%
-  left: 0
-  display: none
+  height: 100%
+  left: 300px
+  right: 0
+  position: fixed
+  width: auto
+  border-left: 1px solid $light-300
+  a
+    word-break: break-word
+
+@media screen and (max-width: $tablet-width)
+  .wy-nav-content-wrap
+    left: 0
+    position: relative
 
 .wy-nav-content
-  padding: 70px $gutter * 2
+  padding: 0 30% 130px $spacing-200
   height: 100%
-  max-width: 100% 
-  margin: auto
-
+  overflow-y: scroll
 @media screen and (min-width: 930px) and (max-width: 1099px)
   .wy-nav-content
-    padding: 70px 0
-    max-width: 80%
-  .section
-    width: auto!important
-
-.wrapper-expand-collapse
-  display: flex
-  justify-content: flex-end
-  margin-bottom: 50px
-
-.expand-collapse-items
-  margin: 0
-  position: absolute
-  display: none
-  cursor: pointer
-  font-weight: bold
-
-.expand-all-faq,
-.expand-all-glossary
-  color: transparentize($blue-light, 0.4)
-
-.collapse-all-faq,
-.collapse-all-glossary
-  color: $deep-blue
-
-.expand-all-faq::before,
-.expand-all-glossary::before,
-.collapse-all-faq::before,
-.collapse-all-glossary::before
-  font-family: FontAwesome
-  color: transparentize($blue-light, 0.4)
-  margin-right: 10px
-
-.expand-all-faq::before,
-.expand-all-glossary::before
-  content: "\f0d7"
-
-.collapse-all-faq::before,
-.collapse-all-glossary::before
-  content: "\f0d8"
-
-.wrapper-expand-collapse-items-active
-  display: block
-
-.section
-  width: 800px
-  margin: 0 auto
-  p, li, table
-    font-size: 18px
-  h1, h2
-    text-align: center
-  h1
-    margin: 0 0 30px 0
-  h2
-    margin: 70px 0 40px 0
-
-//- Content visible (Question FAQ / Category Glossary)
-.content-visible
-  border-radius: 4px
-  cursor: pointer
-  margin: 20px 0
-  padding: 0
-  font-size: 16px
-  color: transparentize($blue-light, 0.4)
-  li
-    margin: 0!important
-    list-style: none!important
-    display: flex
-    flex-direction: row
-    justify-content: flex-start
-    p
-      color: transparentize($blue-light, 0.4)
-  
-//- IE 10 / 11
-@media all and (-ms-high-contrast: active), (-ms-high-contrast:none)
-    .content-visible /* IE10 */
-      li
-        display: block
-
-.content-visible:hover
-  color: $deep-blue
-
-#glossary
-  .content-visible
-    font-weight: bold
-
-.content-visible-active
-  color: $deep-blue
-  li
-    p
-      color: $deep-blue!important
-
-//- Content hidden (Response FAQ / Tables Glossary)
-.content-hidden
-  margin-bottom: 0!important
-  padding: 10px 20px
-  display: none
-
-//- FAQ
-#frequently-asked-questions-faq
-  .carret-up, .carret-down
-    li::before
-      font-family: FontAwesome
-      color: $blue-ultra-light
-      margin-right: 10px
-      font-size: 22px
-  .carret-up
-    li::before
-      content: "\f0d8"
-  .carret-down
-    li::before 
-      content: "\f0d7"
-
-//- Glossary
-#glossary
-  margin-top: 65px
-
-  .carret-up::before, .carret-down::before
-    font-family: FontAwesome
-    color: $blue-ultra-light
-    margin-right: 10px
-    font-size: 22px
-  .carret-up::before
-    content: "\f0d8"
-  .carret-down::before 
-    content: "\f0d7"
-
-.ods-tooltip
-  position: absolute
-  height: auto
-  width: auto
-  border-radius: 4px
-  background-color: $blue-light
-  opacity: 0
-  p
-    margin: auto 10px
-    color: white
-    font-size: 14px
-    font-weight: 500
-  p::after
-      font-family: FontAwesome
-      content: "\f0ea"
-      margin-left: 10px
-
-.ods-tooltip-active
-  opacity: 1
+    padding: $gutter $gutter * 2
 
 .wy-body-mask
   position: fixed
@@ -499,6 +307,7 @@ body, h1, h2, h3, p, th
     display: block
 footer
   color: $footer-color
+  margin-top: $spacing-200
   p
     margin-bottom: $base-line-height / 2
   span.commit code
@@ -509,6 +318,7 @@ footer
     color: $footer-color
 
 .rst-footer-buttons
+  margin-bottom: $spacing-200
   &:before, &:after
     width: 100%
   +clearfix
@@ -539,6 +349,7 @@ footer
   .wy-nav-top
     display: block
   .wy-nav-side
+    border-right: 1px solid $light-300
     transition: 0.5s
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
@@ -551,6 +362,7 @@ footer
     width: auto
   .wy-side-nav-search
     width: auto
+
   .wy-menu.wy-menu-vertical
     width: auto
   .wy-nav-content-wrap
@@ -558,31 +370,20 @@ footer
     margin-left: 0
     width: 100%
     .wy-nav-content
-      max-width: 100%
-      padding: 40px 20px
+      overflow-y: hidden
+      padding: $gutter $gutter * 2
     &.shift
       overflow: hidden
-  .section
-    width: auto!important
 
 @media screen and (min-width: $nav-media-query)
   .wy-nav-content
     margin: 0
+    padding-top: $spacing-200
+    padding-left: 65px
     background: $section-background-color
-  .wy-side-nav-search
-    margin-bottom: $gutter / 2
-    margin-top: 10px
 
 @media print
   .rst-versions, footer, .wy-nav-side
     display: none
   .wy-nav-content-wrap
     margin-left: 0
-
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none)
-    .section 
-      td 
-        white-space: normal!important
-
-code, .rst-content tt, .rst-content code
-  white-space: normal
