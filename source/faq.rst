@@ -11,26 +11,26 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-visible
 
-    1. **What is OpenDataSoft?**
+    1. **What is Opendatasoft?**
 
 .. rst-class:: content-hidden
 
-    OpenDataSoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured
+    Opendatasoft is a turnkey SaaS platform developed for business users to easily share, publish and reuse structured
     datasets.
 
 .. rst-class:: content-visible
 
-    2. **Is OpenDataSoft open source?**
+    2. **Is Opendatasoft open source?**
 
 .. rst-class:: content-hidden
 
-    OpenDataSoft is not open source.
+    Opendatasoft is not open source.
 
-    OpenDataSoft is selling a service, not a software. However, some parts of the stack are open source.
+    Opendatasoft is selling a service, not a software. However, some parts of the stack are open source.
 
-    OpenDataSoft's front-end is open source. It is built and packaged as a set of AngularJS directives. This project can be accessed on `GitHub <https://github.com/opendatasoft/ods-widgets>`_ and comes with a full fledged documentation.
+    Opendatasoft's front-end is open source. It is built and packaged as a set of AngularJS directives. This project can be accessed on `GitHub <https://github.com/opendatasoft/ods-widgets>`_ and comes with a full fledged documentation.
 
-    OpenDataSoft is also already contributing to the `Elasticsearch <http://www.elasticsearch.org/>`_ project by releasing in the public space a set of plugins that we have developed and that we use internally:
+    Opendatasoft is also already contributing to the `Elasticsearch <http://www.elasticsearch.org/>`_ project by releasing in the public space a set of plugins that we have developed and that we use internally:
 
     * `Hierarchical facets plugin <https://github.com/opendatasoft/elasticsearch-aggregation-pathhierarchy>`_
     * `Geo aggregations plugin <https://github.com/opendatasoft/elasticsearch-plugin-geoshape>`_
@@ -38,15 +38,15 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-visible
 
-    3. **Is the OpenDataSoft team managing data on behalf of its customers?**
+    3. **Is the Opendatasoft team managing data on behalf of its customers?**
 
 .. rst-class:: content-hidden
    
     No.
 
-    OpenDataSoft sells a turnkey solution. Users manage their datasets on their domains by themselves. Of course, the OpenDataSoft support team is more than willing to help handling complex / specific data management issues.
+    Opendatasoft sells a turnkey solution. Users manage their datasets on their domains by themselves. Of course, the Opendatasoft support team is more than willing to help handling complex / specific data management issues.
 
-    Moreover, OpenDataSoft maintains a `data network <https://data.opendatasoft.com/>`_ which federates public datasets published by OpenDataSoft customers as well as datasets published by the OpenDataSoft staff.
+    Moreover, Opendatasoft maintains a `data network <https://data.opendatasoft.com/>`_ which federates public datasets published by Opendatasoft customers as well as datasets published by the Opendatasoft staff.
 
 .. rst-class:: content-visible
 
@@ -61,26 +61,26 @@ Frequently asked questions (FAQ)
     * Make data easy-to-understand for citizens
     * Provide open services to an ecosystem of developers / reusers
 
-    To that extent, having a data management tool tailored to your needs is mandatory and keep in mind that thanks to the Open APIs provided by OpenDataSoft, your national Open Data portal will always have the possibility to reference your public datasets.
+    To that extent, having a data management tool tailored to your needs is mandatory and keep in mind that thanks to the Open APIs provided by Opendatasoft, your national Open Data portal will always have the possibility to reference your public datasets.
 
 .. rst-class:: content-visible
 
-    5. **If I publish datasets on OpenDataSoft, will they automatically be available to everyone on the Web?**
+    5. **If I publish datasets on Opendatasoft, will they automatically be available to everyone on the Web?**
 
 .. rst-class:: content-hidden
     
     No.
 
-    The OpenDataSoft platform can be used for both public and private data management projects. A given platform can even
+    The Opendatasoft platform can be used for both public and private data management projects. A given platform can even
     host public and private datasets. It is also possible to define the ACL of a recordset at the dataset level.
 
 .. rst-class:: content-visible
 
-    6. **What file formats are supported by OpenDataSoft?**
+    6. **What file formats are supported by Opendatasoft?**
 
 .. rst-class:: content-hidden
 
-    The OpenDataSoft platform natively supports the following file formats:
+    The Opendatasoft platform natively supports the following file formats:
 
     * ``CSV````
     * ``GeoJSON``
@@ -94,23 +94,23 @@ Frequently asked questions (FAQ)
     * ``OpenDocument Spreadsheet``
     * ``Remotely stored files for any of the above formats (HTTP or FTP)``
 
-    Specific format parsers can also be made available by the OpenDataSoft team for specific requirements.
+    Specific format parsers can also be made available by the Opendatasoft team for specific requirements.
 
-    The OpenDataSoft platform is also able to connect to remote Web services. OpenDataSoft supports the following services in its standard version:
+    The Opendatasoft platform is also able to connect to remote Web services. Opendatasoft supports the following services in its standard version:
 
     * ``ArcGIS REST API``
     * ``RSS / Atom feeds``
-    * ``Salesforce / Force.com`` (you'll have to ask OpenDataSoft support to activate it on your domain)
+    * ``Salesforce / Force.com`` (you'll have to ask Opendatasoft support to activate it on your domain)
 
     Custom connectivity capabilities can be added upon request.
 
 .. rst-class:: content-visible
 
-    7. **What metadata standards does OpenDataSoft support?**
+    7. **What metadata standards does Opendatasoft support?**
 
 .. rst-class:: content-hidden
 
-    OpenDataSoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-dcat/>`_ to describe datasets. The following
+    Opendatasoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-dcat/>`_ to describe datasets. The following
     metadata are available by default:
 
     * ``title``
@@ -137,7 +137,7 @@ Frequently asked questions (FAQ)
     A full `INSPIRE <http://inspire.ec.europa.eu/index.cfm/pageid/101>`_ template is also available and can be activated on
     demand.
 
-    The metadata template can be customized (adding custom metadata). To do so, simply issue a support request from your OpenDataSoft's back-office.
+    The metadata template can be customized (adding custom metadata). To do so, simply issue a support request from your Opendatasoft's back-office.
 
 .. rst-class:: content-visible
 
@@ -149,7 +149,7 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-visible
 
-    9. **How could I modify the look & feel of my OpenDataSoft domain?**
+    9. **How could I modify the look & feel of my Opendatasoft domain?**
 
 .. rst-class:: content-hidden
 
@@ -161,7 +161,7 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    Use the security section in your dataset's configuration page in OpenDataSoft's back-office to give other users or groups of users a write access to the dataset. These users should also have access to your domain to access your dataset. If this is not the case already, you should contact your domain administrator.
+    Use the security section in your dataset's configuration page in Opendatasoft's back-office to give other users or groups of users a write access to the dataset. These users should also have access to your domain to access your dataset. If this is not the case already, you should contact your domain administrator.
 
 .. rst-class:: content-visible
 
@@ -179,7 +179,7 @@ Frequently asked questions (FAQ)
 
     Yes.
 
-    OpenDataSoft supports Google and ESRI geocoding services. However, OpenDataSoft doesn't come with geocoding API keys.
+    Opendatasoft supports Google and ESRI geocoding services. However, Opendatasoft doesn't come with geocoding API keys.
     The domain administrator has to configure a geocoding API key for one of these services in the back-office configuration (*Configuration > Data processing*).
 
 .. rst-class:: content-visible
@@ -199,7 +199,7 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    Facets are the backbone of most of the features made available by the OpenDataSoft platform. A facet is simply a field
+    Facets are the backbone of most of the features made available by the Opendatasoft platform. A facet is simply a field
     which has been given specific filtering and aggregation capabilities.
 
     .. image:: faq__facet-configuration--en.jpg
@@ -234,7 +234,7 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-visible
 
-    15. **I have an OpenDataSoft free trial account, how can I get a premium account?**
+    15. **I have an Opendatasoft free trial account, how can I get a premium account?**
 
 .. rst-class:: content-hidden
 
@@ -291,11 +291,11 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    There are three ways to embed OpenDataSoft's data visualizations on a website or any content management system:
+    There are three ways to embed Opendatasoft's data visualizations on a website or any content management system:
 
-    * Copy-paste the embed code that can directly be found on the OpenDataSoft platform (usually located under the data visualization itself).
+    * Copy-paste the embed code that can directly be found on the Opendatasoft platform (usually located under the data visualization itself).
     * Use `ODS Widgets, our open source widget library <https://github.com/opendatasoft/ods-widgets>`_ to build content pages tailored to your needs with one or several data visualizations at once.
-    * Use OpenDataSoft's HTTP/REST APIs to develop your own embed.
+    * Use Opendatasoft's HTTP/REST APIs to develop your own embed.
 
 .. rst-class:: content-visible
 
@@ -303,8 +303,8 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    Cartograph is a tool developed by OpenDataSoft to make it possible to build geo mashups out of datasets stored on the
-    OpenDataSoft platform.
+    Cartograph is a tool developed by Opendatasoft to make it possible to build geo mashups out of datasets stored on the
+    Opendatasoft platform.
 
 .. rst-class:: content-visible
 
@@ -312,7 +312,7 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    API is an acronym for Applications Programming Interface. An API is a set of methods for computer programs to exchange information in an autonomous way. OpenDataSoft APIs allow for remote access to datasets using the HTTP protocol.
+    API is an acronym for Applications Programming Interface. An API is a set of methods for computer programs to exchange information in an autonomous way. Opendatasoft APIs allow for remote access to datasets using the HTTP protocol.
 
 .. rst-class:: content-visible
 
@@ -329,8 +329,8 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    API endpoints are associated with quotas. OpenDataSoft customers can configure their own quotas policy. Contact your
-    OpenDataSoft domain owner for more details.
+    API endpoints are associated with quotas. Opendatasoft customers can configure their own quotas policy. Contact your
+    Opendatasoft domain owner for more details.
 
 .. rst-class:: content-visible
 
@@ -344,7 +344,7 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-visible
 
-    25. **What are the compatible browsers for OpenDataSoft's platform?**
+    25. **What are the compatible browsers for Opendatasoft's platform?**
 
 .. rst-class:: content-hidden
 

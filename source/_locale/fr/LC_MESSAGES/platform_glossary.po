@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 08:38+0200\n"
+"POT-Creation-Date: 2019-05-09 16:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
@@ -223,8 +223,8 @@ msgstr ""
 "structure de données facilement lisible par une machine."
 
 #: ../../source/platform_glossary.rst:66
-msgid "OpenDataSoft glossary"
-msgstr "Glossaire OpenDataSoft"
+msgid "Opendatasoft glossary"
+msgstr "Glossaire Opendatasoft"
 
 #: ../../source/platform_glossary.rst:75
 msgid "Assets"
@@ -287,7 +287,7 @@ msgid ""
 "customize X and Y axes and colors"
 msgstr ""
 "L'éditeur de graphe est la solution de construction de graphes "
-"d'OpenDataSoft. Avec l'éditeur de graphe, vous pouvez choisir le type de "
+"d'Opendatasoft. Avec l'éditeur de graphe, vous pouvez choisir le type de "
 "visualisation, choisir les données à afficher et personnaliser les axes X et"
 " Y ou les couleurs. "
 
@@ -475,7 +475,7 @@ msgid ""
 "you can quickly add datasets to a geographical view and customize the "
 "colors, data clustering methods and tooltips."
 msgstr ""
-"Editeur de cartes est la solution de création de cartes OpenDataSoft. Avec "
+"Editeur de cartes est la solution de création de cartes Opendatasoft. Avec "
 "l'éditeur de carte, vous pouvez ajouter des jeux de données sur une vue "
 "géographique et personnaliser les couleurs, l'aggrégation et les infobulles."
 

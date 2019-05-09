@@ -63,7 +63,7 @@ Glossary
 
 .. rst-class:: content-visible
 
-  OpenDataSoft glossary
+  Opendatasoft glossary
 
 .. rst-class:: content-hidden
 
