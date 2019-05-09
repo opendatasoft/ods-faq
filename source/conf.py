@@ -34,7 +34,6 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
-    'rst2pdf.pdfbuilder',
     'localizedimage',
 ]
 
