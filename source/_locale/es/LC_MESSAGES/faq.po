@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 08:38+0200\n"
+"POT-Creation-Date: 2019-05-09 16:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
@@ -31,53 +31,53 @@ msgid "Collapse All"
 msgstr ""
 
 #: ../../source/faq.rst:14
-msgid "**What is OpenDataSoft?**"
-msgstr "**¿Qué es OpenDataSoft?**"
+msgid "**What is Opendatasoft?**"
+msgstr "**¿Qué es Opendatasoft?**"
 
 #: ../../source/faq.rst:18
 msgid ""
-"OpenDataSoft is a turnkey SaaS platform developed for business users to "
+"Opendatasoft is a turnkey SaaS platform developed for business users to "
 "easily share, publish and reuse structured datasets."
 msgstr ""
-"OpenDataSoft es una plataforma SaaS llave en mano desarrollada para que los "
+"Opendatasoft es una plataforma SaaS llave en mano desarrollada para que los "
 "usuarios profesionales compartan, publiquen y reutilicen fácilmente "
 "conjuntos de datos estructurados."
 
 #: ../../source/faq.rst:23
-msgid "**Is OpenDataSoft open source?**"
-msgstr "**¿OpenDataSoft es de código abierto?**"
+msgid "**Is Opendatasoft open source?**"
+msgstr "**¿Opendatasoft es de código abierto?**"
 
 #: ../../source/faq.rst:27
-msgid "OpenDataSoft is not open source."
-msgstr "OpenDataSoft no es de código abierto."
+msgid "Opendatasoft is not open source."
+msgstr "Opendatasoft no es de código abierto."
 
 #: ../../source/faq.rst:29
 msgid ""
-"OpenDataSoft is selling a service, not a software. However, some parts of "
+"Opendatasoft is selling a service, not a software. However, some parts of "
 "the stack are open source."
 msgstr ""
-"OpenDataSoft ofrece un servicio, no un software. Sin embargo, algunas partes"
+"Opendatasoft ofrece un servicio, no un software. Sin embargo, algunas partes"
 " de la pila son de código abierto."
 
 #: ../../source/faq.rst:31
 msgid ""
-"OpenDataSoft's front-end is open source. It is built and packaged as a set "
+"Opendatasoft's front-end is open source. It is built and packaged as a set "
 "of AngularJS directives. This project can be accessed on `GitHub "
 "<https://github.com/opendatasoft/ods-widgets>`_ and comes with a full "
 "fledged documentation."
 msgstr ""
-"El front end de OpenDataSoft es de código abierto. Se ha compilado y "
+"El front end de Opendatasoft es de código abierto. Se ha compilado y "
 "empaquetado como un conjunto de directivas AngularJS. Se puede acceder a "
 "este proyecto en `GitHub <https://github.com/opendatasoft/ods-widgets>`_, "
 "que incluye una completa documentación."
 
 #: ../../source/faq.rst:33
 msgid ""
-"OpenDataSoft is also already contributing to the `Elasticsearch "
+"Opendatasoft is also already contributing to the `Elasticsearch "
 "<http://www.elasticsearch.org/>`_ project by releasing in the public space a"
 " set of plugins that we have developed and that we use internally:"
 msgstr ""
-"Asimismo, OpenDataSoft contribuye al proyecto `Elasticsearch "
+"Asimismo, Opendatasoft contribuye al proyecto `Elasticsearch "
 "<http://www.elasticsearch.org/>`_ mediante la difusión pública de un "
 "conjunto de complementos que hemos desarrollado y utilizamos internamente:"
 
@@ -106,9 +106,9 @@ msgstr ""
 "<https://github.com/opendatasoft/elasticsearch-aggregation-envelope>`_"
 
 #: ../../source/faq.rst:41
-msgid "**Is the OpenDataSoft team managing data on behalf of its customers?**"
+msgid "**Is the Opendatasoft team managing data on behalf of its customers?**"
 msgstr ""
-"**¿El equipo de OpenDataSoft administra los datos en nombre de sus "
+"**¿El equipo de Opendatasoft administra los datos en nombre de sus "
 "clientes?**"
 
 #: ../../source/faq.rst:45 ../../source/faq.rst:72
@@ -117,26 +117,26 @@ msgstr "No."
 
 #: ../../source/faq.rst:47
 msgid ""
-"OpenDataSoft sells a turnkey solution. Users manage their datasets on their "
-"domains by themselves. Of course, the OpenDataSoft support team is more than"
+"Opendatasoft sells a turnkey solution. Users manage their datasets on their "
+"domains by themselves. Of course, the Opendatasoft support team is more than"
 " willing to help handling complex / specific data management issues."
 msgstr ""
-"OpenDataSoft ofrece una solución llave en mano. Los usuarios administran los"
+"Opendatasoft ofrece una solución llave en mano. Los usuarios administran los"
 " conjuntos de datos de sus dominios por sí mismos. Obviamente, el equipo de "
-"soporte de OpenDataSoft está a su entera disposición para ayudar a resolver "
+"soporte de Opendatasoft está a su entera disposición para ayudar a resolver "
 "las cuestiones de administración de datos complejas o específicas."
 
 #: ../../source/faq.rst:49
 msgid ""
-"Moreover, OpenDataSoft maintains a `data network "
+"Moreover, Opendatasoft maintains a `data network "
 "<https://data.opendatasoft.com/>`_ which federates public datasets published"
-" by OpenDataSoft customers as well as datasets published by the OpenDataSoft"
+" by Opendatasoft customers as well as datasets published by the Opendatasoft"
 " staff."
 msgstr ""
-"Además, OpenDataSoft mantiene una `red de datos "
+"Además, Opendatasoft mantiene una `red de datos "
 "<https://data.opendatasoft.com/>`_ que federa conjuntos de datos públicos "
-"publicados por los clientes de OpenDataSoft y conjuntos de datos publicados "
-"por el personal de OpenDataSoft."
+"publicados por los clientes de Opendatasoft y conjuntos de datos publicados "
+"por el personal de Opendatasoft."
 
 #: ../../source/faq.rst:53
 msgid ""
@@ -175,44 +175,44 @@ msgstr ""
 msgid ""
 "To that extent, having a data management tool tailored to your needs is "
 "mandatory and keep in mind that thanks to the Open APIs provided by "
-"OpenDataSoft, your national Open Data portal will always have the "
+"Opendatasoft, your national Open Data portal will always have the "
 "possibility to reference your public datasets."
 msgstr ""
 "En este sentido, es imprescindible que cuente con una herramienta de "
 "administración de datos ajustada a sus necesidades y, gracias a las "
-"interfaces API abiertas suministradas por OpenDataSoft, su portal nacional "
+"interfaces API abiertas suministradas por Opendatasoft, su portal nacional "
 "de datos abiertos siempre tendrá la posibilidad de hacer referencia a sus "
 "conjuntos de datos públicos."
 
 #: ../../source/faq.rst:68
 msgid ""
-"**If I publish datasets on OpenDataSoft, will they automatically be "
+"**If I publish datasets on Opendatasoft, will they automatically be "
 "available to everyone on the Web?**"
 msgstr ""
-"**Si publico conjuntos de datos en OpenDataSoft, ¿automáticamente estarán "
+"**Si publico conjuntos de datos en Opendatasoft, ¿automáticamente estarán "
 "disponibles para todos los internautas?**"
 
 #: ../../source/faq.rst:74
 msgid ""
-"The OpenDataSoft platform can be used for both public and private data "
+"The Opendatasoft platform can be used for both public and private data "
 "management projects. A given platform can even host public and private "
 "datasets. It is also possible to define the ACL of a recordset at the "
 "dataset level."
 msgstr ""
-"La plataforma OpenDataSoft se puede usar para proyectos de administración de"
+"La plataforma Opendatasoft se puede usar para proyectos de administración de"
 " datos públicos y privados. Incluso una misma plataforma puede alojar "
 "conjuntos de datos públicos y privados. También es posible definir la ACL de"
 " un conjunto de registros a nivel de conjunto de datos."
 
 #: ../../source/faq.rst:79
-msgid "**What file formats are supported by OpenDataSoft?**"
-msgstr "**¿Qué formatos de archivo admite OpenDataSoft?**"
+msgid "**What file formats are supported by Opendatasoft?**"
+msgstr "**¿Qué formatos de archivo admite Opendatasoft?**"
 
 #: ../../source/faq.rst:83
 msgid ""
-"The OpenDataSoft platform natively supports the following file formats:"
+"The Opendatasoft platform natively supports the following file formats:"
 msgstr ""
-"La plataforma OpenDataSoft admite de forma nativa los formatos de archivo "
+"La plataforma Opendatasoft admite de forma nativa los formatos de archivo "
 "siguientes:"
 
 #: ../../source/faq.rst:85
@@ -263,19 +263,19 @@ msgstr ""
 
 #: ../../source/faq.rst:97
 msgid ""
-"Specific format parsers can also be made available by the OpenDataSoft team "
+"Specific format parsers can also be made available by the Opendatasoft team "
 "for specific requirements."
 msgstr ""
-"El equipo de OpenDataSoft también puede poner a su disposición analizadores "
+"El equipo de Opendatasoft también puede poner a su disposición analizadores "
 "de formatos específicos a fin de atender requisitos concretos."
 
 #: ../../source/faq.rst:99
 msgid ""
-"The OpenDataSoft platform is also able to connect to remote Web services. "
-"OpenDataSoft supports the following services in its standard version:"
+"The Opendatasoft platform is also able to connect to remote Web services. "
+"Opendatasoft supports the following services in its standard version:"
 msgstr ""
-"La plataforma OpenDataSoft también puede conectar con servicios web remotos."
-" OpenDataSoft admite los servicios siguientes en la versión estándar:"
+"La plataforma Opendatasoft también puede conectar con servicios web remotos."
+" Opendatasoft admite los servicios siguientes en la versión estándar:"
 
 #: ../../source/faq.rst:101
 msgid "``ArcGIS REST API``"
@@ -287,10 +287,10 @@ msgstr "``RSS / Atom feeds``"
 
 #: ../../source/faq.rst:103
 msgid ""
-"``Salesforce / Force.com`` (you'll have to ask OpenDataSoft support to "
+"``Salesforce / Force.com`` (you'll have to ask Opendatasoft support to "
 "activate it on your domain)"
 msgstr ""
-"``Salesforce/Force.com`` (deberá pedir al equipo de soporte de OpenDataSoft "
+"``Salesforce/Force.com`` (deberá pedir al equipo de soporte de Opendatasoft "
 "que lo active en su dominio)"
 
 #: ../../source/faq.rst:105
@@ -299,16 +299,16 @@ msgstr ""
 "Se pueden añadir posibilidades de conectividad personalizadas a petición."
 
 #: ../../source/faq.rst:109
-msgid "**What metadata standards does OpenDataSoft support?**"
-msgstr "**¿Qué estándares de metadatos admite OpenDataSoft?**"
+msgid "**What metadata standards does Opendatasoft support?**"
+msgstr "**¿Qué estándares de metadatos admite Opendatasoft?**"
 
 #: ../../source/faq.rst:113
 msgid ""
-"OpenDataSoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-"
+"Opendatasoft natively uses a subset of `DCAT <http://www.w3.org/TR/vocab-"
 "dcat/>`_ to describe datasets. The following metadata are available by "
 "default:"
 msgstr ""
-"OpenDataSoft utiliza de manera nativa un subconjunto de `DCAT "
+"Opendatasoft utiliza de manera nativa un subconjunto de `DCAT "
 "<http://www.w3.org/TR/vocab-dcat/>`_ para describir los conjuntos de datos. "
 "De forma predeterminada, están disponibles los metadatos siguientes:"
 
@@ -400,11 +400,11 @@ msgstr ""
 #: ../../source/faq.rst:140
 msgid ""
 "The metadata template can be customized (adding custom metadata). To do so, "
-"simply issue a support request from your OpenDataSoft's back-office."
+"simply issue a support request from your Opendatasoft's back-office."
 msgstr ""
 "La plantilla de metadatos se puede personalizar (añadiendo metadatos "
 "personalizados). Para ello, simplemente ejecute una solicitud de soporte "
-"desde el back office de OpenDataSoft."
+"desde el back office de Opendatasoft."
 
 #: ../../source/faq.rst:144
 msgid "**How many datasets can I create?**"
@@ -419,9 +419,9 @@ msgstr ""
 "establecido en el plan de licencia."
 
 #: ../../source/faq.rst:152
-msgid "**How could I modify the look & feel of my OpenDataSoft domain?**"
+msgid "**How could I modify the look & feel of my Opendatasoft domain?**"
 msgstr ""
-"**¿Cómo puedo modificar la apariencia de mi dominio de OpenDataSoft?**"
+"**¿Cómo puedo modificar la apariencia de mi dominio de Opendatasoft?**"
 
 #: ../../source/faq.rst:156
 msgid ""
@@ -443,13 +443,13 @@ msgstr ""
 #: ../../source/faq.rst:164
 msgid ""
 "Use the security section in your dataset's configuration page in "
-"OpenDataSoft's back-office to give other users or groups of users a write "
+"Opendatasoft's back-office to give other users or groups of users a write "
 "access to the dataset. These users should also have access to your domain to"
 " access your dataset. If this is not the case already, you should contact "
 "your domain administrator."
 msgstr ""
 "Utilice la sección de seguridad de la página de configuración del conjunto "
-"de datos en el back office de OpenDataSoft para dar a otros usuarios o "
+"de datos en el back office de Opendatasoft para dar a otros usuarios o "
 "grupos de usuarios acceso de escritura al conjunto de datos. Estos usuarios "
 "también deberían tener acceso al dominio para acceder al conjunto de datos. "
 "Si no es así, póngase en contacto con el administrador del dominio."
@@ -477,13 +477,13 @@ msgstr "Sí."
 
 #: ../../source/faq.rst:182
 msgid ""
-"OpenDataSoft supports Google and ESRI geocoding services. However, "
-"OpenDataSoft doesn't come with geocoding API keys. The domain administrator "
+"Opendatasoft supports Google and ESRI geocoding services. However, "
+"Opendatasoft doesn't come with geocoding API keys. The domain administrator "
 "has to configure a geocoding API key for one of these services in the back-"
 "office configuration (*Configuration > Data processing*)."
 msgstr ""
-"OpenDataSoft admite los servicios de geocodificación de Google y ESRI. No "
-"obstante, OpenDataSoft no suministra las claves de la API de "
+"Opendatasoft admite los servicios de geocodificación de Google y ESRI. No "
+"obstante, Opendatasoft no suministra las claves de la API de "
 "geocodificación. El administrador del dominio tiene que configurar una clave"
 " de API de geocodificación para uno de estos servicios en la configuración "
 "del back office (*Configuración > Procesamiento de datos*)."
@@ -520,11 +520,11 @@ msgstr "**¿Qué es una faceta?**"
 #: ../../source/faq.rst:202
 msgid ""
 "Facets are the backbone of most of the features made available by the "
-"OpenDataSoft platform. A facet is simply a field which has been given "
+"Opendatasoft platform. A facet is simply a field which has been given "
 "specific filtering and aggregation capabilities."
 msgstr ""
 "Las facetas constituyen la espina dorsal de la mayoría de las funciones "
-"disponibles a través de la plataforma OpenDataSoft. Una faceta es "
+"disponibles a través de la plataforma Opendatasoft. Una faceta es "
 "simplemente un campo con posibilidades de filtro y agregación específicas."
 
 #: ../../source/faq.rst:208
@@ -599,10 +599,10 @@ msgstr ""
 
 #: ../../source/faq.rst:237
 msgid ""
-"**I have an OpenDataSoft free trial account, how can I get a premium "
+"**I have an Opendatasoft free trial account, how can I get a premium "
 "account?**"
 msgstr ""
-"**Tengo una cuenta OpenDataSoft de prueba gratuita, ¿cómo puedo conseguir "
+"**Tengo una cuenta Opendatasoft de prueba gratuita, ¿cómo puedo conseguir "
 "una cuenta Premium?**"
 
 #: ../../source/faq.rst:241
@@ -707,19 +707,19 @@ msgstr "**¿Cómo puedo incrustar una visualización de datos en mi sitio web?**
 
 #: ../../source/faq.rst:294
 msgid ""
-"There are three ways to embed OpenDataSoft's data visualizations on a "
+"There are three ways to embed Opendatasoft's data visualizations on a "
 "website or any content management system:"
 msgstr ""
-"Hay 3 formas de incrustar visualizaciones de datos de OpenDataSoft en un "
+"Hay 3 formas de incrustar visualizaciones de datos de Opendatasoft en un "
 "sitio web o cualquier sistema de administración de contenido:"
 
 #: ../../source/faq.rst:296
 msgid ""
-"Copy-paste the embed code that can directly be found on the OpenDataSoft "
+"Copy-paste the embed code that can directly be found on the Opendatasoft "
 "platform (usually located under the data visualization itself)."
 msgstr ""
 "Copie y pegue el código de incrustación que encontrará directamente en la "
-"plataforma OpenDataSoft (suele aparecer bajo la misma visualización de "
+"plataforma Opendatasoft (suele aparecer bajo la misma visualización de "
 "datos)."
 
 #: ../../source/faq.rst:297
@@ -734,9 +734,9 @@ msgstr ""
 "de datos a la vez."
 
 #: ../../source/faq.rst:298
-msgid "Use OpenDataSoft's HTTP/REST APIs to develop your own embed."
+msgid "Use Opendatasoft's HTTP/REST APIs to develop your own embed."
 msgstr ""
-"Utilice las interfaces API HTTP/REST de OpenDataSoft para desarrollar su "
+"Utilice las interfaces API HTTP/REST de Opendatasoft para desarrollar su "
 "propia incrustación."
 
 #: ../../source/faq.rst:302
@@ -745,12 +745,12 @@ msgstr "**¿Qué es \"Cartografía\"?**"
 
 #: ../../source/faq.rst:306
 msgid ""
-"Cartograph is a tool developed by OpenDataSoft to make it possible to build "
-"geo mashups out of datasets stored on the OpenDataSoft platform."
+"Cartograph is a tool developed by Opendatasoft to make it possible to build "
+"geo mashups out of datasets stored on the Opendatasoft platform."
 msgstr ""
-"Cartografía es una herramienta desarrollada por OpenDataSoft para permitir "
+"Cartografía es una herramienta desarrollada por Opendatasoft para permitir "
 "compilar mashups geográficos a partir de conjuntos de datos almacenados en "
-"la plataforma OpenDataSoft."
+"la plataforma Opendatasoft."
 
 #: ../../source/faq.rst:311
 msgid "**What does API mean?**"
@@ -760,13 +760,13 @@ msgstr "**¿Qué significa API?**"
 msgid ""
 "API is an acronym for Applications Programming Interface. An API is a set of"
 " methods for computer programs to exchange information in an autonomous way."
-" OpenDataSoft APIs allow for remote access to datasets using the HTTP "
+" Opendatasoft APIs allow for remote access to datasets using the HTTP "
 "protocol."
 msgstr ""
 "API es un acrónimo de Application Programming Interface (interfaz de "
 "programación de aplicaciones). Una API es un conjunto de métodos pensados "
 "para permitir a los programas informáticos intercambiar información de forma"
-" autónoma. Las interfaces API de OpenDataSoft facilitan el acceso remoto a "
+" autónoma. Las interfaces API de Opendatasoft facilitan el acceso remoto a "
 "los conjuntos de datos mediante el protocolo HTTP."
 
 #: ../../source/faq.rst:319
@@ -789,13 +789,13 @@ msgstr "**¿Cuántas llamadas de API puedo realizar?**"
 
 #: ../../source/faq.rst:332
 msgid ""
-"API endpoints are associated with quotas. OpenDataSoft customers can "
-"configure their own quotas policy. Contact your OpenDataSoft domain owner "
+"API endpoints are associated with quotas. Opendatasoft customers can "
+"configure their own quotas policy. Contact your Opendatasoft domain owner "
 "for more details."
 msgstr ""
-"Los extremos de API tienen asociadas cuotas. Los clientes de OpenDataSoft "
+"Los extremos de API tienen asociadas cuotas. Los clientes de Opendatasoft "
 "pueden configurar su propia directiva de cuotas. Póngase en contacto con el "
-"propietario del dominio OpenDataSoft para obtener más detalles."
+"propietario del dominio Opendatasoft para obtener más detalles."
 
 #: ../../source/faq.rst:337
 msgid "**Does every dataset have its own APIs?**"
@@ -810,9 +810,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/faq.rst:347
-msgid "**What are the compatible browsers for OpenDataSoft's platform?**"
+msgid "**What are the compatible browsers for Opendatasoft's platform?**"
 msgstr ""
-"**¿Cuáles son los exploradores compatibles con la plataforma OpenDataSoft?**"
+"**¿Cuáles son los exploradores compatibles con la plataforma Opendatasoft?**"
 
 #: ../../source/faq.rst:354
 msgid "OS"
