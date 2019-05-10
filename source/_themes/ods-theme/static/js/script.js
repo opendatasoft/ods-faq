@@ -606,8 +606,15 @@ function generatedAfterDOMRendered (callback) {
     }
 
     //- Wrap div around p
-    $(elementsExpandCollapseFAQ).wrapAll(wrapperPattern);
-    $(elementsExpandCollapseGlossary).wrapAll(wrapperPattern);
+    var wrapper = $(wrapperPattern);
+    sectionFAQElement.find('h1').appendTo(wrapper);
+    $(elementsExpandCollapseFAQ).appendTo(wrapper);
+    wrapper.prependTo(sectionFAQElement);
+
+    wrapper = $(wrapperPattern);
+    sectionGlossaryElement.find('h1').appendTo(wrapper);
+    $(elementsExpandCollapseGlossary).appendTo(wrapper);
+    wrapper.prependTo(sectionGlossaryElement);
 
     //- Add class active to expand all
     $(elementClickExpandFAQ).addClass(expandCollapseClassActive);
