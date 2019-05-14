@@ -1,77 +1,35 @@
-.footer-container 
+$footer-height: 50px
+
+.footer-container
     display: flex
-    flex-direction: column
-    justify-content: center
-    background-color: $blue-light
-    height: 60px
-    max-width: 100%
-//- IE 10 / 11
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
-    .footer-container
-        display: block
-        height: 90px
-        padding: 10px 0
+    display: -ms-flexbox
+    justify-content: space-between
+    -ms-flex-pack: justify
+    align-items: center
+    -ms-flex-align: center
+    background-color: $light-100
+    border-top: 1px solid $light-300
+    height: $footer-height
+    width: 100%
 
-@media only screen and (max-width: $tablet-width)
-    .footer-container
-        position: relative
-        z-index: 50
-        border: 1px solid white
-
-.footer-container__logo 
-    margin: auto
-    height: 40px
-    img
-        height: 40px
-        
-//- IE 10 / 11
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
-    .footer-container__logo
-        display: block
+.footer-container__logo
+    margin: $spacing-100 0 $spacing-100 $spacing-300
 
 .footer-container__langs
-    position: absolute
-    right: 0
-    width: auto
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    margin: 0 30px 11px 0
-//- IE 10 / 11
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast:none) 
-    .footer-container__langs
-        margin: 0 30px 0 0
-
-@media only screen and (max-width: $tablet-width)
-    .footer-container__langs
-        display: none
+    margin: 0 $spacing-300
 
 .footer-container__langs-items
-    padding: 7px
-    border-radius: 4px
-    margin: 0 20px
-    background-color: white
-    color: $blue-hover
+    @extend %text-100
+    color: $light-700
     text-transform: uppercase
-    font-weight: 500
-    &:first-child
-        margin-left: 0
-    &:last-child
-        margin-right: 0
+    margin-right: $spacing-50
 
-.footer-container__langs-items:visited
-    color: $blue-hover
+    &:visited
+        color: $light-700
 
-.footer-container__langs-items:hover,
-.footer-container__langs-items:focus
-    background-color: $blue-hover!important 
-    color: white!important
+    &:hover,
+    &.lang-active
+        color: $link-color
 
 #currentLang
     display: none
-
-.lang-active
-    background-color: $blue-hover!important 
-    color: white!important
-    &:visited
-        color: $white

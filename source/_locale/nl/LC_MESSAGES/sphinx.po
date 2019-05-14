@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 08:38+0200\n"
+"POT-Creation-Date: 2019-05-09 16:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
@@ -108,5 +108,5 @@ msgid "View project's source"
 msgstr "De born van het project bekijken"
 
 #: ../../source/_templates/versions.html:22
-msgid "Make the most of your data and APIs with OpenDataSoft."
-msgstr "Haal met OpenDataSoft het uiterste uit uw data en API's."
+msgid "Make the most of your data and APIs with Opendatasoft."
+msgstr "Haal met Opendatasoft het uiterste uit uw data en API's."

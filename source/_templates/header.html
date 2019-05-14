@@ -3,7 +3,7 @@
         <div class="ods__documentation-header-logo">
             <div class="ods__documentation-header-block-hidden"></div>
             <a class="ods__documentation-header-logo-link" href="{{ pathto(master_doc) }}">
-                <img src="{{ pathto('_static/' + logo, 1) }}" alt="OpenDataSoft FAQ-Glossary Logo">
+                <img src="{{ pathto('_static/' + logo, 1) }}" alt="Opendatasoft FAQ-Glossary Logo">
             </a>
             <button type="button" id="help-hub-button"> Help Hub </button>
         </div>
@@ -42,12 +42,6 @@
             <a href="/widgets/">Widgets</a>
             <a href="/{{ language }}/apis/">APIs</a>
             <a href="/tutorials/{{ language }}/">{{ gettext('Tutorials') }}</a>
-        </div>
-        <div class="ods__documentation-help-hub-sidebar-separator"></div>
-        <div class="ods__documentation-help-hub-langs">
-            {% for lang in languages %}
-                <a data-lang="{{ lang }}" class="header__langs-items item-lang-attr" href="/faq-glossary/{{ lang }}">{{ lang }}</a>
-            {% endfor %}
         </div>
     </div>
 
