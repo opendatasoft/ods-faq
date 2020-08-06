@@ -35,12 +35,13 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
     'localizedimage',
+    'rst2pdf.pdfbuilder'
 ]
 
-pdf_documents = [
-    ('index', u'opendatasoft-user-manual', u'OpenDataSoft documentation', u'OpenDataSoft'),
-]
-pdf_compressed = True
+# pdf_documents = [
+#     ('index', u'opendatasoft-user-manual', u'OpenDataSoft documentation', u'OpenDataSoft'),
+# ]
+# pdf_compressed = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
