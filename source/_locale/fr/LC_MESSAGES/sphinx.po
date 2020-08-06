@@ -2,7 +2,7 @@
 # Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -25,8 +25,8 @@ msgstr "Guide de l'utilisateur"
 
 #: ../../source/_templates/header.html:32
 #: ../../source/_templates/header.html:46
-msgid "Tutorials"
-msgstr "Tutoriels"
+msgid "https://academy.opendatasoft.com/page/homepage"
+msgstr "https://academy.opendatasoft.com/"
 
 #: ../../source/_templates/layout.html:114
 msgid "Search docs"
