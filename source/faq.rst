@@ -348,44 +348,45 @@ Frequently asked questions (FAQ)
 
 .. rst-class:: content-hidden
 
-    .. tabularcolumns:: |C|C|C|C|
+    .. tabularcolumns:: |C|C|
 
-    +---------+--------------------+------------------+------------------+
-    | OS      | Browser            | Front Office     | Back Office      |
-    +=========+====================+==================+==================+
-    | Windows | Internet Explorer  |                  |                  |
-    |         |    |iexplore|      | Version 9+       | Version 10+      |
-    |         +--------------------+------------------+------------------+
-    |         | Edge               |                  |                  |
-    |         |    |edge|          | Latest version   | Latest version   |
-    |         +--------------------+------------------+------------------+
-    |         | Chrome             |                  |                  |
-    |         |    |chrome|        | Latest version   | Latest version   |
-    |         +--------------------+------------------+------------------+
-    |         | Firefox            |                  |                  |
-    |         |    |firefox|       | Latest version   | Latest version   |
-    +---------+--------------------+------------------+------------------+
-    | Mac     | Safari             |                  |                  |
-    |         |    |safari|        | Version 6+       | Version 6+       |
-    |         +--------------------+------------------+------------------+
-    |         | Chrome             |                  |                  |
-    |         |    |chrome|        | Latest version   | Latest version   |
-    |         +--------------------+------------------+------------------+
-    |         | Firefox            |                  |                  |
-    |         |    |firefox|       | Latest version   | Latest version   |
-    +---------+--------------------+------------------+------------------+
+    +----------------------------------+------------------------------------------------------------------------+
+    | Browser                          | Supported versions                                                     |
+    +==================================+========================================================================+
+    | |firefox| **Firefox**            |                                                                        |
+    |                                  | Latest version                                                         |
+    |                                  |                                                                        |
+    |                                  | `Latest ESR version <https://www.mozilla.org/firefox/enterprise/>`_    |
+    +----------------------------------+------------------------------------------------------------------------+
+    | |chrome| **Chrome**              |                                                                        |
+    |                                  | Latest version                                                         |
+    +----------------------------------+------------------------------------------------------------------------+
+    | |safari| **Safari**              |                                                                        |
+    |                                  | Latest version                                                         |
+    +----------------------------------+------------------------------------------------------------------------+
+    | |edge| **Edge**                  |                                                                        |
+    |                                  | Latest version                                                         |
+    +----------------------------------+------------------------------------------------------------------------+
+    | |iexplore| **Internet Explorer** |                                                                        |
+    |                                  | Version 11 *(not recommended)*                                         |
+    +----------------------------------+------------------------------------------------------------------------+
 
-    .. |iexplore| image:: browser-logos-master/src/ie/ie_32x32.png
+    .. |iexplore| image:: browser-logos/ie_64x64.png
         :alt: Internet Explorer
-    
-    .. |edge| image:: browser-logos-master/src/edge/edge_32x32.png
+        :width: 32
+
+    .. |edge| image:: browser-logos/edge_64x64.png
         :alt: Edge
+        :width: 32
 
-    .. |chrome| image:: browser-logos-master/src/chrome/chrome_32x32.png
+    .. |chrome| image:: browser-logos/chrome_64x64.png
         :alt: Chrome
+        :width: 32
 
-    .. |firefox| image:: browser-logos-master/src/firefox/firefox_32x32.png
+    .. |firefox| image:: browser-logos/firefox_64x64.png
         :alt: Firefox
+        :width: 32
 
-    .. |safari| image:: browser-logos-master/src/safari/safari_32x32.png
+    .. |safari| image:: browser-logos/safari_64x64.png
         :alt: Safari
+        :width: 32
