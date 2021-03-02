@@ -1,16 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
+# Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-09 16:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"POT-Creation-Date: 2021-03-02 09:59+0100\n"
+"PO-Revision-Date: 2018-10-12 06:38+0000\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +29,11 @@ msgstr "Frequently asked questions (FAQ)"
 
 #: ../../source/faq.rst:6
 msgid "Expand All"
-msgstr ""
+msgstr "Alles vergroten"
 
 #: ../../source/faq.rst:10
 msgid "Collapse All"
-msgstr ""
+msgstr "Alles verkleinen"
 
 #: ../../source/faq.rst:14
 msgid "**What is Opendatasoft?**"
@@ -179,7 +184,7 @@ msgid ""
 msgstr ""
 "Binnen deze context is het beschikken over een databeheertool die speciaal "
 "afgestemd is op uw noden verplicht en dient u ook in het achterhoofd te "
-"houden dat dankzij de Open API's die aangeleverd worden door Opendatasoft, "
+"houden dat dankzij de Open API’s die aangeleverd worden door Opendatasoft, "
 "uw nationaal Open Data-portaal altijd over de mogelijkheid zal beschikken om"
 " uw publieke datasets te raadplegen."
 
@@ -804,6 +809,10 @@ msgid ""
 "documentation <https://docs.opendatasoft.com/en/using_api/index.html>`_ for "
 "more information."
 msgstr ""
+"Wanneer u een dataset publiceert, wordt een speciale API aangemaakt. Zie  "
+"`APIs documentation "
+"<https://docs.opendatasoft.com/en/using_api/index.html>`_ voor meer "
+"informatie."
 
 #: ../../source/faq.rst:347
 msgid "**What are the compatible browsers for Opendatasoft's platform?**"
@@ -811,84 +820,42 @@ msgstr ""
 "**Welke browsers zijn compatibel voor het platform van Opendatasoft?**"
 
 #: ../../source/faq.rst:354
-msgid "OS"
-msgstr "OS"
-
-#: ../../source/faq.rst:354
 msgid "Browser"
 msgstr "Browser"
 
 #: ../../source/faq.rst:354
-msgid "Front Office"
-msgstr "Front Office"
-
-#: ../../source/faq.rst:354
-msgid "Back Office"
-msgstr "Back Office"
+msgid "Supported versions"
+msgstr "Ondersteunde versies"
 
 #: ../../source/faq.rst:356
-msgid "Windows"
-msgstr "Windows"
+msgid "|firefox| **Firefox**"
+msgstr "|firefox| **Firefox**"
 
-#: ../../source/faq.rst:356
-msgid "Internet Explorer"
-msgstr "Internet Explorer"
-
-#: ../../source/faq.rst:357
-msgid "|iexplore|"
-msgstr "|iexplore|"
-
-#: ../../source/faq.rst:357
-msgid "Version 9+"
-msgstr "Versie 9+"
-
-#: ../../source/faq.rst:357
-msgid "Version 10+"
-msgstr "Versie 10+"
-
-#: ../../source/faq.rst:359
-msgid "Edge"
-msgstr "Edge"
-
-#: ../../source/faq.rst:360
-msgid "|edge|"
-msgstr ""
-
-#: ../../source/faq.rst:360 ../../source/faq.rst:360 ../../source/faq.rst:363
-#: ../../source/faq.rst:363 ../../source/faq.rst:366 ../../source/faq.rst:366
-#: ../../source/faq.rst:372 ../../source/faq.rst:372 ../../source/faq.rst:375
-#: ../../source/faq.rst:375
+#: ../../source/faq.rst:357 ../../source/faq.rst:362 ../../source/faq.rst:365
+#: ../../source/faq.rst:368
 msgid "Latest version"
 msgstr "Meest recente versie"
 
-#: ../../source/faq.rst:362 ../../source/faq.rst:371
-msgid "Chrome"
-msgstr "Chrome"
+#: ../../source/faq.rst:359
+msgid "`Latest ESR version <https://www.mozilla.org/firefox/enterprise/>`_"
+msgstr "`Latest ESR version <https://www.mozilla.org/firefox/enterprise/>`_"
 
-#: ../../source/faq.rst:363 ../../source/faq.rst:372
-msgid "|chrome|"
-msgstr "|chrome|"
+#: ../../source/faq.rst:361
+msgid "|chrome| **Chrome**"
+msgstr "|chrome| **Chrome**"
 
-#: ../../source/faq.rst:365 ../../source/faq.rst:374
-msgid "Firefox"
-msgstr "Firefox"
+#: ../../source/faq.rst:364
+msgid "|safari| **Safari**"
+msgstr "|safari| **Safari**"
 
-#: ../../source/faq.rst:366 ../../source/faq.rst:375
-msgid "|firefox|"
-msgstr "|firefox|"
+#: ../../source/faq.rst:367
+msgid "|edge| **Edge**"
+msgstr "|edge| **Edge**"
 
-#: ../../source/faq.rst:368
-msgid "Mac"
-msgstr "Mac"
+#: ../../source/faq.rst:370
+msgid "|iexplore| **Internet Explorer**"
+msgstr "|iexplore| **Internet Explorer**"
 
-#: ../../source/faq.rst:368
-msgid "Safari"
-msgstr "Safari"
-
-#: ../../source/faq.rst:369
-msgid "|safari|"
-msgstr "|safari|"
-
-#: ../../source/faq.rst:369 ../../source/faq.rst:369
-msgid "Version 6+"
-msgstr "Versie 6+"
+#: ../../source/faq.rst:371
+msgid "Version 11 *(not recommended)*"
+msgstr "Version 11 *(not recommended)*"
