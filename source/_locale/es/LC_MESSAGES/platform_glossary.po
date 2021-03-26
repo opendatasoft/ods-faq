@@ -1,16 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
+# Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Admin OpenDataSoft <admin@opendatasoft.com>, 2018
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2018
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-09 16:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"POT-Creation-Date: 2021-03-02 09:59+0100\n"
+"PO-Revision-Date: 2018-10-12 06:38+0000\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +30,11 @@ msgstr "Glosario"
 
 #: ../../source/platform_glossary.rst:6
 msgid "Expand All"
-msgstr ""
+msgstr "Expandir todo"
 
 #: ../../source/platform_glossary.rst:10
 msgid "Collapse All"
-msgstr ""
+msgstr "Contraer todo"
 
 #: ../../source/platform_glossary.rst:14
 msgid "Data glossary"
@@ -493,6 +499,11 @@ msgid ""
 "metadata are data about the rst-classs of data. Descriptive metadata use "
 "individual instances of application data or the data content."
 msgstr ""
+"Los metadatos son \"datos que aportan información sobre otros datos\". "
+"Existen dos tipos de metadatos: estructurales y descriptivos. Los metadatos "
+"estructurales son datos sobre rst-classs de datos. Los metadatos "
+"descriptivos utilizan instancias individuales de los datos de la aplicación "
+"o el contenido de los datos."
 
 #: ../../source/platform_glossary.rst:135
 msgid "Publisher (dataset)"

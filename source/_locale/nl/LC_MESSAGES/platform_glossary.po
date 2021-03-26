@@ -1,16 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
+# Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-09 16:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"POT-Creation-Date: 2021-03-02 09:59+0100\n"
+"PO-Revision-Date: 2018-10-12 06:38+0000\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +29,11 @@ msgstr "Glossarium"
 
 #: ../../source/platform_glossary.rst:6
 msgid "Expand All"
-msgstr ""
+msgstr "Alles vergroten"
 
 #: ../../source/platform_glossary.rst:10
 msgid "Collapse All"
-msgstr ""
+msgstr "Alles verkleinen"
 
 #: ../../source/platform_glossary.rst:14
 msgid "Data glossary"
@@ -288,7 +293,7 @@ msgid ""
 "Builder, you can choose a visualization type, choose data to display and "
 "customize X and Y axes and colors"
 msgstr ""
-"Chart Builder is de oplossing die Opendatasoft aanreikt om diagrammen te "
+"Chart Builder is de oplossing die OpenDataSoft aanreikt om diagrammen te "
 "maken. Met Chart Builder kan u een weergavetype kiezen, kiezen welke data "
 "moeten worden weergegeven en X- en Y-assen en kleuren aanpassen."
 
@@ -477,7 +482,7 @@ msgid ""
 "you can quickly add datasets to a geographical view and customize the "
 "colors, data clustering methods and tooltips."
 msgstr ""
-"Map Builder is de oplossing die Opendatasoft aanreikt om kaarten te maken. "
+"Map Builder is de oplossing die OpenDataSoft aanreikt om kaarten te maken. "
 "Met Map Builder kan u snel datasets toevoegen aan een geografische weergave "
 "en de kleuren, dataclusteringmethodes en tooltips personaliseren."
 
@@ -496,6 +501,11 @@ msgid ""
 "metadata are data about the rst-classs of data. Descriptive metadata use "
 "individual instances of application data or the data content."
 msgstr ""
+"Metadata zijn \"data die informatie verschaffen over andere data\". Er "
+"bestaan twee soorten metadata: structurele metadata en beschrijvende "
+"metadata. Structurele metadata zijn data over de rst-klasse van data. "
+"Beschrijvende data gebruiken individuele instanties van applicatiedata of de"
+" data content."
 
 #: ../../source/platform_glossary.rst:135
 msgid "Publisher (dataset)"

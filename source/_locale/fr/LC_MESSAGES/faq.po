@@ -1,16 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
+# Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# benrict <benoit.richter@opendatasoft.com>, 2018
+# Jérémy Morel, 2018
+# Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018
+# Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2018
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-09 16:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"POT-Creation-Date: 2021-03-02 09:59+0100\n"
+"PO-Revision-Date: 2018-10-12 06:38+0000\n"
+"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -121,7 +129,7 @@ msgid ""
 "domains by themselves. Of course, the Opendatasoft support team is more than"
 " willing to help handling complex / specific data management issues."
 msgstr ""
-"Opendatasoft vend une solution clé en main. Les utilisateurs d'Opendatasoft "
+"Opendatasoft vend une solution clé en main. Les utilisateurs Opendatasoft "
 "gèrent leurs données eux-mêmes sur la plateforme. L'équipe d'assistance "
 "d'Opendatasoft est bien entendu disponible pour répondre à toute question "
 "relative à la gestion des données."
@@ -153,7 +161,7 @@ msgid ""
 " go beyond the simple delivery of raw files and:"
 msgstr ""
 "Un des objectifs de l'Open Data est de mettre à disposition des citoyens les"
-" données produites par l'administration publique. La plateforme Opendatasoft"
+" données produites par l'administration publique. La plateforme OpenDataSoft"
 " permet d'aller plus loin que la simple mise à disposition de données brutes"
 " :"
 
@@ -392,7 +400,7 @@ msgid ""
 "A full `INSPIRE <http://inspire.ec.europa.eu/index.cfm/pageid/101>`_ "
 "template is also available and can be activated on demand."
 msgstr ""
-"Opendatasoft supporte également le modèle de métadonnées `INSPIRE "
+"OpenDataSoft supporte également le modèle de métadonnées `INSPIRE "
 "<http://inspire.ec.europa.eu/index.cfm/pageid/101>`_, activable à la "
 "demande."
 
@@ -818,84 +826,42 @@ msgstr ""
 " "
 
 #: ../../source/faq.rst:354
-msgid "OS"
-msgstr "Système d'exploitation"
-
-#: ../../source/faq.rst:354
 msgid "Browser"
 msgstr "Navigateur"
 
 #: ../../source/faq.rst:354
-msgid "Front Office"
-msgstr "Interface de navigation"
-
-#: ../../source/faq.rst:354
-msgid "Back Office"
-msgstr "Interface d'administration"
+msgid "Supported versions"
+msgstr "Versions prises en charge"
 
 #: ../../source/faq.rst:356
-msgid "Windows"
-msgstr "Windows"
+msgid "|firefox| **Firefox**"
+msgstr "|firefox| **Firefox**"
 
-#: ../../source/faq.rst:356
-msgid "Internet Explorer"
-msgstr "Internet Explorer"
-
-#: ../../source/faq.rst:357
-msgid "|iexplore|"
-msgstr "|iexplore|"
-
-#: ../../source/faq.rst:357
-msgid "Version 9+"
-msgstr "Version 9+"
-
-#: ../../source/faq.rst:357
-msgid "Version 10+"
-msgstr "Version 10+"
-
-#: ../../source/faq.rst:359
-msgid "Edge"
-msgstr "Edge"
-
-#: ../../source/faq.rst:360
-msgid "|edge|"
-msgstr "|edge|"
-
-#: ../../source/faq.rst:360 ../../source/faq.rst:360 ../../source/faq.rst:363
-#: ../../source/faq.rst:363 ../../source/faq.rst:366 ../../source/faq.rst:366
-#: ../../source/faq.rst:372 ../../source/faq.rst:372 ../../source/faq.rst:375
-#: ../../source/faq.rst:375
+#: ../../source/faq.rst:357 ../../source/faq.rst:362 ../../source/faq.rst:365
+#: ../../source/faq.rst:368
 msgid "Latest version"
 msgstr "Dernière version"
 
-#: ../../source/faq.rst:362 ../../source/faq.rst:371
-msgid "Chrome"
-msgstr "Chrome"
+#: ../../source/faq.rst:359
+msgid "`Latest ESR version <https://www.mozilla.org/firefox/enterprise/>`_"
+msgstr "`Dernière version ESR <https://www.mozilla.org/firefox/enterprise/>`_"
 
-#: ../../source/faq.rst:363 ../../source/faq.rst:372
-msgid "|chrome|"
-msgstr "|chrome|"
+#: ../../source/faq.rst:361
+msgid "|chrome| **Chrome**"
+msgstr "|chrome| **Chrome**"
 
-#: ../../source/faq.rst:365 ../../source/faq.rst:374
-msgid "Firefox"
-msgstr "Firefox"
+#: ../../source/faq.rst:364
+msgid "|safari| **Safari**"
+msgstr "|safari| **Safari**"
 
-#: ../../source/faq.rst:366 ../../source/faq.rst:375
-msgid "|firefox|"
-msgstr "|firefox|"
+#: ../../source/faq.rst:367
+msgid "|edge| **Edge**"
+msgstr "|edge| **Edge**"
 
-#: ../../source/faq.rst:368
-msgid "Mac"
-msgstr "Mac"
+#: ../../source/faq.rst:370
+msgid "|iexplore| **Internet Explorer**"
+msgstr "|iexplore| **Internet Explorer**"
 
-#: ../../source/faq.rst:368
-msgid "Safari"
-msgstr "Safari"
-
-#: ../../source/faq.rst:369
-msgid "|safari|"
-msgstr "|safari|"
-
-#: ../../source/faq.rst:369 ../../source/faq.rst:369
-msgid "Version 6+"
-msgstr "Version 6+"
+#: ../../source/faq.rst:371
+msgid "Version 11 *(not recommended)*"
+msgstr "Version 11 *(non recommandée)*"
