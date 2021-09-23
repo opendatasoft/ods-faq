@@ -367,13 +367,7 @@ Frequently asked questions (FAQ)
     | |edge| **Edge**                  |                                                                        |
     |                                  | Latest version                                                         |
     +----------------------------------+------------------------------------------------------------------------+
-    | |iexplore| **Internet Explorer** |                                                                        |
-    |                                  | Version 11 *(not recommended)*                                         |
-    +----------------------------------+------------------------------------------------------------------------+
 
-    .. |iexplore| image:: browser-logos/ie_64x64.png
-        :alt: Internet Explorer
-        :width: 32
 
     .. |edge| image:: browser-logos/edge_64x64.png
         :alt: Edge

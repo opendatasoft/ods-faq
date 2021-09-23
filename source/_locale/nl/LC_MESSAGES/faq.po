@@ -2,12 +2,12 @@
 # Copyright (C) 2021, Opendatasoft
 # This file is distributed under the same license as the OpenDataSoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Thibaut Dupré <thibaut.dupre@opendatasoft.com>, 2018
 # Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018
 # Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2018-10-12 06:38+0000\n"
 "Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2021\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/faq.rst:2
@@ -852,10 +852,8 @@ msgstr "|safari| **Safari**"
 msgid "|edge| **Edge**"
 msgstr "|edge| **Edge**"
 
-#: ../../source/faq.rst:370
-msgid "|iexplore| **Internet Explorer**"
-msgstr "|iexplore| **Internet Explorer**"
+#~ msgid "|iexplore| **Internet Explorer**"
+#~ msgstr "|iexplore| **Internet Explorer**"
 
-#: ../../source/faq.rst:371
-msgid "Version 11 *(not recommended)*"
-msgstr "Version 11 *(not recommended)*"
+#~ msgid "Version 11 *(not recommended)*"
+#~ msgstr "Version 11 *(not recommended)*"
